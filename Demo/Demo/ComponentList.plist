@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Core</string>
+		<key>Status</key>
+		<string>OK</string>
+		<key>Detail</key>
+		<string>Ready to use, more document needed.</string>
+		<key>Has Demo</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFPullToFetchTableView</string>
+		<key>Status</key>
+		<string>Alpha</string>
+		<key>Detail</key>
+		<string>Can work, but need imporve. API may change.
+TODO:
+    * Better animate support.
+    * Complete other container style.</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+</array>
+</plist>
