@@ -48,7 +48,7 @@ RFUIInterfaceOrientationSupportAll
             v.autoresizingMask = UIViewAutoresizingFlexibleSize;
             v.backgroundColor = [UIColor randColorWithAlpha:0.8];
             [self.scrollView addSubview:v];
-            dout(@"Add a view: %@", v)
+            _dout(@"Add a view: %@", v)
         }
     }
     else {
@@ -66,7 +66,13 @@ RFUIInterfaceOrientationSupportAll
     // Fix last view size.
     CGFloat lastWidth = width * (self.pageCount - floorf(self.pageCount));
     [[self.scrollView.subviews lastObject] setWidth:(lastWidth)? : width];
-    douto(self.scrollView.subviews)
+    
+    // Adjust x
+    [self.scrollView.subviews enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(UIView * view, NSUInteger idx, BOOL *stop) {
+        view.x = idx*width;
+    }];
+    
+    _douto(self.scrollView.subviews)
 }
 
 - (IBAction)onPageCountSliderValueChanged:(UISlider *)sender {
