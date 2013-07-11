@@ -67,10 +67,17 @@
 		D520075A178D021000FEA64B /* SidePanel-on.png in Resources */ = {isa = PBXBuildFile; fileRef = D5200752178D020F00FEA64B /* SidePanel-on.png */; };
 		D520075D178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D520075C178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m */; };
 		D5200762178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */; };
+		D5200766178E47FC00FEA64B /* RFScrollViewPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D5200765178E47FC00FEA64B /* RFScrollViewPageControl.m */; };
+		D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5200768178E487000FEA64B /* RFScrollViewPageControl.storyboard */; };
+		D520076C178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D520076B178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m */; };
+		D5200772178E53AD00FEA64B /* 1400x600.png in Resources */ = {isa = PBXBuildFile; fileRef = D520076E178E53AD00FEA64B /* 1400x600.png */; };
+		D5200773178E53AD00FEA64B /* 300x600.png in Resources */ = {isa = PBXBuildFile; fileRef = D520076F178E53AD00FEA64B /* 300x600.png */; };
+		D5200774178E53AD00FEA64B /* 50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = D5200770178E53AD00FEA64B /* 50x50.png */; };
+		D5200775178E53AD00FEA64B /* 800x600.png in Resources */ = {isa = PBXBuildFile; fileRef = D5200771178E53AD00FEA64B /* 800x600.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D520051B178CF43B00FEA64B /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D520051B178CF43B00FEA64B /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Demo.app; path = RFDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D520051E178CF43B00FEA64B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D5200520178CF43B00FEA64B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5200522178CF43B00FEA64B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -197,6 +204,15 @@
 		D520075F178D038800FEA64B /* RFInitializing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFInitializing.h; sourceTree = "<group>"; };
 		D5200760178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPullToFetchTableViewConfigViewController.h; sourceTree = "<group>"; };
 		D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPullToFetchTableViewConfigViewController.m; sourceTree = "<group>"; };
+		D5200764178E47FC00FEA64B /* RFScrollViewPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFScrollViewPageControl.h; sourceTree = "<group>"; };
+		D5200765178E47FC00FEA64B /* RFScrollViewPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFScrollViewPageControl.m; sourceTree = "<group>"; };
+		D5200768178E487000FEA64B /* RFScrollViewPageControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFScrollViewPageControl.storyboard; sourceTree = "<group>"; };
+		D520076A178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFScrollViewPageControlDemoViewController.h; sourceTree = "<group>"; };
+		D520076B178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFScrollViewPageControlDemoViewController.m; sourceTree = "<group>"; };
+		D520076E178E53AD00FEA64B /* 1400x600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1400x600.png; sourceTree = "<group>"; };
+		D520076F178E53AD00FEA64B /* 300x600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 300x600.png; sourceTree = "<group>"; };
+		D5200770178E53AD00FEA64B /* 50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50x50.png; sourceTree = "<group>"; };
+		D5200771178E53AD00FEA64B /* 800x600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 800x600.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +270,7 @@
 		D5200525178CF43B00FEA64B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D520076D178E53AD00FEA64B /* TestImage */,
 				D5200526178CF43B00FEA64B /* Demo-Info.plist */,
 				D5200527178CF43B00FEA64B /* InfoPlist.strings */,
 				D520052A178CF43C00FEA64B /* main.m */,
@@ -280,6 +297,7 @@
 			children = (
 				D520075E178D038800FEA64B /* RFInitializing */,
 				D5200710178D01AE00FEA64B /* RFPullToFetchTableView */,
+				D5200763178E47DC00FEA64B /* RFScrollViewPageControl */,
 				D5200748178D020F00FEA64B /* RFSidePanel */,
 			);
 			path = Alpha;
@@ -468,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				D5200745178D01CE00FEA64B /* RFPullToFetchTableView */,
+				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -529,6 +548,36 @@
 				D520075F178D038800FEA64B /* RFInitializing.h */,
 			);
 			path = RFInitializing;
+			sourceTree = "<group>";
+		};
+		D5200763178E47DC00FEA64B /* RFScrollViewPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				D5200764178E47FC00FEA64B /* RFScrollViewPageControl.h */,
+				D5200765178E47FC00FEA64B /* RFScrollViewPageControl.m */,
+			);
+			path = RFScrollViewPageControl;
+			sourceTree = "<group>";
+		};
+		D5200767178E486000FEA64B /* RFScrollViewPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				D5200768178E487000FEA64B /* RFScrollViewPageControl.storyboard */,
+				D520076A178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.h */,
+				D520076B178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m */,
+			);
+			path = RFScrollViewPageControl;
+			sourceTree = "<group>";
+		};
+		D520076D178E53AD00FEA64B /* TestImage */ = {
+			isa = PBXGroup;
+			children = (
+				D520076E178E53AD00FEA64B /* 1400x600.png */,
+				D520076F178E53AD00FEA64B /* 300x600.png */,
+				D5200770178E53AD00FEA64B /* 50x50.png */,
+				D5200771178E53AD00FEA64B /* 800x600.png */,
+			);
+			path = TestImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,6 +644,11 @@
 				D5200758178D021000FEA64B /* SidePanel-off.png in Resources */,
 				D5200759178D021000FEA64B /* SidePanel-on.active.png in Resources */,
 				D520075A178D021000FEA64B /* SidePanel-on.png in Resources */,
+				D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */,
+				D5200772178E53AD00FEA64B /* 1400x600.png in Resources */,
+				D5200773178E53AD00FEA64B /* 300x600.png in Resources */,
+				D5200774178E53AD00FEA64B /* 50x50.png in Resources */,
+				D5200775178E53AD00FEA64B /* 800x600.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +703,8 @@
 				D5200754178D021000FEA64B /* RFSidePanel.m in Sources */,
 				D520075D178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m in Sources */,
 				D5200762178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m in Sources */,
+				D5200766178E47FC00FEA64B /* RFScrollViewPageControl.m in Sources */,
+				D520076C178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +831,7 @@
 				D5200543178CF43C00FEA64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
