@@ -609,7 +609,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = RFUI;
 			};
-			buildConfigurationList = D5200516178CF43B00FEA64B /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = D5200516178CF43B00FEA64B /* Build configuration list for PBXProject "RFDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -815,7 +815,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5200516178CF43B00FEA64B /* Build configuration list for PBXProject "Demo" */ = {
+		D5200516178CF43B00FEA64B /* Build configuration list for PBXProject "RFDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D520053F178CF43C00FEA64B /* Debug */,
