@@ -20,8 +20,6 @@ RFUIInterfaceOrientationSupportAll
 
 #pragma mark - Config page count
 
-#define FrameAtIndex(ix) CGRectMake((ix)*(width), 0, (width)+10, (height)-20)
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     

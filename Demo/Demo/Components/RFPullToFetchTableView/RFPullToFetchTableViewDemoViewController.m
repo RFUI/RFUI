@@ -56,14 +56,15 @@ RFUIInterfaceOrientationSupportAll
 }
 
 - (void)setupPullToFetchDisplay {
-    self.headerView = (UILabel *)self.tableView.tableHeaderView;
-    self.tableView.tableHeaderView = nil;
+    RFPullToFetchTableView *tableView = self.tableView;
+    self.headerView = (UILabel *)tableView.tableHeaderView;
+    tableView.tableHeaderView = nil;
     
-    self.tableView.headerContainer = self.headerView;
-    [self.tableView addSubview:self.headerView];
+    tableView.headerContainer = self.headerView;
+    [tableView addSubview:self.headerView];
     
     @weakify(self);
-    [self.tableView setHeaderVisibleChangeBlock:^(BOOL isVisible, CGFloat visibleHeight, BOOL isCompleteVisible, BOOL isProccessing) {
+    [tableView setHeaderVisibleChangeBlock:^(BOOL isVisible, CGFloat visibleHeight, BOOL isCompleteVisible, BOOL isProccessing) {
         dout(@"header visible = %@", @(isVisible))
         @strongify(self);
         
@@ -83,13 +84,13 @@ RFUIInterfaceOrientationSupportAll
     }];
     
     
-    self.footerView = (UILabel *)self.tableView.tableFooterView;
-    self.tableView.tableFooterView = nil;
+    self.footerView = (UILabel *)tableView.tableFooterView;
+    tableView.tableFooterView = nil;
     
-    self.tableView.footerContainer = self.footerView;
-    [self.tableView addSubview:self.footerView];
+    tableView.footerContainer = self.footerView;
+    [tableView addSubview:self.footerView];
     
-    [self.tableView setFooterVisibleChangeBlock:^(BOOL isVisible, CGFloat visibleHeight, BOOL isCompleteVisible, BOOL isProccessing, BOOL reachEnd) {
+    [tableView setFooterVisibleChangeBlock:^(BOOL isVisible, CGFloat visibleHeight, BOOL isCompleteVisible, BOOL isProccessing, BOOL reachEnd) {
         dout(@"footer visible = %@", @(isVisible))
         
         @strongify(self);
@@ -147,17 +148,17 @@ RFUIInterfaceOrientationSupportAll
         _cellCount = cellCount;
         
         if (cellCount > orgCount) {
-            [self.tableView insertRowsAtIndexPaths:[self indexPathsForRange:(NSRange){orgCount, ABS(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self.tableView insertRowsAtIndexPaths:[self indexPathsForRange:(NSRange){orgCount, fabs(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
         else {
-            [self.tableView deleteRowsAtIndexPaths:[self indexPathsForRange:(NSRange){fminf(orgCount, cellCount), ABS(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self.tableView deleteRowsAtIndexPaths:[self indexPathsForRange:(NSRange){fminf(orgCount, cellCount), fabs(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }
 }
 
 - (NSArray *)indexPathsForRange:(NSRange)range {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:range.length];
-    for (int i = 0; i < range.length; i++) {
+    for (NSUInteger i = 0; i < range.length; i++) {
         [array addObject:[NSIndexPath indexPathForRow:range.location+i inSection:0]];
     }
     return array;
