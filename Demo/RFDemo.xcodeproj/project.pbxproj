@@ -23,7 +23,6 @@
 		D51D83DE17977E920086D902 /* RFImageGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836C17977E910086D902 /* RFImageGallery.m */; };
 		D51D83DF17977E920086D902 /* RFImageTimeTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836F17977E910086D902 /* RFImageTimeTunnel.m */; };
 		D51D83E017977E920086D902 /* RFImageTimeTunnel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51D837017977E910086D902 /* RFImageTimeTunnel.xib */; };
-		D51D83E117977E920086D902 /* RFModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D837317977E910086D902 /* RFModalView.m */; };
 		D51D83E217977E920086D902 /* RFNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D837617977E910086D902 /* RFNoticeView.m */; };
 		D51D83E317977E920086D902 /* RFPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D837917977E910086D902 /* RFPlugin.m */; };
 		D51D83E617977E920086D902 /* RFRefreshButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D838117977E910086D902 /* RFRefreshButton.m */; };
@@ -177,8 +176,6 @@
 		D51D836E17977E910086D902 /* RFImageTimeTunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFImageTimeTunnel.h; sourceTree = "<group>"; };
 		D51D836F17977E910086D902 /* RFImageTimeTunnel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFImageTimeTunnel.m; sourceTree = "<group>"; };
 		D51D837017977E910086D902 /* RFImageTimeTunnel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFImageTimeTunnel.xib; sourceTree = "<group>"; };
-		D51D837217977E910086D902 /* RFModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFModalView.h; sourceTree = "<group>"; };
-		D51D837317977E910086D902 /* RFModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFModalView.m; sourceTree = "<group>"; };
 		D51D837517977E910086D902 /* RFNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNoticeView.h; sourceTree = "<group>"; };
 		D51D837617977E910086D902 /* RFNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNoticeView.m; sourceTree = "<group>"; };
 		D51D837817977E910086D902 /* RFPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPlugin.h; sourceTree = "<group>"; };
@@ -548,15 +545,6 @@
 			path = RFImageTimeTunnel;
 			sourceTree = "<group>";
 		};
-		D51D837117977E910086D902 /* RFModalView */ = {
-			isa = PBXGroup;
-			children = (
-				D51D837217977E910086D902 /* RFModalView.h */,
-				D51D837317977E910086D902 /* RFModalView.m */,
-			);
-			path = RFModalView;
-			sourceTree = "<group>";
-		};
 		D51D837417977E910086D902 /* RFNoticeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -866,7 +854,6 @@
 				D51D836717977E910086D902 /* RFImageCropper */,
 				D51D836A17977E910086D902 /* RFImageGallery */,
 				D51D836D17977E910086D902 /* RFImageTimeTunnel */,
-				D51D837117977E910086D902 /* RFModalView */,
 				D51D837417977E910086D902 /* RFNoticeView */,
 				D51D837717977E910086D902 /* RFPlugin */,
 				D5200710178D01AE00FEA64B /* RFPullToFetchTableView */,
@@ -1283,7 +1270,6 @@
 				D51D83DD17977E920086D902 /* RFImageCropperView.m in Sources */,
 				D51D83DE17977E920086D902 /* RFImageGallery.m in Sources */,
 				D51D83DF17977E920086D902 /* RFImageTimeTunnel.m in Sources */,
-				D51D83E117977E920086D902 /* RFModalView.m in Sources */,
 				D51D83E217977E920086D902 /* RFNoticeView.m in Sources */,
 				D51D83E317977E920086D902 /* RFPlugin.m in Sources */,
 				D51D83E617977E920086D902 /* RFRefreshButton.m in Sources */,
@@ -1414,13 +1400,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = (
 					"-Weverything",
 					"-Wno-direct-ivar-access",
-					"-Wno-objc-missing-property-synthesis",
 					"-Wno-float-equal",
+					"-Wno-gnu",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-covered-switch-default",
 				);
 				WRAPPER_EXTENSION = app;
 			};
@@ -1432,13 +1420,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = (
 					"-Weverything",
 					"-Wno-direct-ivar-access",
-					"-Wno-objc-missing-property-synthesis",
 					"-Wno-float-equal",
+					"-Wno-gnu",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-covered-switch-default",
 				);
 				WRAPPER_EXTENSION = app;
 			};
