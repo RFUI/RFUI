@@ -9,8 +9,8 @@
 #import "RFPullToFetchTableViewDemoViewController.h"
 #import "RFPullToFetchTableViewConfigViewController.h"
 
-NSTimeInterval DebugFetchDelay = 1;
-int DebugMaxItemCount = 20;
+static NSTimeInterval DebugFetchDelay = 1;
+static int DebugMaxItemCount = 20;
 
 @interface RFPullToFetchTableViewDemoViewController ()
 // For convenience, we don not use real data here.

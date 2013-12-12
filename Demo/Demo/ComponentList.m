@@ -48,10 +48,10 @@
 
 @end
 
-NSString *const TDkName     = @"Name";
-NSString *const TDkStatus   = @"Status";
-NSString *const TDkDetail   = @"Detail";
-NSString *const TDkHasDemo  = @"Has Demo";
+static NSString *const TDkName     = @"Name";
+static NSString *const TDkStatus   = @"Status";
+static NSString *const TDkDetail   = @"Detail";
+static NSString *const TDkHasDemo  = @"Has Demo";
 
 @implementation ComponentListCell
 
