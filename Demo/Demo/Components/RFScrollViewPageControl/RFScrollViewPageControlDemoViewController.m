@@ -8,12 +8,6 @@
 @implementation RFScrollViewPageControlDemoViewController
 RFUIInterfaceOrientationSupportAll
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    self.scrollView.contentSize = (CGSize){ self.pageCount * self.scrollView.bounds.size.width, 0 };
-}
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 }
@@ -25,25 +19,28 @@ RFUIInterfaceOrientationSupportAll
     
     [self.scrollView removeAllSubviews];
     [self onPageCountSliderValueChanged:self.pageCountSlider];
+
+    self.scrollView.translatesAutoresizingMaskIntoConstraints = YES;
 }
 
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     
     if (self.pageCount < 0) return;
     
     CGFloat width = self.scrollView.width;
     CGFloat height = self.scrollView.height;
-    int subviewCountCurrent = self.scrollView.subviews.count;
-    int subviewCountWillBe = ceilf(self.pageCount);
+    NSUInteger subviewCountCurrent = self.scrollView.subviews.count;
+    NSUInteger subviewCountWillBe = ceilf(self.pageCount);
     
     UIView *lastSubview = [self.scrollView.subviews lastObject];
     if (subviewCountWillBe > subviewCountCurrent) {
         lastSubview.width = width;
         
-        for (int i = (subviewCountWillBe - subviewCountCurrent); i > 0; i--) {
+        for (NSInteger i = (subviewCountWillBe - subviewCountCurrent); i > 0; i--) {
             UIView *v = [[UIView alloc] initWithFrame:CGRectMake((subviewCountWillBe - i)*width, 10, width, height-20)];
-            v.autoresizingMask = UIViewAutoresizingFlexibleSize;
+            v.autoresizingMask = UIViewAutoresizingFlexibleSize | UIViewAutoresizingFlexibleMargin;
+            v.translatesAutoresizingMaskIntoConstraints = YES;
             v.backgroundColor = [UIColor randColorWithAlpha:0.8];
             [self.scrollView addSubview:v];
             _dout(@"Add a view: %@", v)
@@ -71,6 +68,7 @@ RFUIInterfaceOrientationSupportAll
     }];
     
     _douto(self.scrollView.subviews)
+    self.scrollView.contentSize = (CGSize){ self.pageCount * self.scrollView.bounds.size.width, 0 };
 }
 
 - (IBAction)onPageCountSliderValueChanged:(UISlider *)sender {

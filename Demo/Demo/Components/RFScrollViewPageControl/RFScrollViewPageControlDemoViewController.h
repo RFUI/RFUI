@@ -19,6 +19,7 @@
 @property(assign, nonatomic) float pageCount;
 @property(weak, nonatomic) IBOutlet UILabel *pageCountLabel;
 @property(weak, nonatomic) IBOutlet UISlider *pageCountSlider;
+
 - (IBAction)onPageCountSliderValueChanged:(UISlider *)sender;
 - (IBAction)onSupportHalfPageSwitchChanged:(UISwitch *)sender;
 @end

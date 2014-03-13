@@ -64,7 +64,6 @@ static NSString *const TDkHasDemo  = @"Has Demo";
 
 - (void)setComponentInfo:(NSDictionary *)componentInfo {
     if (_componentInfo != componentInfo) {
-        [self willChangeValueForKey:@keypath(self, componentInfo)];
         _componentInfo = componentInfo;
         
         BOOL hasDemo = [componentInfo boolForKey:TDkHasDemo];
@@ -73,8 +72,6 @@ static NSString *const TDkHasDemo  = @"Has Demo";
         self.detialLabel.text = componentInfo[TDkDetail];
         self.accessoryType = (hasDemo)? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
         self.selectionStyle = (hasDemo)? UITableViewCellSelectionStyleBlue : UITableViewCellSelectionStyleNone;
-        
-        [self didChangeValueForKey:@keypath(self, componentInfo)];
     }
 }
 
