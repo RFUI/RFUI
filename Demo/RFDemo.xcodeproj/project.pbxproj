@@ -144,6 +144,8 @@
 		D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D549013E18FB90F200EDA527 /* SVProgressHUD.m */; };
 		D549014518FB918500EDA527 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D549014418FB918500EDA527 /* MobileCoreServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D549014718FB91B000EDA527 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D549014618FB91B000EDA527 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */; };
+		D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */; };
 		D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */; };
 		D56CDDE3185AE7580050241B /* RFAssetsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDDC185AE7580050241B /* RFAssetsCache.m */; };
 		D56CDDE4185AE7580050241B /* RFAssetsCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDDD185AE7580050241B /* RFAssetsCache.xcdatamodeld */; };
@@ -436,6 +438,9 @@
 		D549013E18FB90F200EDA527 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		D549014418FB918500EDA527 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D549014618FB91B000EDA527 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFTableViewCellHeightDelegate.storyboard; sourceTree = "<group>"; };
+		D549014B18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewCellHeightDelegateDemoViewController.h; sourceTree = "<group>"; };
+		D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCellHeightDelegateDemoViewController.m; sourceTree = "<group>"; };
 		D54D40D1185EA2E800A09A35 /* RFAssetsCacheTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCacheTestHelper.h; sourceTree = "<group>"; };
 		D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCacheTestHelper.m; sourceTree = "<group>"; };
 		D56CDDDB185AE7580050241B /* RFAssetsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCache.h; sourceTree = "<group>"; };
@@ -1082,6 +1087,7 @@
 				D56CDDE7185AE99B0050241B /* RFAssetsCache */,
 				D5200745178D01CE00FEA64B /* RFPullToFetchTableView */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
+				D549014818FB92B500EDA527 /* RFTableViewCellHeightDelegate */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1214,6 +1220,16 @@
 			path = Frameworks/SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		D549014818FB92B500EDA527 /* RFTableViewCellHeightDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */,
+				D549014B18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.h */,
+				D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */,
+			);
+			path = RFTableViewCellHeightDelegate;
+			sourceTree = "<group>";
+		};
 		D56CDDDA185AE7580050241B /* RFAssetsCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -1320,6 +1336,7 @@
 				D5200772178E53AD00FEA64B /* 1400x600.png in Resources */,
 				D5200773178E53AD00FEA64B /* 300x600.png in Resources */,
 				D5200774178E53AD00FEA64B /* 50x50.png in Resources */,
+				D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */,
 				D5200775178E53AD00FEA64B /* 800x600.png in Resources */,
 				D51D83E017977E920086D902 /* RFImageTimeTunnel.xib in Resources */,
 				D51D83F117977E920086D902 /* RFSidePanel.xib in Resources */,
@@ -1386,6 +1403,7 @@
 				D52006EC178CF4B100FEA64B /* RFGeometry.m in Sources */,
 				D52006ED178CF4B100FEA64B /* RFPerformance.m in Sources */,
 				D52006F9178CF4B100FEA64B /* RFUI.m in Sources */,
+				D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */,
 				D520070D178CF76A00FEA64B /* ComponentList.m in Sources */,
 				D520073D178D01AF00FEA64B /* RFPullToFetchTableView.m in Sources */,
 				D549012118FB820200EDA527 /* AFURLRequestSerialization.m in Sources */,

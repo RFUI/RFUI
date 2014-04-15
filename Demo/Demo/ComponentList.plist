@@ -45,5 +45,15 @@ TODO:
 		<key>Has Demo</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFTableViewCellHeightDelegate</string>
+		<key>Status</key>
+		<string>TEST</string>
+		<key>Detail</key>
+		<string>Alpha</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
 </array>
 </plist>
