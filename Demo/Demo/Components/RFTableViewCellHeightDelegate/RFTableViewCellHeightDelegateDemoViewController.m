@@ -40,9 +40,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(indexPath.row % 2)? @"Cell1": @"Cell2"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableView:tableView cellReuseIdentifierForRowAtIndexPath:indexPath]];
     [self tableView:tableView configureCell:cell forIndexPath:indexPath];
     return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.tableData.count;
 }
 
 - (void)tableView:(UITableView *)tableView configureCell:(id)cell forIndexPath:(NSIndexPath *)indexPath {
@@ -50,8 +54,8 @@
     aCell.muiltLineLabel.text = self.tableData[indexPath.row];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.tableData.count;
+- (NSString *)tableView:(UITableView *)tableView cellReuseIdentifierForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return (indexPath.row % 2)? @"Cell1": @"Cell2";
 }
 
 #pragma mark - Editing
@@ -66,7 +70,7 @@
 #import "RFPerformance.h"
 
 @implementation RFTableViewCellHeightDelegateDemoCell
-_RFAlloctionLog
+RFAlloctionLog
 
 @end
 
