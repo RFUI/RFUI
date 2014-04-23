@@ -39,9 +39,9 @@
     ];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableView:tableView cellReuseIdentifierForRowAtIndexPath:indexPath]];
-    [self tableView:tableView configureCell:cell forIndexPath:indexPath];
+    [self tableView:tableView configureCell:cell forIndexPath:indexPath offscreenRendering:NO];
     return cell;
 }
 
@@ -49,13 +49,13 @@
     return self.tableData.count;
 }
 
-- (void)tableView:(UITableView *)tableView configureCell:(id)cell forIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView configureCell:(id)cell forIndexPath:(NSIndexPath *)indexPath offscreenRendering:(BOOL)isOffscreenRendering {
     RFTableViewCellHeightDelegateDemoCell *aCell = cell;
     aCell.muiltLineLabel.text = self.tableData[indexPath.row];
 }
 
 - (NSString *)tableView:(UITableView *)tableView cellReuseIdentifierForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return (indexPath.row % 2)? @"Cell1": @"Cell2";
+    return (indexPath.row % 2)? @"Cell1" : @"Cell2";
 }
 
 #pragma mark - Editing

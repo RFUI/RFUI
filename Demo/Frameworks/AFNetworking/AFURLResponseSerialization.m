@@ -1,6 +1,6 @@
 // AFSerialization.h
 //
-// Copyright (c) 2013 AFNetworking (http://afnetworking.com)
+// Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,14 +22,14 @@
 
 #import "AFURLResponseSerialization.h"
 
-extern NSString * const AFNetworkingErrorDomain;
-extern NSString * const AFNetworkingOperationFailingURLResponseErrorKey;
-
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 #import <UIKit/UIKit.h>
 #elif defined(__MAC_OS_X_VERSION_MIN_REQUIRED)
 #import <Cocoa/Cocoa.h>
 #endif
+
+extern NSString * const AFNetworkingErrorDomain;
+extern NSString * const AFNetworkingOperationFailingURLResponseErrorKey;
 
 static NSError * AFErrorWithUnderlyingError(NSError *error, NSError *underlyingError) {
     if (!error) {
@@ -46,30 +46,39 @@ static NSError * AFErrorWithUnderlyingError(NSError *error, NSError *underlyingE
     return [[NSError alloc] initWithDomain:error.domain code:error.code userInfo:mutableUserInfo];
 }
 
-static BOOL AFErrorOrUnderlyingErrorHasCode(NSError *error, NSInteger code) {
-    if (error.code == code) {
+static BOOL AFErrorOrUnderlyingErrorHasCodeInDomain(NSError *error, NSInteger code, NSString *domain) {
+    if ([error.domain isEqualToString:domain] && error.code == code) {
         return YES;
     } else if (error.userInfo[NSUnderlyingErrorKey]) {
-        return AFErrorOrUnderlyingErrorHasCode(error.userInfo[NSUnderlyingErrorKey], code);
+        return AFErrorOrUnderlyingErrorHasCodeInDomain(error.userInfo[NSUnderlyingErrorKey], code, domain);
     }
 
     return NO;
 }
 
-static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dictionary) {
-    NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionaryWithDictionary:dictionary];
-    for (id <NSCopying> key in [dictionary allKeys]) {
-        id value = [dictionary objectForKey:key];
-        if (!value || [value isEqual:[NSNull null]]) {
-            [mutableDictionary removeObjectForKey:key];
-        } else {
-            if ([value isKindOfClass:[NSDictionary class]]) {
-                [mutableDictionary setObject:AFDictionaryByRemovingKeysWithNullValues(value) forKey:key];
+static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingOptions readingOptions) {
+    if ([JSONObject isKindOfClass:[NSArray class]]) {
+        NSMutableArray *mutableArray = [NSMutableArray arrayWithCapacity:[(NSArray *)JSONObject count]];
+        for (id value in (NSArray *)JSONObject) {
+            [mutableArray addObject:AFJSONObjectByRemovingKeysWithNullValues(value, readingOptions)];
+        }
+
+        return (readingOptions & NSJSONReadingMutableContainers) ? mutableArray : [NSArray arrayWithArray:mutableArray];
+    } else if ([JSONObject isKindOfClass:[NSDictionary class]]) {
+        NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionaryWithDictionary:JSONObject];
+        for (id <NSCopying> key in [(NSDictionary *)JSONObject allKeys]) {
+            id value = [(NSDictionary *)JSONObject objectForKey:key];
+            if (!value || [value isEqual:[NSNull null]]) {
+                [mutableDictionary removeObjectForKey:key];
+            } else if ([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]]) {
+                [mutableDictionary setObject:AFJSONObjectByRemovingKeysWithNullValues(value, readingOptions) forKey:key];
             }
         }
+
+        return (readingOptions & NSJSONReadingMutableContainers) ? mutableDictionary : [NSDictionary dictionaryWithDictionary:mutableDictionary];
     }
 
-    return mutableDictionary;
+    return JSONObject;
 }
 
 @implementation AFHTTPResponseSerializer
@@ -118,8 +127,8 @@ static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dic
 
         if (self.acceptableStatusCodes && ![self.acceptableStatusCodes containsIndex:(NSUInteger)response.statusCode]) {
             NSDictionary *userInfo = @{
-                                       NSLocalizedDescriptionKey: [NSString stringWithFormat:NSLocalizedStringFromTable(@"Request failed: %@ (%lu)", @"AFNetworking", nil), [NSHTTPURLResponse localizedStringForStatusCode:response.statusCode], (unsigned long)response.statusCode],
-                                    NSURLErrorFailingURLErrorKey:[response URL],
+                                       NSLocalizedDescriptionKey: [NSString stringWithFormat:NSLocalizedStringFromTable(@"Request failed: %@ (%ld)", @"AFNetworking", nil), [NSHTTPURLResponse localizedStringForStatusCode:response.statusCode], (long)response.statusCode],
+                                       NSURLErrorFailingURLErrorKey:[response URL],
                                        AFNetworkingOperationFailingURLResponseErrorKey: response
                                        };
 
@@ -211,7 +220,7 @@ static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dic
                           error:(NSError *__autoreleasing *)error
 {
     if (![self validateResponse:(NSHTTPURLResponse *)response data:data error:error]) {
-        if (AFErrorOrUnderlyingErrorHasCode(*error, NSURLErrorCannotDecodeContentData)) {
+        if (AFErrorOrUnderlyingErrorHasCodeInDomain(*error, NSURLErrorCannotDecodeContentData, AFNetworkingErrorDomain)) {
             return nil;
         }
     }
@@ -252,8 +261,8 @@ static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dic
         }
     }
 
-    if (self.removesKeysWithNullValues && responseObject && [responseObject isKindOfClass:[NSDictionary class]]) {
-        responseObject = AFDictionaryByRemovingKeysWithNullValues(responseObject);
+    if (self.removesKeysWithNullValues && responseObject) {
+        responseObject = AFJSONObjectByRemovingKeysWithNullValues(responseObject, self.readingOptions);
     }
     
     if (error) {
@@ -321,7 +330,7 @@ static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dic
                           error:(NSError *__autoreleasing *)error
 {
     if (![self validateResponse:(NSHTTPURLResponse *)response data:data error:error]) {
-        if (AFErrorOrUnderlyingErrorHasCode(*error, NSURLErrorCannotDecodeContentData)) {
+        if (AFErrorOrUnderlyingErrorHasCodeInDomain(*error, NSURLErrorCannotDecodeContentData, AFNetworkingErrorDomain)) {
             return nil;
         }
     }
@@ -366,7 +375,7 @@ static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dic
                           error:(NSError *__autoreleasing *)error
 {
     if (![self validateResponse:(NSHTTPURLResponse *)response data:data error:error]) {
-        if (AFErrorOrUnderlyingErrorHasCode(*error, NSURLErrorCannotDecodeContentData)) {
+        if (AFErrorOrUnderlyingErrorHasCodeInDomain(*error, NSURLErrorCannotDecodeContentData, AFNetworkingErrorDomain)) {
             return nil;
         }
     }
@@ -449,7 +458,7 @@ static NSDictionary * AFDictionaryByRemovingKeysWithNullValues(NSDictionary *dic
                           error:(NSError *__autoreleasing *)error
 {
     if (![self validateResponse:(NSHTTPURLResponse *)response data:data error:error]) {
-        if (AFErrorOrUnderlyingErrorHasCode(*error, NSURLErrorCannotDecodeContentData)) {
+        if (AFErrorOrUnderlyingErrorHasCodeInDomain(*error, NSURLErrorCannotDecodeContentData, AFNetworkingErrorDomain)) {
             return nil;
         }
     }
@@ -626,7 +635,7 @@ static UIImage * AFInflatedImageFromResponseWithDataAtScale(NSHTTPURLResponse *r
                           error:(NSError *__autoreleasing *)error
 {
     if (![self validateResponse:(NSHTTPURLResponse *)response data:data error:error]) {
-        if (AFErrorOrUnderlyingErrorHasCode(*error, NSURLErrorCannotDecodeContentData)) {
+        if (AFErrorOrUnderlyingErrorHasCodeInDomain(*error, NSURLErrorCannotDecodeContentData, AFNetworkingErrorDomain)) {
             return nil;
         }
     }
