@@ -58,6 +58,15 @@
     return (indexPath.row % 2)? @"Cell1" : @"Cell2";
 }
 
+// On iOS 6, Table view’s contentSize may be wrong after frame changes.
+// !REF: http://stackoverflow.com/a/14429025
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+
+    [self.tableView beginUpdates];
+    [self.tableView endUpdates];
+}
+
 #pragma mark - Editing
 
 - (IBAction)onEditItemTapped:(UIBarButtonItem *)sender {
