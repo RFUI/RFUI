@@ -10,24 +10,18 @@
 		D51D83C617977E920086D902 /* RFAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833117977E910086D902 /* RFAudioPlayer.m */; };
 		D51D83C817977E920086D902 /* RFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833717977E910086D902 /* RFButton.m */; };
 		D51D83C917977E920086D902 /* RFControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833917977E910086D902 /* RFControl.m */; };
-		D51D83CA17977E920086D902 /* RFResizableBackgroundImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833B17977E910086D902 /* RFResizableBackgroundImageButton.m */; };
 		D51D83CB17977E920086D902 /* RFCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833E17977E910086D902 /* RFCheckbox.m */; };
 		D51D83CC17977E920086D902 /* NSManagedObject+RFCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834117977E910086D902 /* NSManagedObject+RFCoreData.m */; };
 		D51D83CD17977E920086D902 /* NSManagedObject+RFCoreDataSyncPurge.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834317977E910086D902 /* NSManagedObject+RFCoreDataSyncPurge.m */; };
 		D51D83CF17977E920086D902 /* RFCoreDataAutoFetchTableViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834817977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.m */; };
-		D51D83D117977E920086D902 /* RFFetchedResultsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834C17977E910086D902 /* RFFetchedResultsTableView.m */; };
-		D51D83D217977E920086D902 /* RFFetchedResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834E17977E910086D902 /* RFFetchedResultsTableViewController.m */; };
 		D51D83DC17977E920086D902 /* RFGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836617977E910086D902 /* RFGridView.m */; };
 		D51D83DD17977E920086D902 /* RFImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836917977E910086D902 /* RFImageCropperView.m */; };
 		D51D83DE17977E920086D902 /* RFImageGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836C17977E910086D902 /* RFImageGallery.m */; };
-		D51D83DF17977E920086D902 /* RFImageTimeTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836F17977E910086D902 /* RFImageTimeTunnel.m */; };
-		D51D83E017977E920086D902 /* RFImageTimeTunnel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51D837017977E910086D902 /* RFImageTimeTunnel.xib */; };
 		D51D83E217977E920086D902 /* RFNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D837617977E910086D902 /* RFNoticeView.m */; };
 		D51D83E317977E920086D902 /* RFPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D837917977E910086D902 /* RFPlugin.m */; };
 		D51D83E617977E920086D902 /* RFRefreshButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D838117977E910086D902 /* RFRefreshButton.m */; };
 		D51D83E717977E920086D902 /* RFReusingPool.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D838517977E920086D902 /* RFReusingPool.m */; };
 		D51D83E817977E920086D902 /* RFReusingRange.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D838717977E920086D902 /* RFReusingRange.m */; };
-		D51D83EF17977E920086D902 /* RFSidePanel+RFUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D839717977E920086D902 /* RFSidePanel+RFUITheme.m */; };
 		D51D83F017977E920086D902 /* RFSidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D839917977E920086D902 /* RFSidePanel.m */; };
 		D51D83F117977E920086D902 /* RFSidePanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51D839A17977E920086D902 /* RFSidePanel.xib */; };
 		D51D83F217977E920086D902 /* SidePanel-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D51D839B17977E920086D902 /* SidePanel-bg.png */; };
@@ -43,9 +37,6 @@
 		D51D83FC17977E920086D902 /* RFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83AE17977E920086D902 /* RFTableViewCell.m */; };
 		D51D83FD17977E920086D902 /* RFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83B117977E920086D902 /* RFTabBar.m */; };
 		D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83B317977E920086D902 /* RFTabBarItem.m */; };
-		D51D83FF17977E920086D902 /* RFUIThemeBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83B717977E920086D902 /* RFUIThemeBundle.m */; };
-		D51D840017977E920086D902 /* RFUIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83BA17977E920086D902 /* RFUIThemeManager.m */; };
-		D51D840117977E920086D902 /* UIResponder+RFUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83BC17977E920086D902 /* UIResponder+RFUITheme.m */; };
 		D51D840617977E920086D902 /* RFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83C517977E920086D902 /* RFWindow.m */; };
 		D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D8412179780C00086D902 /* RFDismissModalBarButtonItem.m */; };
 		D51D8427179780C00086D902 /* RFPopBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D8414179780C00086D902 /* RFPopBarButtonItem.m */; };
@@ -144,6 +135,10 @@
 		D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */; };
 		D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */; };
 		D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */; };
+		D55FD840192F418700ECA92B /* UINavigationController+RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FD83F192F418700ECA92B /* UINavigationController+RFKit.m */; };
+		D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FD843192F41FE00ECA92B /* RFDrawImage.m */; };
+		D55FD849192F421000ECA92B /* RFDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FD846192F421000ECA92B /* RFDrawView.m */; };
+		D55FD84A192F421000ECA92B /* RFRoundingCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FD848192F421000ECA92B /* RFRoundingCornersView.m */; };
 		D56CDDE3185AE7580050241B /* RFAssetsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDDC185AE7580050241B /* RFAssetsCache.m */; };
 		D56CDDE4185AE7580050241B /* RFAssetsCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDDD185AE7580050241B /* RFAssetsCache.xcdatamodeld */; };
 		D56CDDE5185AE7580050241B /* RFAssetsCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDE0185AE7580050241B /* RFAssetsCacheData.m */; };
@@ -174,8 +169,6 @@
 		D51D833717977E910086D902 /* RFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFButton.m; sourceTree = "<group>"; };
 		D51D833817977E910086D902 /* RFControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFControl.h; sourceTree = "<group>"; };
 		D51D833917977E910086D902 /* RFControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFControl.m; sourceTree = "<group>"; };
-		D51D833A17977E910086D902 /* RFResizableBackgroundImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFResizableBackgroundImageButton.h; sourceTree = "<group>"; };
-		D51D833B17977E910086D902 /* RFResizableBackgroundImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFResizableBackgroundImageButton.m; sourceTree = "<group>"; };
 		D51D833D17977E910086D902 /* RFCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCheckbox.h; sourceTree = "<group>"; };
 		D51D833E17977E910086D902 /* RFCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCheckbox.m; sourceTree = "<group>"; };
 		D51D834017977E910086D902 /* NSManagedObject+RFCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+RFCoreData.h"; sourceTree = "<group>"; };
@@ -186,11 +179,6 @@
 		D51D834617977E910086D902 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
 		D51D834717977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCoreDataAutoFetchTableViewPlugin.h; sourceTree = "<group>"; };
 		D51D834817977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCoreDataAutoFetchTableViewPlugin.m; sourceTree = "<group>"; };
-		D51D834A17977E910086D902 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
-		D51D834B17977E910086D902 /* RFFetchedResultsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFFetchedResultsTableView.h; sourceTree = "<group>"; };
-		D51D834C17977E910086D902 /* RFFetchedResultsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFFetchedResultsTableView.m; sourceTree = "<group>"; };
-		D51D834D17977E910086D902 /* RFFetchedResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFFetchedResultsTableViewController.h; sourceTree = "<group>"; };
-		D51D834E17977E910086D902 /* RFFetchedResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFFetchedResultsTableViewController.m; sourceTree = "<group>"; };
 		D51D835017977E910086D902 /* change.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = change.log; sourceTree = "<group>"; };
 		D51D836517977E910086D902 /* RFGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFGridView.h; sourceTree = "<group>"; };
 		D51D836617977E910086D902 /* RFGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFGridView.m; sourceTree = "<group>"; };
@@ -198,9 +186,6 @@
 		D51D836917977E910086D902 /* RFImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFImageCropperView.m; sourceTree = "<group>"; };
 		D51D836B17977E910086D902 /* RFImageGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFImageGallery.h; sourceTree = "<group>"; };
 		D51D836C17977E910086D902 /* RFImageGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFImageGallery.m; sourceTree = "<group>"; };
-		D51D836E17977E910086D902 /* RFImageTimeTunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFImageTimeTunnel.h; sourceTree = "<group>"; };
-		D51D836F17977E910086D902 /* RFImageTimeTunnel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFImageTimeTunnel.m; sourceTree = "<group>"; };
-		D51D837017977E910086D902 /* RFImageTimeTunnel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFImageTimeTunnel.xib; sourceTree = "<group>"; };
 		D51D837517977E910086D902 /* RFNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNoticeView.h; sourceTree = "<group>"; };
 		D51D837617977E910086D902 /* RFNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNoticeView.m; sourceTree = "<group>"; };
 		D51D837817977E910086D902 /* RFPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPlugin.h; sourceTree = "<group>"; };
@@ -212,8 +197,6 @@
 		D51D838517977E920086D902 /* RFReusingPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFReusingPool.m; sourceTree = "<group>"; };
 		D51D838617977E920086D902 /* RFReusingRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFReusingRange.h; sourceTree = "<group>"; };
 		D51D838717977E920086D902 /* RFReusingRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFReusingRange.m; sourceTree = "<group>"; };
-		D51D839617977E920086D902 /* RFSidePanel+RFUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RFSidePanel+RFUITheme.h"; sourceTree = "<group>"; };
-		D51D839717977E920086D902 /* RFSidePanel+RFUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RFSidePanel+RFUITheme.m"; sourceTree = "<group>"; };
 		D51D839817977E920086D902 /* RFSidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSidePanel.h; sourceTree = "<group>"; };
 		D51D839917977E920086D902 /* RFSidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSidePanel.m; sourceTree = "<group>"; };
 		D51D839A17977E920086D902 /* RFSidePanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFSidePanel.xib; sourceTree = "<group>"; };
@@ -237,14 +220,6 @@
 		D51D83B117977E920086D902 /* RFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTabBar.m; sourceTree = "<group>"; };
 		D51D83B217977E920086D902 /* RFTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTabBarItem.h; sourceTree = "<group>"; };
 		D51D83B317977E920086D902 /* RFTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTabBarItem.m; sourceTree = "<group>"; };
-		D51D83B517977E920086D902 /* RFUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUITheme.h; sourceTree = "<group>"; };
-		D51D83B617977E920086D902 /* RFUIThemeBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIThemeBundle.h; sourceTree = "<group>"; };
-		D51D83B717977E920086D902 /* RFUIThemeBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIThemeBundle.m; sourceTree = "<group>"; };
-		D51D83B817977E920086D902 /* RFUIThemeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIThemeDelegate.h; sourceTree = "<group>"; };
-		D51D83B917977E920086D902 /* RFUIThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFUIThemeManager.h; sourceTree = "<group>"; };
-		D51D83BA17977E920086D902 /* RFUIThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFUIThemeManager.m; sourceTree = "<group>"; };
-		D51D83BB17977E920086D902 /* UIResponder+RFUITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+RFUITheme.h"; sourceTree = "<group>"; };
-		D51D83BC17977E920086D902 /* UIResponder+RFUITheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+RFUITheme.m"; sourceTree = "<group>"; };
 		D51D83C417977E920086D902 /* RFWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFWindow.h; sourceTree = "<group>"; };
 		D51D83C517977E920086D902 /* RFWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFWindow.m; sourceTree = "<group>"; };
 		D51D840A17977EB40086D902 /* RFInitializing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFInitializing.h; sourceTree = "<group>"; };
@@ -357,7 +332,6 @@
 		D5200636178CF4B100FEA64B /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		D5200637178CF4B100FEA64B /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		D5200638178CF4B100FEA64B /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
-		D5200639178CF4B100FEA64B /* EXTSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTSwizzle.h; sourceTree = "<group>"; };
 		D520063A178CF4B100FEA64B /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		D520063B178CF4B100FEA64B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D520063D178CF4B100FEA64B /* JRSwizzle Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JRSwizzle Readme.md"; sourceTree = "<group>"; };
@@ -443,6 +417,14 @@
 		D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCellHeightDelegateDemoViewController.m; sourceTree = "<group>"; };
 		D54D40D1185EA2E800A09A35 /* RFAssetsCacheTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCacheTestHelper.h; sourceTree = "<group>"; };
 		D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCacheTestHelper.m; sourceTree = "<group>"; };
+		D55FD83E192F418700ECA92B /* UINavigationController+RFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RFKit.h"; sourceTree = "<group>"; };
+		D55FD83F192F418700ECA92B /* UINavigationController+RFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RFKit.m"; sourceTree = "<group>"; };
+		D55FD842192F41FE00ECA92B /* RFDrawImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDrawImage.h; sourceTree = "<group>"; };
+		D55FD843192F41FE00ECA92B /* RFDrawImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDrawImage.m; sourceTree = "<group>"; };
+		D55FD845192F421000ECA92B /* RFDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDrawView.h; sourceTree = "<group>"; };
+		D55FD846192F421000ECA92B /* RFDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDrawView.m; sourceTree = "<group>"; };
+		D55FD847192F421000ECA92B /* RFRoundingCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRoundingCornersView.h; sourceTree = "<group>"; };
+		D55FD848192F421000ECA92B /* RFRoundingCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRoundingCornersView.m; sourceTree = "<group>"; };
 		D56CDDDB185AE7580050241B /* RFAssetsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCache.h; sourceTree = "<group>"; };
 		D56CDDDC185AE7580050241B /* RFAssetsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCache.m; sourceTree = "<group>"; };
 		D56CDDDE185AE7580050241B /* RFAssetsCache.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RFAssetsCache.xcdatamodel; sourceTree = "<group>"; };
@@ -523,8 +505,6 @@
 				D51D833717977E910086D902 /* RFButton.m */,
 				D51D833817977E910086D902 /* RFControl.h */,
 				D51D833917977E910086D902 /* RFControl.m */,
-				D51D833A17977E910086D902 /* RFResizableBackgroundImageButton.h */,
-				D51D833B17977E910086D902 /* RFResizableBackgroundImageButton.m */,
 			);
 			path = RFButton;
 			sourceTree = "<group>";
@@ -560,18 +540,6 @@
 			path = RFCoreDataAutoFetchTableViewPlugin;
 			sourceTree = "<group>";
 		};
-		D51D834917977E910086D902 /* RFFetchedResultsTableView */ = {
-			isa = PBXGroup;
-			children = (
-				D51D834A17977E910086D902 /* Readme.md */,
-				D51D834B17977E910086D902 /* RFFetchedResultsTableView.h */,
-				D51D834C17977E910086D902 /* RFFetchedResultsTableView.m */,
-				D51D834D17977E910086D902 /* RFFetchedResultsTableViewController.h */,
-				D51D834E17977E910086D902 /* RFFetchedResultsTableViewController.m */,
-			);
-			path = RFFetchedResultsTableView;
-			sourceTree = "<group>";
-		};
 		D51D834F17977E910086D902 /* RFGridView */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,16 +566,6 @@
 				D51D836C17977E910086D902 /* RFImageGallery.m */,
 			);
 			path = RFImageGallery;
-			sourceTree = "<group>";
-		};
-		D51D836D17977E910086D902 /* RFImageTimeTunnel */ = {
-			isa = PBXGroup;
-			children = (
-				D51D836E17977E910086D902 /* RFImageTimeTunnel.h */,
-				D51D836F17977E910086D902 /* RFImageTimeTunnel.m */,
-				D51D837017977E910086D902 /* RFImageTimeTunnel.xib */,
-			);
-			path = RFImageTimeTunnel;
 			sourceTree = "<group>";
 		};
 		D51D837417977E910086D902 /* RFNoticeView */ = {
@@ -652,8 +610,6 @@
 		D51D839517977E920086D902 /* RFSidePanel */ = {
 			isa = PBXGroup;
 			children = (
-				D51D839617977E920086D902 /* RFSidePanel+RFUITheme.h */,
-				D51D839717977E920086D902 /* RFSidePanel+RFUITheme.m */,
 				D51D839817977E920086D902 /* RFSidePanel.h */,
 				D51D839917977E920086D902 /* RFSidePanel.m */,
 				D51D839A17977E920086D902 /* RFSidePanel.xib */,
@@ -714,21 +670,6 @@
 				D51D83B317977E920086D902 /* RFTabBarItem.m */,
 			);
 			path = RFTabView;
-			sourceTree = "<group>";
-		};
-		D51D83B417977E920086D902 /* RFUITheme */ = {
-			isa = PBXGroup;
-			children = (
-				D51D83B517977E920086D902 /* RFUITheme.h */,
-				D51D83B617977E920086D902 /* RFUIThemeBundle.h */,
-				D51D83B717977E920086D902 /* RFUIThemeBundle.m */,
-				D51D83B817977E920086D902 /* RFUIThemeDelegate.h */,
-				D51D83B917977E920086D902 /* RFUIThemeManager.h */,
-				D51D83BA17977E920086D902 /* RFUIThemeManager.m */,
-				D51D83BB17977E920086D902 /* UIResponder+RFUITheme.h */,
-				D51D83BC17977E920086D902 /* UIResponder+RFUITheme.m */,
-			);
-			path = RFUITheme;
 			sourceTree = "<group>";
 		};
 		D51D83C317977E920086D902 /* RFWindow */ = {
@@ -901,11 +842,10 @@
 				D51D833F17977E910086D902 /* RFCoreData */,
 				D51D834517977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin */,
 				D549012418FB8BF300EDA527 /* RFDelegateChain */,
-				D51D834917977E910086D902 /* RFFetchedResultsTableView */,
+				D55FD841192F41FE00ECA92B /* RFDrawImage */,
 				D51D834F17977E910086D902 /* RFGridView */,
 				D51D836717977E910086D902 /* RFImageCropper */,
 				D51D836A17977E910086D902 /* RFImageGallery */,
-				D51D836D17977E910086D902 /* RFImageTimeTunnel */,
 				D549012C18FB8FA600EDA527 /* RFMessageManager */,
 				D51D837417977E910086D902 /* RFNoticeView */,
 				D51D837717977E910086D902 /* RFPlugin */,
@@ -920,7 +860,6 @@
 				D51D83AA17977E920086D902 /* RFTableViewCell */,
 				D549012818FB8BFE00EDA527 /* RFTableViewCellHeightDelegate */,
 				D51D83AF17977E920086D902 /* RFTabView */,
-				D51D83B417977E920086D902 /* RFUITheme */,
 				D598F4A218D1499B009C142D /* RFViewApperance */,
 				D51D83C317977E920086D902 /* RFWindow */,
 			);
@@ -1014,6 +953,8 @@
 		D5200612178CF4B100FEA64B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D55FD83E192F418700ECA92B /* UINavigationController+RFKit.h */,
+				D55FD83F192F418700ECA92B /* UINavigationController+RFKit.m */,
 				D5200613178CF4B100FEA64B /* UIAlertView+RFKit.h */,
 				D5200614178CF4B100FEA64B /* UIAlertView+RFKit.m */,
 				D5200615178CF4B100FEA64B /* UIButton+RFKit.h */,
@@ -1067,7 +1008,6 @@
 				D5200636178CF4B100FEA64B /* EXTKeyPathCoding.h */,
 				D5200637178CF4B100FEA64B /* EXTScope.h */,
 				D5200638178CF4B100FEA64B /* EXTScope.m */,
-				D5200639178CF4B100FEA64B /* EXTSwizzle.h */,
 				D520063A178CF4B100FEA64B /* metamacros.h */,
 			);
 			path = extobjc;
@@ -1249,6 +1189,15 @@
 			path = RFTableViewCellHeightDelegate;
 			sourceTree = "<group>";
 		};
+		D55FD841192F41FE00ECA92B /* RFDrawImage */ = {
+			isa = PBXGroup;
+			children = (
+				D55FD842192F41FE00ECA92B /* RFDrawImage.h */,
+				D55FD843192F41FE00ECA92B /* RFDrawImage.m */,
+			);
+			path = RFDrawImage;
+			sourceTree = "<group>";
+		};
 		D56CDDDA185AE7580050241B /* RFAssetsCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -1278,8 +1227,12 @@
 		D598F4A218D1499B009C142D /* RFViewApperance */ = {
 			isa = PBXGroup;
 			children = (
+				D55FD845192F421000ECA92B /* RFDrawView.h */,
+				D55FD846192F421000ECA92B /* RFDrawView.m */,
 				D598F4A318D1499B009C142D /* RFLine.h */,
 				D598F4A418D1499B009C142D /* RFLine.m */,
+				D55FD847192F421000ECA92B /* RFRoundingCornersView.h */,
+				D55FD848192F421000ECA92B /* RFRoundingCornersView.m */,
 				D598F4A518D1499B009C142D /* UIButton+RFResizableBackgroundImage.h */,
 				D598F4A618D1499B009C142D /* UIButton+RFResizableBackgroundImage.m */,
 				D5B9EDA119079F740093570F /* UIView+RFLayerApperance.h */,
@@ -1388,7 +1341,6 @@
 				D5200774178E53AD00FEA64B /* 50x50.png in Resources */,
 				D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */,
 				D5200775178E53AD00FEA64B /* 800x600.png in Resources */,
-				D51D83E017977E920086D902 /* RFImageTimeTunnel.xib in Resources */,
 				D51D83F117977E920086D902 /* RFSidePanel.xib in Resources */,
 				D51D83F217977E920086D902 /* SidePanel-bg.png in Resources */,
 				D51D83F317977E920086D902 /* SidePanel-off.active.png in Resources */,
@@ -1406,6 +1358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55FD849192F421000ECA92B /* RFDrawView.m in Sources */,
 				D520052B178CF43C00FEA64B /* main.m in Sources */,
 				D5B9EDAB19079F940093570F /* RFAPIDefine.m in Sources */,
 				D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */,
@@ -1425,7 +1378,9 @@
 				D52006CC178CF4B100FEA64B /* NSObject+RFKit.m in Sources */,
 				D52006CD178CF4B100FEA64B /* NSString+RFKit.m in Sources */,
 				D52006CE178CF4B100FEA64B /* NSURL+RFKit.m in Sources */,
+				D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */,
 				D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */,
+				D55FD84A192F421000ECA92B /* RFRoundingCornersView.m in Sources */,
 				D52006CF178CF4B100FEA64B /* UIAlertView+RFKit.m in Sources */,
 				D52006D0178CF4B100FEA64B /* UIButton+RFKit.m in Sources */,
 				D52006D1178CF4B100FEA64B /* UIColor+RFKit.m in Sources */,
@@ -1468,10 +1423,10 @@
 				D5B9EDB91907A08C0093570F /* JSONModelClassProperty.m in Sources */,
 				D5200766178E47FC00FEA64B /* RFScrollViewPageControl.m in Sources */,
 				D520076C178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m in Sources */,
+				D55FD840192F418700ECA92B /* UINavigationController+RFKit.m in Sources */,
 				D51D83C617977E920086D902 /* RFAudioPlayer.m in Sources */,
 				D51D83C817977E920086D902 /* RFButton.m in Sources */,
 				D51D83C917977E920086D902 /* RFControl.m in Sources */,
-				D51D83CA17977E920086D902 /* RFResizableBackgroundImageButton.m in Sources */,
 				D51D83CB17977E920086D902 /* RFCheckbox.m in Sources */,
 				D549012218FB820200EDA527 /* AFURLResponseSerialization.m in Sources */,
 				D56CDDE3185AE7580050241B /* RFAssetsCache.m in Sources */,
@@ -1479,19 +1434,15 @@
 				D51D83CD17977E920086D902 /* NSManagedObject+RFCoreDataSyncPurge.m in Sources */,
 				D51D83CF17977E920086D902 /* RFCoreDataAutoFetchTableViewPlugin.m in Sources */,
 				D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */,
-				D51D83D117977E920086D902 /* RFFetchedResultsTableView.m in Sources */,
 				D549011F18FB820200EDA527 /* AFNetworkReachabilityManager.m in Sources */,
-				D51D83D217977E920086D902 /* RFFetchedResultsTableViewController.m in Sources */,
 				D51D83DC17977E920086D902 /* RFGridView.m in Sources */,
 				D51D83DD17977E920086D902 /* RFImageCropperView.m in Sources */,
 				D51D83DE17977E920086D902 /* RFImageGallery.m in Sources */,
-				D51D83DF17977E920086D902 /* RFImageTimeTunnel.m in Sources */,
 				D51D83E217977E920086D902 /* RFNoticeView.m in Sources */,
 				D51D83E317977E920086D902 /* RFPlugin.m in Sources */,
 				D51D83E617977E920086D902 /* RFRefreshButton.m in Sources */,
 				D51D83E717977E920086D902 /* RFReusingPool.m in Sources */,
 				D51D83E817977E920086D902 /* RFReusingRange.m in Sources */,
-				D51D83EF17977E920086D902 /* RFSidePanel+RFUITheme.m in Sources */,
 				D549012718FB8BF300EDA527 /* RFDelegateChain.m in Sources */,
 				D56CDDE5185AE7580050241B /* RFAssetsCacheData.m in Sources */,
 				D51D83F017977E920086D902 /* RFSidePanel.m in Sources */,
@@ -1507,11 +1458,8 @@
 				D598F4AB18D1499B009C142D /* RFLine.m in Sources */,
 				D5B9EDB81907A08C0093570F /* JSONModelArray.m in Sources */,
 				D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */,
-				D51D83FF17977E920086D902 /* RFUIThemeBundle.m in Sources */,
 				D549013718FB8FA600EDA527 /* RFSVProgressMessageManager.m in Sources */,
-				D51D840017977E920086D902 /* RFUIThemeManager.m in Sources */,
 				D598F4AC18D1499B009C142D /* UIButton+RFResizableBackgroundImage.m in Sources */,
-				D51D840117977E920086D902 /* UIResponder+RFUITheme.m in Sources */,
 				D51D840617977E920086D902 /* RFWindow.m in Sources */,
 				D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */,
 				D5B9EDBA1907A08C0093570F /* JSONModelError.m in Sources */,
