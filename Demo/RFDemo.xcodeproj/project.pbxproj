@@ -127,7 +127,6 @@
 		D549013718FB8FA600EDA527 /* RFSVProgressMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D549013118FB8FA600EDA527 /* RFSVProgressMessageManager.m */; };
 		D549013818FB8FA600EDA527 /* RFMessageManager+RFDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = D549013318FB8FA600EDA527 /* RFMessageManager+RFDisplay.m */; };
 		D549013918FB8FA600EDA527 /* RFMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D549013518FB8FA600EDA527 /* RFMessageManager.m */; };
-		D549013F18FB90F200EDA527 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D549013B18FB90F200EDA527 /* LICENSE.txt */; };
 		D549014018FB90F200EDA527 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D549013C18FB90F200EDA527 /* SVProgressHUD.bundle */; };
 		D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D549013E18FB90F200EDA527 /* SVProgressHUD.m */; };
 		D549014518FB918500EDA527 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D549014418FB918500EDA527 /* MobileCoreServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -150,6 +149,7 @@
 		D598F4AC18D1499B009C142D /* UIButton+RFResizableBackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4A618D1499B009C142D /* UIButton+RFResizableBackgroundImage.m */; };
 		D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4AA18D1499B009C142D /* UIView+RFPatternImageBackground.m */; };
 		D5B20E2E193718F700CBC939 /* WarAndPeace.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5B20E2D193718F700CBC939 /* WarAndPeace.plist */; };
+		D5B20E3019371D1500CBC939 /* LICENSE-SVProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = D5B20E2F19371D1500CBC939 /* LICENSE-SVProgressHUD */; };
 		D5B9EDA319079F740093570F /* UIView+RFLayerApperance.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDA219079F740093570F /* UIView+RFLayerApperance.m */; };
 		D5B9EDAB19079F940093570F /* RFAPIDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDA619079F940093570F /* RFAPIDefine.m */; };
 		D5B9EDAC19079F940093570F /* RFAPIDefineConfigFileKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDA819079F940093570F /* RFAPIDefineConfigFileKeys.m */; };
@@ -407,7 +407,6 @@
 		D549013318FB8FA600EDA527 /* RFMessageManager+RFDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RFMessageManager+RFDisplay.m"; sourceTree = "<group>"; };
 		D549013418FB8FA600EDA527 /* RFMessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMessageManager.h; sourceTree = "<group>"; };
 		D549013518FB8FA600EDA527 /* RFMessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMessageManager.m; sourceTree = "<group>"; };
-		D549013B18FB90F200EDA527 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		D549013C18FB90F200EDA527 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		D549013D18FB90F200EDA527 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		D549013E18FB90F200EDA527 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
@@ -445,6 +444,7 @@
 		D598F4A918D1499B009C142D /* UIView+RFPatternImageBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RFPatternImageBackground.h"; sourceTree = "<group>"; };
 		D598F4AA18D1499B009C142D /* UIView+RFPatternImageBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RFPatternImageBackground.m"; sourceTree = "<group>"; };
 		D5B20E2D193718F700CBC939 /* WarAndPeace.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WarAndPeace.plist; sourceTree = "<group>"; };
+		D5B20E2F19371D1500CBC939 /* LICENSE-SVProgressHUD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-SVProgressHUD"; sourceTree = "<group>"; };
 		D5B9EDA119079F740093570F /* UIView+RFLayerApperance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RFLayerApperance.h"; sourceTree = "<group>"; };
 		D5B9EDA219079F740093570F /* UIView+RFLayerApperance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RFLayerApperance.m"; sourceTree = "<group>"; };
 		D5B9EDA519079F940093570F /* RFAPIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAPIDefine.h; sourceTree = "<group>"; };
@@ -1172,7 +1172,7 @@
 		D549013A18FB90F200EDA527 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				D549013B18FB90F200EDA527 /* LICENSE.txt */,
+				D5B20E2F19371D1500CBC939 /* LICENSE-SVProgressHUD */,
 				D549013C18FB90F200EDA527 /* SVProgressHUD.bundle */,
 				D549013D18FB90F200EDA527 /* SVProgressHUD.h */,
 				D549013E18FB90F200EDA527 /* SVProgressHUD.m */,
@@ -1328,7 +1328,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D549013F18FB90F200EDA527 /* LICENSE.txt in Resources */,
 				D5200529178CF43B00FEA64B /* InfoPlist.strings in Resources */,
 				D5200531178CF43C00FEA64B /* Default.png in Resources */,
 				D56CDDE9185AE9B60050241B /* RFAssetsCache.storyboard in Resources */,
@@ -1352,6 +1351,7 @@
 				D51D83F517977E920086D902 /* SidePanel-on.active.png in Resources */,
 				D51D83F617977E920086D902 /* SidePanel-on.png in Resources */,
 				D51D83FA17977E920086D902 /* RFStatusBarNotificationWindow.xib in Resources */,
+				D5B20E3019371D1500CBC939 /* LICENSE-SVProgressHUD in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
