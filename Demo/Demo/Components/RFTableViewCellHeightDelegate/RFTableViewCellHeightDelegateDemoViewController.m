@@ -19,28 +19,13 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
 
-    self.tableData = @[
-        @"ABC",
-        @"ABC",
-        @"123",
-        @"123",
-        @"1\n2\n3",
-        @"1\n2\n3",
-        @"[tableView dequeueReusableCellWithIdentifier:@\"RFTableViewCellHeightDelegateDemoCell\" forIndexPath:indexPath]",
-        @"[tableView dequeueReusableCellWithIdentifier:@\"RFTableViewCellHeightDelegateDemoCell\" forIndexPath:indexPath]",
-        @"[self tableView:tableView configCell:cell atIndexPath:indexPath]\nreturn cell;",
-        @"[self tableView:tableView configCell:cell atIndexPath:indexPath]\nreturn cell;",
-        @"- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {\n     return self.tableData.count;\n        }",
-        @"- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {\n     return self.tableData.count;\n        }",
-        @"@interface RFTableViewCellHeightDelegateDemoCell : UITableViewCell\n        @property (weak, nonatomic) IBOutlet UILabel *muiltLineLabel;\n        @end",
-        @"@interface RFTableViewCellHeightDelegateDemoCell : UITableViewCell\n        @property (weak, nonatomic) IBOutlet UILabel *muiltLineLabel;\n        @end",
-        @"RFTableViewCellHeightDelegateDemoViewController",
-        @"RFTableViewCellHeightDelegateDemoViewController"
-    ];
+    NSString *arrayDataPath = [[NSBundle mainBundle] pathForResource:@"WarAndPeace" ofType:@"plist"];
+    self.tableData = [NSArray arrayWithContentsOfFile:arrayDataPath];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableView:tableView cellReuseIdentifierForRowAtIndexPath:indexPath]];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableView:tableView cellReuseIdentifierForRowAtIndexPath:indexPath]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self tableView:tableView cellReuseIdentifierForRowAtIndexPath:indexPath] forIndexPath:indexPath];
     [self tableView:tableView configureCell:cell forIndexPath:indexPath offscreenRendering:NO];
     return cell;
 }
@@ -58,13 +43,15 @@
     return (indexPath.row % 2)? @"Cell1" : @"Cell2";
 }
 
-// On iOS 6, Table view’s contentSize may be wrong after frame changes.
-// !REF: http://stackoverflow.com/a/14429025
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
 
-    [self.tableView beginUpdates];
-    [self.tableView endUpdates];
+    // On iOS 6, Table view’s contentSize may be wrong after frame changes.
+    // !REF: http://stackoverflow.com/a/14429025
+    if (RF_iOS7Before) {
+        [self.tableView beginUpdates];
+        [self.tableView endUpdates];
+    }
 }
 
 #pragma mark - Editing

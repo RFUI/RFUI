@@ -49,9 +49,9 @@ TODO:
 		<key>Name</key>
 		<string>RFTableViewCellHeightDelegate</string>
 		<key>Status</key>
-		<string>TEST</string>
+		<string>BETA</string>
 		<key>Detail</key>
-		<string>Alpha</string>
+		<string>Seems ready to release. Will used in more project to verify that.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>
