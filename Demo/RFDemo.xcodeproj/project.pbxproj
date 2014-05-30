@@ -1045,9 +1045,9 @@
 			isa = PBXGroup;
 			children = (
 				D56CDDE7185AE99B0050241B /* RFAssetsCache */,
-				D5200745178D01CE00FEA64B /* RFPullToFetchTableView */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
 				D549014818FB92B500EDA527 /* RFTableViewCellHeightDelegate */,
+				D5200745178D01CE00FEA64B /* RFTableViewPullToFetchPlugin */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1065,7 +1065,7 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
-		D5200745178D01CE00FEA64B /* RFPullToFetchTableView */ = {
+		D5200745178D01CE00FEA64B /* RFTableViewPullToFetchPlugin */ = {
 			isa = PBXGroup;
 			children = (
 				D5200746178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard */,
@@ -1074,7 +1074,7 @@
 				D5200760178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.h */,
 				D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */,
 			);
-			path = RFPullToFetchTableView;
+			path = RFTableViewPullToFetchPlugin;
 			sourceTree = "<group>";
 		};
 		D5200763178E47DC00FEA64B /* RFScrollViewPageControl */ = {
