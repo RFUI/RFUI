@@ -10,10 +10,13 @@
 #import "RFSidePanel.h"
 #import "RFTableViewPullToFetchPlugin.h"
 
-@interface RFTableViewPullToFetchPluginDemoViewController : UIViewController
-<UITableViewDataSource, UITableViewDelegate>
+@interface RFTableViewPullToFetchPluginDemoViewController : UIViewController <
+    UITableViewDataSource,
+    UITableViewDelegate
+>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) RFTableViewPullToFetchPlugin *pullToFetchControl;
 
 @property (assign, nonatomic) int pageSize;
 @property (assign, nonatomic) int currentPageIndex;

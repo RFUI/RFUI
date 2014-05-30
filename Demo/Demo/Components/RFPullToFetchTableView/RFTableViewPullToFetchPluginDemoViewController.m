@@ -8,6 +8,7 @@
 
 #import "RFTableViewPullToFetchPluginDemoViewController.h"
 #import "RFPullToFetchTableViewConfigViewController.h"
+#import "UIView+RFAnimate.h"
 
 static NSTimeInterval DebugFetchDelay = 1;
 static int DebugMaxItemCount = 20;
@@ -15,9 +16,6 @@ static int DebugMaxItemCount = 20;
 @interface RFTableViewPullToFetchPluginDemoViewController ()
 // For convenience, we don not use real data here.
 @property (assign, nonatomic) int cellCount;
-
-@property (strong, nonatomic) UILabel *headerView;
-@property (strong, nonatomic) UILabel *footerView;
 @end
 
 @implementation RFTableViewPullToFetchPluginDemoViewController
@@ -27,6 +25,9 @@ RFUIInterfaceOrientationSupportAll
     [super viewDidLoad];
     
     [self setupPanel];
+
+    self.pullToFetchControl.delegate = self;
+    self.pullToFetchControl.tableView = self.tableView;
     [self setupPullToFetchDisplay];
     [self setupPullToFetchData];
     
@@ -37,7 +38,7 @@ RFUIInterfaceOrientationSupportAll
     [super viewDidAppear:animated];
     
     dispatch_after_seconds(1, ^{
-        [self.tableView triggerHeaderProccess];
+        [self.pullToFetchControl triggerHeaderProcess];
     });
 }
 
@@ -56,79 +57,80 @@ RFUIInterfaceOrientationSupportAll
 }
 
 - (void)setupPullToFetchDisplay {
-    RFPullToFetchTableView *tableView = self.tableView;
-    self.headerView = (UILabel *)tableView.tableHeaderView;
+    RFTableViewPullToFetchPlugin *control = self.pullToFetchControl;
+    UITableView *tableView = self.tableView;
+
+    control.headerContainer = tableView.tableHeaderView;
     tableView.tableHeaderView = nil;
-    
-    tableView.headerContainer = self.headerView;
-    [tableView addSubview:self.headerView];
-    
-    @weakify(self);
-    [tableView setHeaderVisibleChangeBlock:^(BOOL isVisible, CGFloat visibleHeight, BOOL isCompleteVisible, BOOL isProccessing) {
-        dout(@"header visible = %@", @(isVisible))
-        @strongify(self);
-        
-        if (isProccessing) {
-            self.headerView.text = @"Refreshing...";
-            return;
-        }
-        
-        if (isCompleteVisible) {
-            self.headerView.text = @"Release to refresh.";
-            return;
-        }
-        
-        if (isVisible) {
-            self.headerView.text = @"Pull to refresh.";
+
+    control.footerContainer = tableView.tableFooterView;
+    tableView.tableFooterView = nil;
+
+    [control setHeaderStatusChangeBlock:^(RFTableViewPullToFetchPlugin *control, id indicatorView, RFPullToFetchIndicatorStatus status, CGFloat visibleHeight, UITableView *tableView) {
+        UILabel *label = indicatorView;
+        switch (status) {
+            case RFPullToFetchIndicatorStatusProcessing:
+                label.text = @"Refreshing...";
+                return;
+
+            case RFPullToFetchIndicatorStatusDragging: {
+                BOOL isCompleteVisible = !!(visibleHeight >= label.height);
+                label.text = isCompleteVisible? @"Release to refresh." : @"Pull to refresh.";
+                return;
+            }
+            case RFPullToFetchIndicatorStatusDecelerating:
+                label.text = @"Pull to refresh.";
+                return;
+
+            default:
+                break;
         }
     }];
-    
-    
-    self.footerView = (UILabel *)tableView.tableFooterView;
-    tableView.tableFooterView = nil;
-    
-    tableView.footerContainer = self.footerView;
-    [tableView addSubview:self.footerView];
-    
-    [tableView setFooterVisibleChangeBlock:^(BOOL isVisible, CGFloat visibleHeight, BOOL isCompleteVisible, BOOL isProccessing, BOOL reachEnd) {
-        dout(@"footer visible = %@", @(isVisible))
-        
-        @strongify(self);
-        if (reachEnd) {
-            self.footerView.text = @"No more";
-            return;
-        }
-        
-        if (isProccessing) {
-            self.footerView.text = @"Loading...";
-            return;
-        }
-        
-        if (isCompleteVisible) {
-            self.footerView.text = @"Release to load more.";
-            return;
-        }
-        
-        if (isVisible) {
-            self.footerView.text = @"Pull to load more.";
+
+    [control setFooterStatusChangeBlock:^(RFTableViewPullToFetchPlugin *control, id indicatorView, RFPullToFetchIndicatorStatus status, CGFloat visibleHeight, UITableView *tableView) {
+        UILabel *label = indicatorView;
+        switch (status) {
+            case RFPullToFetchIndicatorStatusFrozen:
+                label.text = @"No more";
+                return;
+
+            case RFPullToFetchIndicatorStatusProcessing:
+                label.text = @"Loading...";
+                return;
+
+            case RFPullToFetchIndicatorStatusDragging: {
+                BOOL isCompleteVisible = !!(visibleHeight >= label.height);
+                label.text = isCompleteVisible? @"Release to load more." : @"Pull to load more.";
+                return;
+            }
+            case RFPullToFetchIndicatorStatusDecelerating:
+                label.text = @"Pull to load more.";
+                return;
+                
+            case RFPullToFetchIndicatorStatusWaiting:
+                break;
         }
     }];
 }
 
 - (void)setupPullToFetchData {
-    [self.tableView setHeaderProccessBlock:^{
+    @weakify(self);
+    [self.pullToFetchControl setHeaderProcessBlock:^{
+        @strongify(self);
         self.cellCount = 0;
-        
+
         dispatch_after_seconds(DebugFetchDelay, ^{
             self.cellCount = self.pageSize;
-            [self.tableView headerProccessFinshed];
+            [self.pullToFetchControl markProcessFinshed];
         });
     }];
     
-    [self.tableView setFooterProccessBlock:^{
+    [self.pullToFetchControl setFooterProcessBlock:^{
+        @strongify(self);
+
         dispatch_after_seconds(DebugFetchDelay, ^{
             self.cellCount += self.pageSize;
-            [self.tableView footerProccessFinshed];
+            [self.pullToFetchControl markProcessFinshed];
         });
     }];
 }
@@ -136,7 +138,7 @@ RFUIInterfaceOrientationSupportAll
 #pragma mark - TableView data
 - (void)setCellCount:(int)cellCount {
     if (DebugMaxItemCount && cellCount > DebugMaxItemCount) {
-        self.tableView.footerReachEnd = YES;
+        self.pullToFetchControl.footerReachEnd = YES;
         cellCount = DebugMaxItemCount;
     }
     
