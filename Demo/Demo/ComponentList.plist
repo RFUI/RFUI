@@ -14,16 +14,13 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>RFTableViewPullToFetchPlugin</string>
+		<string>RFAssetsCache</string>
 		<key>Status</key>
-		<string>Alpha</string>
+		<string>TEST</string>
 		<key>Detail</key>
-		<string>Can work, but need imporve. API may change.
-TODO:
-    * Better animate support.
-    * Complete other container style.</string>
+		<string></string>
 		<key>Has Demo</key>
-		<true/>
+		<false/>
 	</dict>
 	<dict>
 		<key>Name</key>
@@ -37,21 +34,24 @@ TODO:
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>RFAssetsCache</string>
-		<key>Status</key>
-		<string>TEST</string>
-		<key>Detail</key>
-		<string></string>
-		<key>Has Demo</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
 		<string>RFTableViewCellHeightDelegate</string>
 		<key>Status</key>
 		<string>BETA</string>
 		<key>Detail</key>
 		<string>Seems ready to release. Will used in more project to verify that.</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFTableViewPullToFetchPlugin</string>
+		<key>Status</key>
+		<string>Alpha</string>
+		<key>Detail</key>
+		<string>Can work, but need imporve. API may change.
+TODO:
+    * Better animate support.
+    * Complete other container style.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>
