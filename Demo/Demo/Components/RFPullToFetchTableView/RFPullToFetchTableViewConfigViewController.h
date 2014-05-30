@@ -8,8 +8,8 @@
 
 #import "RFUI.h"
 
-@class RFPullToFetchTableViewDemoViewController;
+@class RFTableViewPullToFetchPluginDemoViewController;
 
 @interface RFPullToFetchTableViewConfigViewController : UIViewController
-@property(weak, nonatomic) RFPullToFetchTableViewDemoViewController *master;
+@property(weak, nonatomic) RFTableViewPullToFetchPluginDemoViewController *master;
 @end

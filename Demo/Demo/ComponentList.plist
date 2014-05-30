@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>RFPullToFetchTableView</string>
+		<string>RFTableViewPullToFetchPlugin</string>
 		<key>Status</key>
 		<string>Alpha</string>
 		<key>Detail</key>

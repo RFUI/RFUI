@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nqk-EQ-dBS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nqk-EQ-dBS">
     <dependencies>
         <deployment version="1536" defaultVersion="1536" identifier="iOS"/>
         <development version="5000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Pull To Fetch Table View Demo View Controller - PullToFetchTable-->
+        <!--Table View Pull To Fetch Plugin Demo View Controller - PullToFetchTable-->
         <scene sceneID="xzr-L4-8y7">
             <objects>
-                <viewController title="PullToFetchTable" id="nqk-EQ-dBS" customClass="RFPullToFetchTableViewDemoViewController" sceneMemberID="viewController">
+                <viewController title="PullToFetchTable" id="nqk-EQ-dBS" customClass="RFTableViewPullToFetchPluginDemoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vNB-6a-9H3"/>
                         <viewControllerLayoutGuide type="bottom" id="Va8-Mm-iay"/>
@@ -104,6 +104,7 @@
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="460"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zgd-Jf-lXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

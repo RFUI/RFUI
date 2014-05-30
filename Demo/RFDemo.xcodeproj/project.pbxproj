@@ -104,10 +104,8 @@
 		D52006F9178CF4B100FEA64B /* RFUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D5200672178CF4B100FEA64B /* RFUI.m */; };
 		D520070D178CF76A00FEA64B /* ComponentList.m in Sources */ = {isa = PBXBuildFile; fileRef = D520070C178CF76A00FEA64B /* ComponentList.m */; };
 		D520070F178CFA0400FEA64B /* ComponentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D520070E178CFA0400FEA64B /* ComponentList.plist */; };
-		D520073D178D01AF00FEA64B /* RFPullToFetchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D520072D178D01AF00FEA64B /* RFPullToFetchTableView.m */; };
-		D520073E178D01AF00FEA64B /* UIScrollView+RFScrollViewContentDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = D520072F178D01AF00FEA64B /* UIScrollView+RFScrollViewContentDistance.m */; };
-		D5200747178D01E300FEA64B /* RFPullToFetchTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5200746178D01E300FEA64B /* RFPullToFetchTableView.storyboard */; };
-		D520075D178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D520075C178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m */; };
+		D5200747178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5200746178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard */; };
+		D520075D178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D520075C178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m */; };
 		D5200762178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */; };
 		D5200766178E47FC00FEA64B /* RFScrollViewPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D5200765178E47FC00FEA64B /* RFScrollViewPageControl.m */; };
 		D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5200768178E487000FEA64B /* RFScrollViewPageControl.storyboard */; };
@@ -150,6 +148,8 @@
 		D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4AA18D1499B009C142D /* UIView+RFPatternImageBackground.m */; };
 		D5B20E2E193718F700CBC939 /* WarAndPeace.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5B20E2D193718F700CBC939 /* WarAndPeace.plist */; };
 		D5B20E3019371D1500CBC939 /* LICENSE-SVProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = D5B20E2F19371D1500CBC939 /* LICENSE-SVProgressHUD */; };
+		D5B20E4119381B2800CBC939 /* RFTableViewPullToFetchPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B20E4019381B2800CBC939 /* RFTableViewPullToFetchPlugin.m */; };
+		D5B20E4419381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B20E4319381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m */; };
 		D5B9EDA319079F740093570F /* UIView+RFLayerApperance.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDA219079F740093570F /* UIView+RFLayerApperance.m */; };
 		D5B9EDAB19079F940093570F /* RFAPIDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDA619079F940093570F /* RFAPIDefine.m */; };
 		D5B9EDAC19079F940093570F /* RFAPIDefineConfigFileKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDA819079F940093570F /* RFAPIDefineConfigFileKeys.m */; };
@@ -367,13 +367,9 @@
 		D520070B178CF76A00FEA64B /* ComponentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentList.h; sourceTree = "<group>"; };
 		D520070C178CF76A00FEA64B /* ComponentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentList.m; sourceTree = "<group>"; };
 		D520070E178CFA0400FEA64B /* ComponentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ComponentList.plist; sourceTree = "<group>"; };
-		D520072C178D01AF00FEA64B /* RFPullToFetchTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPullToFetchTableView.h; sourceTree = "<group>"; };
-		D520072D178D01AF00FEA64B /* RFPullToFetchTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPullToFetchTableView.m; sourceTree = "<group>"; };
-		D520072E178D01AF00FEA64B /* UIScrollView+RFScrollViewContentDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RFScrollViewContentDistance.h"; sourceTree = "<group>"; };
-		D520072F178D01AF00FEA64B /* UIScrollView+RFScrollViewContentDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RFScrollViewContentDistance.m"; sourceTree = "<group>"; };
-		D5200746178D01E300FEA64B /* RFPullToFetchTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFPullToFetchTableView.storyboard; sourceTree = "<group>"; };
-		D520075B178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPullToFetchTableViewDemoViewController.h; sourceTree = "<group>"; };
-		D520075C178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPullToFetchTableViewDemoViewController.m; sourceTree = "<group>"; };
+		D5200746178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFTableViewPullToFetchPlugin.storyboard; sourceTree = "<group>"; };
+		D520075B178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewPullToFetchPluginDemoViewController.h; sourceTree = "<group>"; };
+		D520075C178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewPullToFetchPluginDemoViewController.m; sourceTree = "<group>"; };
 		D5200760178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPullToFetchTableViewConfigViewController.h; sourceTree = "<group>"; };
 		D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPullToFetchTableViewConfigViewController.m; sourceTree = "<group>"; };
 		D5200764178E47FC00FEA64B /* RFScrollViewPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFScrollViewPageControl.h; sourceTree = "<group>"; };
@@ -445,6 +441,10 @@
 		D598F4AA18D1499B009C142D /* UIView+RFPatternImageBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RFPatternImageBackground.m"; sourceTree = "<group>"; };
 		D5B20E2D193718F700CBC939 /* WarAndPeace.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WarAndPeace.plist; sourceTree = "<group>"; };
 		D5B20E2F19371D1500CBC939 /* LICENSE-SVProgressHUD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-SVProgressHUD"; sourceTree = "<group>"; };
+		D5B20E3F19381B2800CBC939 /* RFTableViewPullToFetchPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewPullToFetchPlugin.h; sourceTree = "<group>"; };
+		D5B20E4019381B2800CBC939 /* RFTableViewPullToFetchPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewPullToFetchPlugin.m; sourceTree = "<group>"; };
+		D5B20E4219381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RFScrollViewContentDistance.h"; sourceTree = "<group>"; };
+		D5B20E4319381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RFScrollViewContentDistance.m"; sourceTree = "<group>"; };
 		D5B9EDA119079F740093570F /* UIView+RFLayerApperance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RFLayerApperance.h"; sourceTree = "<group>"; };
 		D5B9EDA219079F740093570F /* UIView+RFLayerApperance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RFLayerApperance.m"; sourceTree = "<group>"; };
 		D5B9EDA519079F940093570F /* RFAPIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAPIDefine.h; sourceTree = "<group>"; };
@@ -851,7 +851,6 @@
 				D549012C18FB8FA600EDA527 /* RFMessageManager */,
 				D51D837417977E910086D902 /* RFNoticeView */,
 				D51D837717977E910086D902 /* RFPlugin */,
-				D5200710178D01AE00FEA64B /* RFPullToFetchTableView */,
 				D51D837F17977E910086D902 /* RFRefreshButton */,
 				D51D838217977E910086D902 /* RFReusing */,
 				D5200763178E47DC00FEA64B /* RFScrollViewPageControl */,
@@ -861,6 +860,7 @@
 				D51D83A617977E920086D902 /* RFStatusBarNotificationController */,
 				D51D83AA17977E920086D902 /* RFTableViewCell */,
 				D549012818FB8BFE00EDA527 /* RFTableViewCellHeightDelegate */,
+				D5B20E3E19381B2800CBC939 /* RFTableViewPullToFetchPlugin */,
 				D51D83AF17977E920086D902 /* RFTabView */,
 				D598F4A218D1499B009C142D /* RFViewApperance */,
 				D51D83C317977E920086D902 /* RFWindow */,
@@ -1065,23 +1065,12 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
-		D5200710178D01AE00FEA64B /* RFPullToFetchTableView */ = {
-			isa = PBXGroup;
-			children = (
-				D520072C178D01AF00FEA64B /* RFPullToFetchTableView.h */,
-				D520072D178D01AF00FEA64B /* RFPullToFetchTableView.m */,
-				D520072E178D01AF00FEA64B /* UIScrollView+RFScrollViewContentDistance.h */,
-				D520072F178D01AF00FEA64B /* UIScrollView+RFScrollViewContentDistance.m */,
-			);
-			path = RFPullToFetchTableView;
-			sourceTree = "<group>";
-		};
 		D5200745178D01CE00FEA64B /* RFPullToFetchTableView */ = {
 			isa = PBXGroup;
 			children = (
-				D5200746178D01E300FEA64B /* RFPullToFetchTableView.storyboard */,
-				D520075B178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.h */,
-				D520075C178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m */,
+				D5200746178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard */,
+				D520075B178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.h */,
+				D520075C178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m */,
 				D5200760178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.h */,
 				D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */,
 			);
@@ -1246,6 +1235,17 @@
 			path = RFViewApperance;
 			sourceTree = "<group>";
 		};
+		D5B20E3E19381B2800CBC939 /* RFTableViewPullToFetchPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				D5B20E3F19381B2800CBC939 /* RFTableViewPullToFetchPlugin.h */,
+				D5B20E4019381B2800CBC939 /* RFTableViewPullToFetchPlugin.m */,
+				D5B20E4219381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.h */,
+				D5B20E4319381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m */,
+			);
+			path = RFTableViewPullToFetchPlugin;
+			sourceTree = "<group>";
+		};
 		D5B9EDA419079F940093570F /* RFAPIDefine */ = {
 			isa = PBXGroup;
 			children = (
@@ -1336,7 +1336,7 @@
 				D5200535178CF43C00FEA64B /* Default-568h@2x.png in Resources */,
 				D5200538178CF43C00FEA64B /* MainStoryboard.storyboard in Resources */,
 				D520070F178CFA0400FEA64B /* ComponentList.plist in Resources */,
-				D5200747178D01E300FEA64B /* RFPullToFetchTableView.storyboard in Resources */,
+				D5200747178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard in Resources */,
 				D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */,
 				D5B20E2E193718F700CBC939 /* WarAndPeace.plist in Resources */,
 				D5200772178E53AD00FEA64B /* 1400x600.png in Resources */,
@@ -1377,6 +1377,7 @@
 				D52006C7178CF4B100FEA64B /* NSDateFormatter+RFKit.m in Sources */,
 				D52006C8178CF4B100FEA64B /* NSDictionary+RFKit.m in Sources */,
 				D52006C9178CF4B100FEA64B /* NSFileManager+RFKit.m in Sources */,
+				D5B20E4119381B2800CBC939 /* RFTableViewPullToFetchPlugin.m in Sources */,
 				D52006CA178CF4B100FEA64B /* NSJSONSerialization+RFKit.m in Sources */,
 				D52006CB178CF4B100FEA64B /* NSNumberFormatter+RFKit.m in Sources */,
 				D52006CC178CF4B100FEA64B /* NSObject+RFKit.m in Sources */,
@@ -1406,6 +1407,7 @@
 				D52006E0178CF4B100FEA64B /* EXTScope.m in Sources */,
 				D52006E3178CF4B100FEA64B /* JRSwizzle.m in Sources */,
 				D549013618FB8FA600EDA527 /* RFAlertViewMessageManager.m in Sources */,
+				D5B20E4419381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m in Sources */,
 				D5B9EDAC19079F940093570F /* RFAPIDefineConfigFileKeys.m in Sources */,
 				D52006E5178CF4B100FEA64B /* NSObject+RACKVOWrapper.m in Sources */,
 				D52006E6178CF4B100FEA64B /* RACSwizzling.m in Sources */,
@@ -1418,11 +1420,9 @@
 				D5B9EDAD19079F940093570F /* RFAPIDefineManager.m in Sources */,
 				D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */,
 				D520070D178CF76A00FEA64B /* ComponentList.m in Sources */,
-				D520073D178D01AF00FEA64B /* RFPullToFetchTableView.m in Sources */,
 				D549012118FB820200EDA527 /* AFURLRequestSerialization.m in Sources */,
-				D520073E178D01AF00FEA64B /* UIScrollView+RFScrollViewContentDistance.m in Sources */,
 				D549013918FB8FA600EDA527 /* RFMessageManager.m in Sources */,
-				D520075D178D02B300FEA64B /* RFPullToFetchTableViewDemoViewController.m in Sources */,
+				D520075D178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m in Sources */,
 				D5200762178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m in Sources */,
 				D5B9EDB91907A08C0093570F /* JSONModelClassProperty.m in Sources */,
 				D5200766178E47FC00FEA64B /* RFScrollViewPageControl.m in Sources */,

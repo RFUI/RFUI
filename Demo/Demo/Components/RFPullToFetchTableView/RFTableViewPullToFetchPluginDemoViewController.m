@@ -6,13 +6,13 @@
 //  Copyright (c) 2013年 RFUI. All rights reserved.
 //
 
-#import "RFPullToFetchTableViewDemoViewController.h"
+#import "RFTableViewPullToFetchPluginDemoViewController.h"
 #import "RFPullToFetchTableViewConfigViewController.h"
 
 static NSTimeInterval DebugFetchDelay = 1;
 static int DebugMaxItemCount = 20;
 
-@interface RFPullToFetchTableViewDemoViewController ()
+@interface RFTableViewPullToFetchPluginDemoViewController ()
 // For convenience, we don not use real data here.
 @property (assign, nonatomic) int cellCount;
 
@@ -20,7 +20,7 @@ static int DebugMaxItemCount = 20;
 @property (strong, nonatomic) UILabel *footerView;
 @end
 
-@implementation RFPullToFetchTableViewDemoViewController
+@implementation RFTableViewPullToFetchPluginDemoViewController
 RFUIInterfaceOrientationSupportAll
 
 - (void)viewDidLoad {
