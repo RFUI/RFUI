@@ -33,8 +33,6 @@
 		D51D83F817977E920086D902 /* RFSoundService.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83A517977E920086D902 /* RFSoundService.m */; };
 		D51D83F917977E920086D902 /* RFStatusBarNotificationWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83A817977E920086D902 /* RFStatusBarNotificationWindow.m */; };
 		D51D83FA17977E920086D902 /* RFStatusBarNotificationWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51D83A917977E920086D902 /* RFStatusBarNotificationWindow.xib */; };
-		D51D83FB17977E920086D902 /* RFCheckmarkSelectedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83AC17977E920086D902 /* RFCheckmarkSelectedTableViewCell.m */; };
-		D51D83FC17977E920086D902 /* RFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83AE17977E920086D902 /* RFTableViewCell.m */; };
 		D51D83FD17977E920086D902 /* RFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83B117977E920086D902 /* RFTabBar.m */; };
 		D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83B317977E920086D902 /* RFTabBarItem.m */; };
 		D51D840617977E920086D902 /* RFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83C517977E920086D902 /* RFWindow.m */; };
@@ -215,10 +213,6 @@
 		D51D83A717977E920086D902 /* RFStatusBarNotificationWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFStatusBarNotificationWindow.h; sourceTree = "<group>"; };
 		D51D83A817977E920086D902 /* RFStatusBarNotificationWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFStatusBarNotificationWindow.m; sourceTree = "<group>"; };
 		D51D83A917977E920086D902 /* RFStatusBarNotificationWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RFStatusBarNotificationWindow.xib; sourceTree = "<group>"; };
-		D51D83AB17977E920086D902 /* RFCheckmarkSelectedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCheckmarkSelectedTableViewCell.h; sourceTree = "<group>"; };
-		D51D83AC17977E920086D902 /* RFCheckmarkSelectedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCheckmarkSelectedTableViewCell.m; sourceTree = "<group>"; };
-		D51D83AD17977E920086D902 /* RFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewCell.h; sourceTree = "<group>"; };
-		D51D83AE17977E920086D902 /* RFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCell.m; sourceTree = "<group>"; };
 		D51D83B017977E920086D902 /* RFTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTabBar.h; sourceTree = "<group>"; };
 		D51D83B117977E920086D902 /* RFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTabBar.m; sourceTree = "<group>"; };
 		D51D83B217977E920086D902 /* RFTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTabBarItem.h; sourceTree = "<group>"; };
@@ -658,17 +652,6 @@
 			path = RFStatusBarNotificationController;
 			sourceTree = "<group>";
 		};
-		D51D83AA17977E920086D902 /* RFTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				D51D83AB17977E920086D902 /* RFCheckmarkSelectedTableViewCell.h */,
-				D51D83AC17977E920086D902 /* RFCheckmarkSelectedTableViewCell.m */,
-				D51D83AD17977E920086D902 /* RFTableViewCell.h */,
-				D51D83AE17977E920086D902 /* RFTableViewCell.m */,
-			);
-			path = RFTableViewCell;
-			sourceTree = "<group>";
-		};
 		D51D83AF17977E920086D902 /* RFTabView */ = {
 			isa = PBXGroup;
 			children = (
@@ -865,7 +848,6 @@
 				D51D83A017977E920086D902 /* RFSlideNavigationController */,
 				D51D83A317977E920086D902 /* RFSound */,
 				D51D83A617977E920086D902 /* RFStatusBarNotificationController */,
-				D51D83AA17977E920086D902 /* RFTableViewCell */,
 				D549012818FB8BFE00EDA527 /* RFTableViewCellHeightDelegate */,
 				D5B20E3E19381B2800CBC939 /* RFTableViewPullToFetchPlugin */,
 				D51D83AF17977E920086D902 /* RFTabView */,
@@ -1482,8 +1464,6 @@
 				D598F4A118D14971009C142D /* UIResponder+RFKit.m in Sources */,
 				D51D83F817977E920086D902 /* RFSoundService.m in Sources */,
 				D51D83F917977E920086D902 /* RFStatusBarNotificationWindow.m in Sources */,
-				D51D83FB17977E920086D902 /* RFCheckmarkSelectedTableViewCell.m in Sources */,
-				D51D83FC17977E920086D902 /* RFTableViewCell.m in Sources */,
 				D51D83FD17977E920086D902 /* RFTabBar.m in Sources */,
 				D549010E18FB7FD500EDA527 /* RFAPI.m in Sources */,
 				D5B9EDC01907A17C0093570F /* AFNetworkActivityIndicatorManager.m in Sources */,
