@@ -15,4 +15,16 @@
     self.preferredMaxLayoutWidth = bounds.size.width;
 }
 
+- (CGSize)intrinsicContentSize {
+    CGSize size = [super intrinsicContentSize];
+    if (size.width == 0) {
+        size.width = self.preferredMaxLayoutWidth;
+    }
+
+    if (size.height < 22) {
+        size.height = 22;
+    }
+    return size;
+}
+
 @end

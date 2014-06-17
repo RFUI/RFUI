@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RFTableViewCellHeightDelegate.h"
 
-@interface ComponentList : UITableViewController
+@interface ComponentList : UITableViewController <
+    RFTableViewCellHeightDelegate
+>
 @property(strong, nonatomic) NSMutableArray *tableData;
 
 @end
@@ -21,7 +24,6 @@
 
 @property(strong, nonatomic) NSDictionary *componentInfo;
 
-+ (CGFloat)cellHeightForInfo:(NSDictionary *)componentInfo tableWidth:(CGFloat)tableWidth;
 - (NSString *)stroyboardName;
 
 @end

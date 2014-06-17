@@ -16,7 +16,6 @@
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ComponentList" ofType:@"plist"];
     self.tableData = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
-    _douto(self.tableData);
 }
 
 #pragma mark - DataSource
@@ -25,17 +24,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *info = [self.tableData objectAtIndex:indexPath.row];
-    ComponentListCell *cell = [tableView dequeueReusableCellWithClass:[ComponentListCell class]];
-    cell.componentInfo = info;
+    id cell = [tableView dequeueReusableCellWithIdentifier:[self tableView:tableView cellReuseIdentifierForRowAtIndexPath:indexPath]];
+    [self tableView:tableView configureCell:cell forIndexPath:indexPath offscreenRendering:NO];
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *info = [self.tableData objectAtIndex:indexPath.row];
-    return [ComponentListCell cellHeightForInfo:info tableWidth:tableView.bounds.size.width];
-}
-
+#pragma mark - Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *stroyboardName = [(ComponentListCell *)[tableView cellForRowAtIndexPath:indexPath] stroyboardName];
     if (stroyboardName) {
@@ -46,6 +40,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - RFTableViewCellHeightDelegate
+
+- (NSString *)tableView:(UITableView *)tableView cellReuseIdentifierForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NSStringFromClass([ComponentListCell class]);
+}
+
+- (void)tableView:(UITableView *)tableView configureCell:(id)cell forIndexPath:(NSIndexPath *)indexPath offscreenRendering:(BOOL)isOffscreenRendering {
+    [(ComponentListCell *)cell setComponentInfo:self.tableData[indexPath.row]];
+}
+
 @end
 
 static NSString *const TDkName     = @"Name";
@@ -54,13 +58,6 @@ static NSString *const TDkDetail   = @"Detail";
 static NSString *const TDkHasDemo  = @"Has Demo";
 
 @implementation ComponentListCell
-
-+ (CGFloat)cellHeightForInfo:(NSDictionary *)componentInfo tableWidth:(CGFloat)tableWidth {
-    CGFloat labelWidth = tableWidth - 11 - 7;
-    CGSize labelSize = [componentInfo[TDkDetail] sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(labelWidth, CGFLOAT_MAX)];
-    _dout_size(labelSize)
-    return labelSize.height + 32 + 7;
-}
 
 - (void)setComponentInfo:(NSDictionary *)componentInfo {
     if (_componentInfo != componentInfo) {
