@@ -25,9 +25,6 @@ RFUIInterfaceOrientationSupportAll
     [super viewDidLoad];
     
     [self setupPanel];
-
-    self.pullToFetchControl.delegate = self;
-    self.pullToFetchControl.tableView = self.tableView;
     [self setupPullToFetchDisplay];
     [self setupPullToFetchData];
     

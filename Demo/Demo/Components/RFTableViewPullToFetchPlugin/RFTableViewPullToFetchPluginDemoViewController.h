@@ -16,7 +16,7 @@
 >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) RFTableViewPullToFetchPlugin *pullToFetchControl;
+@property (strong, nonatomic) IBOutlet RFTableViewPullToFetchPlugin *pullToFetchControl;
 
 @property (assign, nonatomic) int pageSize;
 @property (assign, nonatomic) int currentPageIndex;

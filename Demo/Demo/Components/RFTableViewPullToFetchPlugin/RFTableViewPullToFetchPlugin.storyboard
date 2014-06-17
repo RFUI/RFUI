@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="388-18-73i" customClass="RFPullToFetchTableView">
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="388-18-73i">
                                 <rect key="frame" x="20" y="28" width="295" height="432"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.73999999999999999" colorSpace="calibratedWhite"/>
@@ -60,7 +60,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="nqk-EQ-dBS" id="fil-tB-fS0"/>
-                                    <outlet property="delegate" destination="nqk-EQ-dBS" id="MLr-Hu-4Xs"/>
+                                    <outlet property="delegate" destination="jQb-S2-tmQ" id="cE2-1W-myD"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -73,10 +73,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pullToFetchControl" destination="jQb-S2-tmQ" id="IUB-fu-ls7"/>
                         <outlet property="tableView" destination="388-18-73i" id="Sr2-Ya-DCj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKx-Yq-Oe7" sceneMemberID="firstResponder"/>
+                <customObject id="jQb-S2-tmQ" customClass="RFTableViewPullToFetchPlugin">
+                    <connections>
+                        <outlet property="delegate" destination="nqk-EQ-dBS" id="4vC-X3-1xd"/>
+                        <outlet property="tableView" destination="388-18-73i" id="QsM-TK-f2a"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-11" y="40"/>
         </scene>
