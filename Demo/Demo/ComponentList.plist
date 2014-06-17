@@ -24,6 +24,16 @@
 	</dict>
 	<dict>
 		<key>Name</key>
+		<string>RFSliderView</string>
+		<key>Status</key>
+		<string>TEST</string>
+		<key>Detail</key>
+		<string>Works as expected. Will used in more project to verify that. Also, API will be improved.</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
 		<string>RFScrollViewPageControl</string>
 		<key>Status</key>
 		<string>Alpha</string>

@@ -140,6 +140,10 @@
 		D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDE2185AE7580050241B /* RFAssetsCacheRecord.m */; };
 		D56CDDE9185AE9B60050241B /* RFAssetsCache.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56CDDE8185AE9B60050241B /* RFAssetsCache.storyboard */; };
 		D56CDDEF185AE9ED0050241B /* RFAssetsCacheDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDEE185AE9ED0050241B /* RFAssetsCacheDemoViewController.m */; };
+		D56DF683194FF12400CB1B14 /* RFSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF682194FF12400CB1B14 /* RFSliderView.m */; };
+		D56DF686194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF685194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m */; };
+		D56DF689194FF46200CB1B14 /* RFSliderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56DF688194FF46200CB1B14 /* RFSliderView.storyboard */; };
+		D56DF68C194FF48300CB1B14 /* RFSliderViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF68B194FF48300CB1B14 /* RFSliderViewDemoViewController.m */; };
 		D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */; };
 		D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */; };
 		D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D2C1938333700F21650 /* RootNavigationController.m */; };
@@ -429,6 +433,13 @@
 		D56CDDE8185AE9B60050241B /* RFAssetsCache.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFAssetsCache.storyboard; sourceTree = "<group>"; };
 		D56CDDED185AE9ED0050241B /* RFAssetsCacheDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCacheDemoViewController.h; sourceTree = "<group>"; };
 		D56CDDEE185AE9ED0050241B /* RFAssetsCacheDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCacheDemoViewController.m; sourceTree = "<group>"; };
+		D56DF681194FF12400CB1B14 /* RFSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSliderView.h; sourceTree = "<group>"; };
+		D56DF682194FF12400CB1B14 /* RFSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSliderView.m; sourceTree = "<group>"; };
+		D56DF684194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFFullSizeCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		D56DF685194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFFullSizeCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		D56DF688194FF46200CB1B14 /* RFSliderView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFSliderView.storyboard; sourceTree = "<group>"; };
+		D56DF68A194FF48300CB1B14 /* RFSliderViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSliderViewDemoViewController.h; sourceTree = "<group>"; };
+		D56DF68B194FF48300CB1B14 /* RFSliderViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSliderViewDemoViewController.m; sourceTree = "<group>"; };
 		D56DF68E19500D7A00CB1B14 /* SimpleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleLogger.h; sourceTree = "<group>"; };
 		D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleLogger.m; sourceTree = "<group>"; };
 		D56DF69019500D7A00CB1B14 /* SimpleConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleConsoleView.h; sourceTree = "<group>"; };
@@ -852,6 +863,7 @@
 				D5200763178E47DC00FEA64B /* RFScrollViewPageControl */,
 				D51D839517977E920086D902 /* RFSidePanel */,
 				D51D83A017977E920086D902 /* RFSlideNavigationController */,
+				D56DF680194FF0F800CB1B14 /* RFSliderView */,
 				D51D83A317977E920086D902 /* RFSound */,
 				D51D83A617977E920086D902 /* RFStatusBarNotificationController */,
 				D549012818FB8BFE00EDA527 /* RFTableViewCellHeightDelegate */,
@@ -1041,6 +1053,7 @@
 			children = (
 				D56CDDE7185AE99B0050241B /* RFAssetsCache */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
+				D56DF687194FF44F00CB1B14 /* RFSliderView */,
 				D549014818FB92B500EDA527 /* RFTableViewCellHeightDelegate */,
 				D5200745178D01CE00FEA64B /* RFTableViewPullToFetchPlugin */,
 			);
@@ -1213,6 +1226,27 @@
 			path = RFAssetsCache;
 			sourceTree = "<group>";
 		};
+		D56DF680194FF0F800CB1B14 /* RFSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				D56DF681194FF12400CB1B14 /* RFSliderView.h */,
+				D56DF682194FF12400CB1B14 /* RFSliderView.m */,
+				D56DF684194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.h */,
+				D56DF685194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m */,
+			);
+			path = RFSliderView;
+			sourceTree = "<group>";
+		};
+		D56DF687194FF44F00CB1B14 /* RFSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				D56DF688194FF46200CB1B14 /* RFSliderView.storyboard */,
+				D56DF68A194FF48300CB1B14 /* RFSliderViewDemoViewController.h */,
+				D56DF68B194FF48300CB1B14 /* RFSliderViewDemoViewController.m */,
+			);
+			path = RFSliderView;
+			sourceTree = "<group>";
+		};
 		D56DF68D19500D7100CB1B14 /* Simple Console */ = {
 			isa = PBXGroup;
 			children = (
@@ -1374,6 +1408,7 @@
 				D51D83F217977E920086D902 /* SidePanel-bg.png in Resources */,
 				D51D83F317977E920086D902 /* SidePanel-off.active.png in Resources */,
 				D51D83F417977E920086D902 /* SidePanel-off.png in Resources */,
+				D56DF689194FF46200CB1B14 /* RFSliderView.storyboard in Resources */,
 				D51D83F517977E920086D902 /* SidePanel-on.active.png in Resources */,
 				D51D83F617977E920086D902 /* SidePanel-on.png in Resources */,
 				D51D83FA17977E920086D902 /* RFStatusBarNotificationWindow.xib in Resources */,
@@ -1411,6 +1446,7 @@
 				D52006CD178CF4B100FEA64B /* NSString+RFKit.m in Sources */,
 				D52006CE178CF4B100FEA64B /* NSURL+RFKit.m in Sources */,
 				D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */,
+				D56DF683194FF12400CB1B14 /* RFSliderView.m in Sources */,
 				D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */,
 				D55FD84A192F421000ECA92B /* RFRoundingCornersView.m in Sources */,
 				D52006CF178CF4B100FEA64B /* UIAlertView+RFKit.m in Sources */,
@@ -1437,6 +1473,7 @@
 				D5B20E4419381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m in Sources */,
 				D5B9EDAC19079F940093570F /* RFAPIDefineConfigFileKeys.m in Sources */,
 				D52006E5178CF4B100FEA64B /* NSObject+RACKVOWrapper.m in Sources */,
+				D56DF68C194FF48300CB1B14 /* RFSliderViewDemoViewController.m in Sources */,
 				D52006E6178CF4B100FEA64B /* RACSwizzling.m in Sources */,
 				D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */,
 				D52006E9178CF4B100FEA64B /* RFAlloctionProxyButton.m in Sources */,
@@ -1494,6 +1531,7 @@
 				D51D840617977E920086D902 /* RFWindow.m in Sources */,
 				D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */,
 				D5B9EDBA1907A08C0093570F /* JSONModelError.m in Sources */,
+				D56DF686194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m in Sources */,
 				D51D8427179780C00086D902 /* RFPopBarButtonItem.m in Sources */,
 				D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */,
 				D51D8428179780C00086D902 /* RFSegueDismissModalButton.m in Sources */,

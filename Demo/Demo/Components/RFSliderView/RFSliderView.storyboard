@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IfI-IM-nvf">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Slider View Demo View Controller - Slider View-->
+        <scene sceneID="G6w-hb-Jmt">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="IfI-IM-nvf" customClass="RFSliderViewDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RJs-6O-d0B"/>
+                        <viewControllerLayoutGuide type="bottom" id="5EW-xT-Xlk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zk2-gZ-hIu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cnf-nF-0YE" customClass="RFSliderView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cnf-nF-0YE" secondAttribute="height" multiplier="16:9" priority="750" id="Jo7-Lq-8CJ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vlS-JW-JSr">
+                                    <size key="itemSize" width="320" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="KRr-P2-FwW" customClass="RFSliderViewDemoCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2wL-h1-Ycq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOx-le-ARu">
+                                                    <rect key="frame" x="0.0" y="150" width="320" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="9Mc-3t-4F7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="2wL-h1-Ycq" secondAttribute="bottom" id="2Gg-kr-wdO"/>
+                                            <constraint firstAttribute="trailing" secondItem="2wL-h1-Ycq" secondAttribute="trailing" id="Edr-eZ-Qsq"/>
+                                            <constraint firstAttribute="bottom" secondItem="rOx-le-ARu" secondAttribute="bottom" id="O5V-Ea-HfA"/>
+                                            <constraint firstItem="2wL-h1-Ycq" firstAttribute="top" secondItem="KRr-P2-FwW" secondAttribute="top" id="Tkl-rH-fHo"/>
+                                            <constraint firstAttribute="trailing" secondItem="rOx-le-ARu" secondAttribute="trailing" id="ivw-5r-wxD"/>
+                                            <constraint firstItem="rOx-le-ARu" firstAttribute="leading" secondItem="KRr-P2-FwW" secondAttribute="leading" id="nrZ-2o-sry"/>
+                                            <constraint firstItem="2wL-h1-Ycq" firstAttribute="leading" secondItem="KRr-P2-FwW" secondAttribute="leading" id="pye-RJ-CSk"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="2wL-h1-Ycq" id="sVx-Tf-Vv7"/>
+                                            <outlet property="titleLabel" destination="rOx-le-ARu" id="wtK-1i-2II"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="IfI-IM-nvf" id="5iI-Vq-RMa"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="H8n-OK-lCi" customClass="RFScrollViewPageControl">
+                                <rect key="frame" x="269" y="211" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="scrollView" destination="Cnf-nF-0YE" id="OR3-My-TA0"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="bottom" secondItem="H8n-OK-lCi" secondAttribute="bottom" constant="-4" id="4ek-8O-wdk"/>
+                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="leading" secondItem="zk2-gZ-hIu" secondAttribute="leading" id="CEs-f2-m6p"/>
+                            <constraint firstAttribute="trailing" secondItem="Cnf-nF-0YE" secondAttribute="trailing" id="Ta2-sO-e2I"/>
+                            <constraint firstItem="5EW-xT-Xlk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cnf-nF-0YE" secondAttribute="bottom" constant="5" id="lAf-t3-bdO"/>
+                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="top" secondItem="RJs-6O-d0B" secondAttribute="bottom" id="qVN-7W-qCr"/>
+                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="trailing" secondItem="H8n-OK-lCi" secondAttribute="trailing" constant="12" id="ra4-Gd-lyI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Slider View" id="5hL-Ve-vgl"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sliderView" destination="Cnf-nF-0YE" id="VPU-Re-Jcf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVL-tU-82k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="179"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
