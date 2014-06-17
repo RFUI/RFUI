@@ -140,6 +140,8 @@
 		D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDE2185AE7580050241B /* RFAssetsCacheRecord.m */; };
 		D56CDDE9185AE9B60050241B /* RFAssetsCache.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56CDDE8185AE9B60050241B /* RFAssetsCache.storyboard */; };
 		D56CDDEF185AE9ED0050241B /* RFAssetsCacheDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CDDEE185AE9ED0050241B /* RFAssetsCacheDemoViewController.m */; };
+		D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */; };
+		D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */; };
 		D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D2C1938333700F21650 /* RootNavigationController.m */; };
 		D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */; };
 		D598F4A118D14971009C142D /* UIResponder+RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4A018D14971009C142D /* UIResponder+RFKit.m */; };
@@ -427,6 +429,10 @@
 		D56CDDE8185AE9B60050241B /* RFAssetsCache.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFAssetsCache.storyboard; sourceTree = "<group>"; };
 		D56CDDED185AE9ED0050241B /* RFAssetsCacheDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCacheDemoViewController.h; sourceTree = "<group>"; };
 		D56CDDEE185AE9ED0050241B /* RFAssetsCacheDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCacheDemoViewController.m; sourceTree = "<group>"; };
+		D56DF68E19500D7A00CB1B14 /* SimpleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleLogger.h; sourceTree = "<group>"; };
+		D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleLogger.m; sourceTree = "<group>"; };
+		D56DF69019500D7A00CB1B14 /* SimpleConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleConsoleView.h; sourceTree = "<group>"; };
+		D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleConsoleView.m; sourceTree = "<group>"; };
 		D58A5D2B1938333700F21650 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		D58A5D2C1938333700F21650 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		D58A5D30193836D000F21650 /* AutoLayoutMultiLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMultiLineLabel.h; sourceTree = "<group>"; };
@@ -1207,9 +1213,21 @@
 			path = RFAssetsCache;
 			sourceTree = "<group>";
 		};
+		D56DF68D19500D7100CB1B14 /* Simple Console */ = {
+			isa = PBXGroup;
+			children = (
+				D56DF68E19500D7A00CB1B14 /* SimpleLogger.h */,
+				D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */,
+				D56DF69019500D7A00CB1B14 /* SimpleConsoleView.h */,
+				D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */,
+			);
+			path = "Simple Console";
+			sourceTree = "<group>";
+		};
 		D58A5D2E1938365500F21650 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D56DF68D19500D7100CB1B14 /* Simple Console */,
 				D58A5D2F193836BF00F21650 /* AutoLayoutMultiLineLabel */,
 			);
 			path = Shared;
@@ -1458,6 +1476,7 @@
 				D51D83E717977E920086D902 /* RFReusingPool.m in Sources */,
 				D51D83E817977E920086D902 /* RFReusingRange.m in Sources */,
 				D549012718FB8BF300EDA527 /* RFDelegateChain.m in Sources */,
+				D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */,
 				D56CDDE5185AE7580050241B /* RFAssetsCacheData.m in Sources */,
 				D51D83F017977E920086D902 /* RFSidePanel.m in Sources */,
 				D51D83F717977E920086D902 /* RFSlideNavigationController.m in Sources */,
@@ -1488,6 +1507,7 @@
 				D51D844D179781930086D902 /* AFHTTPRequestOperation.m in Sources */,
 				D549012018FB820200EDA527 /* AFSecurityPolicy.m in Sources */,
 				D56CDDE4185AE7580050241B /* RFAssetsCache.xcdatamodeld in Sources */,
+				D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */,
 				D51D8452179781930086D902 /* AFURLConnectionOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
