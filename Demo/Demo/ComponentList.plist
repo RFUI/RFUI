@@ -40,7 +40,7 @@
 		<key>Detail</key>
 		<string>Seems ready to release. Will used in more project to verify that.</string>
 		<key>Has Demo</key>
-		<false/>
+		<true/>
 	</dict>
 	<dict>
 		<key>Name</key>

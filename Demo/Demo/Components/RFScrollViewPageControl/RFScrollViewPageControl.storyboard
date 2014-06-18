@@ -9,7 +9,7 @@
         <!--Scroll View Page Control Demo View Controller - Scroll PageControl-->
         <scene sceneID="Ze3-gY-VG4">
             <objects>
-                <viewController id="k8f-ka-1i1" customClass="RFScrollViewPageControlDemoViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="k8f-ka-1i1" customClass="RFScrollViewPageControlDemoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IL7-0N-zRq"/>
                         <viewControllerLayoutGuide type="bottom" id="HZv-4d-GC7"/>
@@ -34,7 +34,7 @@
                                     <outlet property="scrollView" destination="Sol-AS-tZf" id="2D7-e6-fmc"/>
                                 </connections>
                             </pageControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6d-BK-w4a" userLabel="Config">
+                            <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y6d-BK-w4a" userLabel="Config">
                                 <rect key="frame" x="0.0" y="483" width="320" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
