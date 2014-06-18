@@ -65,5 +65,15 @@ TODO:
 		<key>Has Demo</key>
 		<true/>
 	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFTimer</string>
+		<key>Status</key>
+		<string>TEST</string>
+		<key>Detail</key>
+		<string>Seems work. Needs more test.</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
 </array>
 </plist>

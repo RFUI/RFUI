@@ -148,6 +148,9 @@
 		D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */; };
 		D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D2C1938333700F21650 /* RootNavigationController.m */; };
 		D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */; };
+		D58D099F19515ED2003A0463 /* RFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D099E19515ED2003A0463 /* RFTimer.m */; };
+		D58D09A219518809003A0463 /* RFTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D09A119518809003A0463 /* RFTimer.storyboard */; };
+		D58D09A519518826003A0463 /* RFTimerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D09A419518826003A0463 /* RFTimerDemoViewController.m */; };
 		D598F4A118D14971009C142D /* UIResponder+RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4A018D14971009C142D /* UIResponder+RFKit.m */; };
 		D598F4AB18D1499B009C142D /* RFLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4A418D1499B009C142D /* RFLine.m */; };
 		D598F4AC18D1499B009C142D /* UIButton+RFResizableBackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4A618D1499B009C142D /* UIButton+RFResizableBackgroundImage.m */; };
@@ -448,6 +451,11 @@
 		D58A5D2C1938333700F21650 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		D58A5D30193836D000F21650 /* AutoLayoutMultiLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMultiLineLabel.h; sourceTree = "<group>"; };
 		D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutMultiLineLabel.m; sourceTree = "<group>"; };
+		D58D099D19515ED2003A0463 /* RFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTimer.h; sourceTree = "<group>"; };
+		D58D099E19515ED2003A0463 /* RFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTimer.m; sourceTree = "<group>"; };
+		D58D09A119518809003A0463 /* RFTimer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFTimer.storyboard; sourceTree = "<group>"; };
+		D58D09A319518826003A0463 /* RFTimerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTimerDemoViewController.h; sourceTree = "<group>"; };
+		D58D09A419518826003A0463 /* RFTimerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTimerDemoViewController.m; sourceTree = "<group>"; };
 		D598F49F18D14971009C142D /* UIResponder+RFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+RFKit.h"; sourceTree = "<group>"; };
 		D598F4A018D14971009C142D /* UIResponder+RFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+RFKit.m"; sourceTree = "<group>"; };
 		D598F4A318D1499B009C142D /* RFLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFLine.h; sourceTree = "<group>"; };
@@ -869,6 +877,7 @@
 				D549012818FB8BFE00EDA527 /* RFTableViewCellHeightDelegate */,
 				D5B20E3E19381B2800CBC939 /* RFTableViewPullToFetchPlugin */,
 				D51D83AF17977E920086D902 /* RFTabView */,
+				D58D099C19515EB2003A0463 /* RFTimer */,
 				D598F4A218D1499B009C142D /* RFViewApperance */,
 				D51D83C317977E920086D902 /* RFWindow */,
 			);
@@ -1056,6 +1065,7 @@
 				D56DF687194FF44F00CB1B14 /* RFSliderView */,
 				D549014818FB92B500EDA527 /* RFTableViewCellHeightDelegate */,
 				D5200745178D01CE00FEA64B /* RFTableViewPullToFetchPlugin */,
+				D58D09A0195187F7003A0463 /* RFTimer */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1276,6 +1286,25 @@
 			path = AutoLayoutMultiLineLabel;
 			sourceTree = "<group>";
 		};
+		D58D099C19515EB2003A0463 /* RFTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D58D099D19515ED2003A0463 /* RFTimer.h */,
+				D58D099E19515ED2003A0463 /* RFTimer.m */,
+			);
+			path = RFTimer;
+			sourceTree = "<group>";
+		};
+		D58D09A0195187F7003A0463 /* RFTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D58D09A119518809003A0463 /* RFTimer.storyboard */,
+				D58D09A319518826003A0463 /* RFTimerDemoViewController.h */,
+				D58D09A419518826003A0463 /* RFTimerDemoViewController.m */,
+			);
+			path = RFTimer;
+			sourceTree = "<group>";
+		};
 		D598F4A218D1499B009C142D /* RFViewApperance */ = {
 			isa = PBXGroup;
 			children = (
@@ -1394,6 +1423,7 @@
 				D549014018FB90F200EDA527 /* SVProgressHUD.bundle in Resources */,
 				D5200533178CF43C00FEA64B /* Default@2x.png in Resources */,
 				D5200535178CF43C00FEA64B /* Default-568h@2x.png in Resources */,
+				D58D09A219518809003A0463 /* RFTimer.storyboard in Resources */,
 				D5200538178CF43C00FEA64B /* MainStoryboard.storyboard in Resources */,
 				D520070F178CFA0400FEA64B /* ComponentList.plist in Resources */,
 				D5200747178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard in Resources */,
@@ -1450,6 +1480,7 @@
 				D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */,
 				D55FD84A192F421000ECA92B /* RFRoundingCornersView.m in Sources */,
 				D52006CF178CF4B100FEA64B /* UIAlertView+RFKit.m in Sources */,
+				D58D09A519518826003A0463 /* RFTimerDemoViewController.m in Sources */,
 				D52006D0178CF4B100FEA64B /* UIButton+RFKit.m in Sources */,
 				D52006D1178CF4B100FEA64B /* UIColor+RFKit.m in Sources */,
 				D5B9EDBD1907A0BF0093570F /* JSONValueTransformer.m in Sources */,
@@ -1459,6 +1490,7 @@
 				D5B9EDA319079F740093570F /* UIView+RFLayerApperance.m in Sources */,
 				D549012B18FB8BFE00EDA527 /* RFTableViewCellHeightDelegate.m in Sources */,
 				D549013818FB8FA600EDA527 /* RFMessageManager+RFDisplay.m in Sources */,
+				D58D099F19515ED2003A0463 /* RFTimer.m in Sources */,
 				D52006D5178CF4B100FEA64B /* UIStoryboard+RFKit.m in Sources */,
 				D52006D6178CF4B100FEA64B /* UITableView+RFKit.m in Sources */,
 				D52006D7178CF4B100FEA64B /* UIView+RFAnimate.m in Sources */,
