@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHj-Td-iWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="-876"/>
+            <point key="canvasLocation" x="740" y="-1374"/>
         </scene>
         <!--Segue Delegate Demo View Controller - Source Delegate-->
         <scene sceneID="jPt-l8-GA2">
@@ -219,11 +219,23 @@
                                     <segue destination="IKu-Eb-ybs" kind="custom" customClass="RFNavigationPushSegue" id="ACI-E2-mwY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4it-B1-97j">
+                                <rect key="frame" x="134" y="214" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Present">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WQq-cn-TVq" kind="custom" customClass="RFPresentSegue" id="eys-cO-aE4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4it-B1-97j" firstAttribute="top" secondItem="88f-7M-ChK" secondAttribute="bottom" constant="30" id="6np-jn-8FU"/>
                             <constraint firstItem="88f-7M-ChK" firstAttribute="top" secondItem="0dw-9N-9ZD" secondAttribute="bottom" constant="90" id="7h4-KB-b4V"/>
                             <constraint firstAttribute="centerX" secondItem="WpN-Ie-9ZD" secondAttribute="centerX" constant="-0.5" id="I6Z-yQ-KzB"/>
+                            <constraint firstItem="4it-B1-97j" firstAttribute="centerX" secondItem="88f-7M-ChK" secondAttribute="centerX" id="Qax-6D-asM"/>
                             <constraint firstItem="WpN-Ie-9ZD" firstAttribute="top" secondItem="0dw-9N-9ZD" secondAttribute="bottom" constant="30" id="j9S-g6-uGp"/>
                             <constraint firstAttribute="centerX" secondItem="88f-7M-ChK" secondAttribute="centerX" id="nrp-1W-pUv"/>
                         </constraints>
@@ -232,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jpq-Iz-um9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="-203"/>
+            <point key="canvasLocation" x="740" y="-347"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LKr-yH-vIt">
@@ -247,7 +259,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtU-xq-aX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="1205"/>
+            <point key="canvasLocation" x="740" y="1315"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lpc-Sn-hVh">
@@ -354,7 +366,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6Y-Oh-kes" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="1202"/>
+            <point key="canvasLocation" x="1282" y="1315"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2Py-BH-ZXk">
@@ -455,7 +467,7 @@ RFSeguePopButton
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XsA-bX-VIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="1874"/>
+            <point key="canvasLocation" x="740" y="1984"/>
         </scene>
         <!--Segue Should Return Demo View Controller - Should Return?-->
         <scene sceneID="lJk-8R-y2H">
@@ -498,7 +510,7 @@ RFSeguePopButton
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YC-ot-sOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="-876"/>
+            <point key="canvasLocation" x="1282" y="-1374"/>
         </scene>
         <!--Segue Delegate Demo View Controller - Destination Delegate-->
         <scene sceneID="vlW-xW-cv4">
@@ -542,7 +554,7 @@ RFSeguePopButton
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zl6-q1-Ky7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="-203"/>
+            <point key="canvasLocation" x="1282" y="-707"/>
         </scene>
         <!--Asynchronous Segue Demo View Controller - Asynchronous Segue-->
         <scene sceneID="j0L-5e-RSX">
@@ -577,7 +589,7 @@ RFSeguePopButton
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCR-OL-DI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="507"/>
+            <point key="canvasLocation" x="740" y="642"/>
         </scene>
         <!--Segue Delegate Demo View Controller - Empty-->
         <scene sceneID="6Pc-jG-It4">
@@ -597,7 +609,49 @@ RFSeguePopButton
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C96-jf-S4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="507"/>
+            <point key="canvasLocation" x="1282" y="642"/>
+        </scene>
+        <!--Segue Delegate Demo View Controller - Destination Delegate-->
+        <scene sceneID="nAL-48-S5O">
+            <objects>
+                <viewController id="WQq-cn-TVq" customClass="RFSegueDelegateDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qH1-dz-O1W"/>
+                        <viewControllerLayoutGuide type="bottom" id="b00-3w-cjN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q4g-QF-TGy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check console output" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7V-Sw-FJ8">
+                                <rect key="frame" x="76" y="94" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-AB-6VO" customClass="RFSegueDismissModalButton">
+                                <rect key="frame" x="143" y="154" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fgn-AB-6VO" firstAttribute="top" secondItem="qH1-dz-O1W" secondAttribute="bottom" constant="90" id="2ko-Vi-pKh"/>
+                            <constraint firstAttribute="centerX" secondItem="H7V-Sw-FJ8" secondAttribute="centerX" constant="-0.5" id="L8W-Nf-sDw"/>
+                            <constraint firstItem="H7V-Sw-FJ8" firstAttribute="top" secondItem="qH1-dz-O1W" secondAttribute="bottom" constant="30" id="cbb-Df-9FP"/>
+                            <constraint firstAttribute="centerX" secondItem="fgn-AB-6VO" secondAttribute="centerX" id="xZs-92-i63"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Destination Delegate" id="QTZ-hu-7D0"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Dd-eN-mqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282" y="-19"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
