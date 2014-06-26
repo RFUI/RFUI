@@ -24,21 +24,31 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>RFSliderView</string>
-		<key>Status</key>
-		<string>TEST</string>
-		<key>Detail</key>
-		<string>Works as expected. Will used in more project to verify that. Also, API will be improved.</string>
-		<key>Has Demo</key>
-		<true/>
-	</dict>
-	<dict>
-		<key>Name</key>
 		<string>RFScrollViewPageControl</string>
 		<key>Status</key>
 		<string>Alpha</string>
 		<key>Detail</key>
 		<string>Seems ready to release. Will used in more project to verify that.</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFSegue</string>
+		<key>Status</key>
+		<string>2.2</string>
+		<key>Detail</key>
+		<string>Released</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFSliderView</string>
+		<key>Status</key>
+		<string>TEST</string>
+		<key>Detail</key>
+		<string>Works as expected. Will used in more project to verify that. Also, API will be improved.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>

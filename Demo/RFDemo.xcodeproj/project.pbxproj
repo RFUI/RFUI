@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D50EAAEF195BBAAD00548BF6 /* RFSegue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50EAAEE195BBAAD00548BF6 /* RFSegue.storyboard */; };
+		D50EAAF2195BBAD400548BF6 /* RFSegueDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAF1195BBAD400548BF6 /* RFSegueDemoListViewController.m */; };
+		D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAF4195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m */; };
+		D50EAAF8195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAF7195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m */; };
+		D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */; };
 		D51D83C617977E920086D902 /* RFAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833117977E910086D902 /* RFAudioPlayer.m */; };
 		D51D83C817977E920086D902 /* RFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833717977E910086D902 /* RFButton.m */; };
 		D51D83C917977E920086D902 /* RFControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833917977E910086D902 /* RFControl.m */; };
@@ -173,6 +178,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D50EAAEE195BBAAD00548BF6 /* RFSegue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFSegue.storyboard; sourceTree = "<group>"; };
+		D50EAAF0195BBAD400548BF6 /* RFSegueDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegueDemoListViewController.h; sourceTree = "<group>"; };
+		D50EAAF1195BBAD400548BF6 /* RFSegueDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegueDemoListViewController.m; sourceTree = "<group>"; };
+		D50EAAF3195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegueShouldPerformDemoViewController.h; sourceTree = "<group>"; };
+		D50EAAF4195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegueShouldPerformDemoViewController.m; sourceTree = "<group>"; };
+		D50EAAF6195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegueShouldReturnDemoViewController.h; sourceTree = "<group>"; };
+		D50EAAF7195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegueShouldReturnDemoViewController.m; sourceTree = "<group>"; };
+		D50EAAF9195BC3B500548BF6 /* RFSegueDelegateDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegueDelegateDemoViewController.h; sourceTree = "<group>"; };
+		D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegueDelegateDemoViewController.m; sourceTree = "<group>"; };
 		D51D833017977E910086D902 /* RFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAudioPlayer.h; sourceTree = "<group>"; };
 		D51D833117977E910086D902 /* RFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAudioPlayer.m; sourceTree = "<group>"; };
 		D51D833617977E910086D902 /* RFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFButton.h; sourceTree = "<group>"; };
@@ -516,6 +530,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D50EAAED195BBA9600548BF6 /* RFSegue */ = {
+			isa = PBXGroup;
+			children = (
+				D50EAAEE195BBAAD00548BF6 /* RFSegue.storyboard */,
+				D50EAAF0195BBAD400548BF6 /* RFSegueDemoListViewController.h */,
+				D50EAAF1195BBAD400548BF6 /* RFSegueDemoListViewController.m */,
+				D50EAAF3195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.h */,
+				D50EAAF4195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m */,
+				D50EAAF6195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.h */,
+				D50EAAF7195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m */,
+				D50EAAF9195BC3B500548BF6 /* RFSegueDelegateDemoViewController.h */,
+				D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */,
+			);
+			path = RFSegue;
+			sourceTree = "<group>";
+		};
 		D51D832F17977E910086D902 /* RFAudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1062,6 +1092,7 @@
 			children = (
 				D56CDDE7185AE99B0050241B /* RFAssetsCache */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
+				D50EAAED195BBA9600548BF6 /* RFSegue */,
 				D56DF687194FF44F00CB1B14 /* RFSliderView */,
 				D549014818FB92B500EDA527 /* RFTableViewCellHeightDelegate */,
 				D5200745178D01CE00FEA64B /* RFTableViewPullToFetchPlugin */,
@@ -1434,6 +1465,7 @@
 				D5200774178E53AD00FEA64B /* 50x50.png in Resources */,
 				D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */,
 				D5200775178E53AD00FEA64B /* 800x600.png in Resources */,
+				D50EAAEF195BBAAD00548BF6 /* RFSegue.storyboard in Resources */,
 				D51D83F117977E920086D902 /* RFSidePanel.xib in Resources */,
 				D51D83F217977E920086D902 /* SidePanel-bg.png in Resources */,
 				D51D83F317977E920086D902 /* SidePanel-off.active.png in Resources */,
@@ -1493,6 +1525,7 @@
 				D58D099F19515ED2003A0463 /* RFTimer.m in Sources */,
 				D52006D5178CF4B100FEA64B /* UIStoryboard+RFKit.m in Sources */,
 				D52006D6178CF4B100FEA64B /* UITableView+RFKit.m in Sources */,
+				D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */,
 				D52006D7178CF4B100FEA64B /* UIView+RFAnimate.m in Sources */,
 				D52006D8178CF4B100FEA64B /* UIView+RFKit.m in Sources */,
 				D52006D9178CF4B100FEA64B /* UIViewController+RFKit.m in Sources */,
@@ -1546,10 +1579,12 @@
 				D51D83E817977E920086D902 /* RFReusingRange.m in Sources */,
 				D549012718FB8BF300EDA527 /* RFDelegateChain.m in Sources */,
 				D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */,
+				D50EAAF2195BBAD400548BF6 /* RFSegueDemoListViewController.m in Sources */,
 				D56CDDE5185AE7580050241B /* RFAssetsCacheData.m in Sources */,
 				D51D83F017977E920086D902 /* RFSidePanel.m in Sources */,
 				D51D83F717977E920086D902 /* RFSlideNavigationController.m in Sources */,
 				D598F4A118D14971009C142D /* UIResponder+RFKit.m in Sources */,
+				D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */,
 				D51D83F817977E920086D902 /* RFSoundService.m in Sources */,
 				D51D83F917977E920086D902 /* RFStatusBarNotificationWindow.m in Sources */,
 				D51D83FD17977E920086D902 /* RFTabBar.m in Sources */,
@@ -1560,6 +1595,7 @@
 				D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */,
 				D549013718FB8FA600EDA527 /* RFSVProgressMessageManager.m in Sources */,
 				D598F4AC18D1499B009C142D /* UIButton+RFResizableBackgroundImage.m in Sources */,
+				D50EAAF8195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m in Sources */,
 				D51D840617977E920086D902 /* RFWindow.m in Sources */,
 				D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */,
 				D5B9EDBA1907A08C0093570F /* JSONModelError.m in Sources */,
