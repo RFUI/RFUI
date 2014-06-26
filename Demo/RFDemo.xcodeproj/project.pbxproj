@@ -14,6 +14,9 @@
 		D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */; };
 		D51000AE195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000AD195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m */; };
 		D51000B5195BCACC00239810 /* RFAsynchronousSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000B4195BCACC00239810 /* RFAsynchronousSegue.m */; };
+		D51000C4195BE69800239810 /* RFAsynchronousPresentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000C1195BE69800239810 /* RFAsynchronousPresentSegue.m */; };
+		D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000C3195BE69800239810 /* RFAsynchronousPushSegue.m */; };
+		D51000C8195BF53100239810 /* RFPresentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000C7195BF53100239810 /* RFPresentSegue.m */; };
 		D51D83C617977E920086D902 /* RFAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833117977E910086D902 /* RFAudioPlayer.m */; };
 		D51D83C817977E920086D902 /* RFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833717977E910086D902 /* RFButton.m */; };
 		D51D83C917977E920086D902 /* RFControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833917977E910086D902 /* RFControl.m */; };
@@ -193,6 +196,12 @@
 		D51000AD195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAsynchronousSegueDemoViewController.m; sourceTree = "<group>"; };
 		D51000B3195BCACC00239810 /* RFAsynchronousSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAsynchronousSegue.h; sourceTree = "<group>"; };
 		D51000B4195BCACC00239810 /* RFAsynchronousSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAsynchronousSegue.m; sourceTree = "<group>"; };
+		D51000C0195BE69800239810 /* RFAsynchronousPresentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAsynchronousPresentSegue.h; sourceTree = "<group>"; };
+		D51000C1195BE69800239810 /* RFAsynchronousPresentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAsynchronousPresentSegue.m; sourceTree = "<group>"; };
+		D51000C2195BE69800239810 /* RFAsynchronousPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAsynchronousPushSegue.h; sourceTree = "<group>"; };
+		D51000C3195BE69800239810 /* RFAsynchronousPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAsynchronousPushSegue.m; sourceTree = "<group>"; };
+		D51000C6195BF53100239810 /* RFPresentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPresentSegue.h; sourceTree = "<group>"; };
+		D51000C7195BF53100239810 /* RFPresentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPresentSegue.m; sourceTree = "<group>"; };
 		D51D833017977E910086D902 /* RFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAudioPlayer.h; sourceTree = "<group>"; };
 		D51D833117977E910086D902 /* RFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAudioPlayer.m; sourceTree = "<group>"; };
 		D51D833617977E910086D902 /* RFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFButton.h; sourceTree = "<group>"; };
@@ -557,6 +566,10 @@
 		D51000B2195BCACC00239810 /* RFAsynchronousSegue */ = {
 			isa = PBXGroup;
 			children = (
+				D51000C0195BE69800239810 /* RFAsynchronousPresentSegue.h */,
+				D51000C1195BE69800239810 /* RFAsynchronousPresentSegue.m */,
+				D51000C2195BE69800239810 /* RFAsynchronousPushSegue.h */,
+				D51000C3195BE69800239810 /* RFAsynchronousPushSegue.m */,
 				D51000B3195BCACC00239810 /* RFAsynchronousSegue.h */,
 				D51000B4195BCACC00239810 /* RFAsynchronousSegue.m */,
 			);
@@ -758,6 +771,8 @@
 				D51D841C179780C00086D902 /* RFNavigationPushAsRootSegue.m */,
 				D51D841D179780C00086D902 /* RFNavigationPushSegue.h */,
 				D51D841E179780C00086D902 /* RFNavigationPushSegue.m */,
+				D51000C6195BF53100239810 /* RFPresentSegue.h */,
+				D51000C7195BF53100239810 /* RFPresentSegue.m */,
 				D51D841F179780C00086D902 /* RFSegue.h */,
 				D51D8420179780C00086D902 /* RFSegue.m */,
 				D51D8421179780C00086D902 /* RFSegueDelegate.h */,
@@ -1544,6 +1559,7 @@
 				D58D099F19515ED2003A0463 /* RFTimer.m in Sources */,
 				D52006D5178CF4B100FEA64B /* UIStoryboard+RFKit.m in Sources */,
 				D52006D6178CF4B100FEA64B /* UITableView+RFKit.m in Sources */,
+				D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */,
 				D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */,
 				D52006D7178CF4B100FEA64B /* UIView+RFAnimate.m in Sources */,
 				D52006D8178CF4B100FEA64B /* UIView+RFKit.m in Sources */,
@@ -1605,8 +1621,10 @@
 				D598F4A118D14971009C142D /* UIResponder+RFKit.m in Sources */,
 				D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */,
 				D51D83F817977E920086D902 /* RFSoundService.m in Sources */,
+				D51000C8195BF53100239810 /* RFPresentSegue.m in Sources */,
 				D51D83F917977E920086D902 /* RFStatusBarNotificationWindow.m in Sources */,
 				D51D83FD17977E920086D902 /* RFTabBar.m in Sources */,
+				D51000C4195BE69800239810 /* RFAsynchronousPresentSegue.m in Sources */,
 				D549010E18FB7FD500EDA527 /* RFAPI.m in Sources */,
 				D5B9EDC01907A17C0093570F /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D598F4AB18D1499B009C142D /* RFLine.m in Sources */,

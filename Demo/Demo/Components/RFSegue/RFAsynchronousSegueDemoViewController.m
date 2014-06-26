@@ -14,7 +14,11 @@ RFUIInterfaceOrientationSupportDefault
     if ([segue isKindOfClass:[RFAsynchronousSegue class]]) {
         RFAsynchronousSegue *s = (id)segue;
         [s setPerformBlcok:^(RFAsynchronousSegue *this) {
+            [this noticeDelegateWillPerform];
             [[this.sourceViewController navigationController] pushViewController:this.destinationViewController animated:YES];
+            dispatch_after_seconds(RFSegueNavigationTransitionDuration, ^{
+                [this noticeDelegateDidPerformed];
+            });
         }];
         self.segue = s;
 
@@ -23,7 +27,7 @@ RFUIInterfaceOrientationSupportDefault
     }
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex) {
         [self.segue fire];
     }
