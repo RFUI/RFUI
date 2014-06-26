@@ -12,6 +12,8 @@
 		D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAF4195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m */; };
 		D50EAAF8195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAF7195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m */; };
 		D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */; };
+		D51000AE195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000AD195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m */; };
+		D51000B5195BCACC00239810 /* RFAsynchronousSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000B4195BCACC00239810 /* RFAsynchronousSegue.m */; };
 		D51D83C617977E920086D902 /* RFAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833117977E910086D902 /* RFAudioPlayer.m */; };
 		D51D83C817977E920086D902 /* RFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833717977E910086D902 /* RFButton.m */; };
 		D51D83C917977E920086D902 /* RFControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833917977E910086D902 /* RFControl.m */; };
@@ -187,6 +189,10 @@
 		D50EAAF7195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegueShouldReturnDemoViewController.m; sourceTree = "<group>"; };
 		D50EAAF9195BC3B500548BF6 /* RFSegueDelegateDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegueDelegateDemoViewController.h; sourceTree = "<group>"; };
 		D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegueDelegateDemoViewController.m; sourceTree = "<group>"; };
+		D51000AC195BC9E000239810 /* RFAsynchronousSegueDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAsynchronousSegueDemoViewController.h; sourceTree = "<group>"; };
+		D51000AD195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAsynchronousSegueDemoViewController.m; sourceTree = "<group>"; };
+		D51000B3195BCACC00239810 /* RFAsynchronousSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAsynchronousSegue.h; sourceTree = "<group>"; };
+		D51000B4195BCACC00239810 /* RFAsynchronousSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAsynchronousSegue.m; sourceTree = "<group>"; };
 		D51D833017977E910086D902 /* RFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAudioPlayer.h; sourceTree = "<group>"; };
 		D51D833117977E910086D902 /* RFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAudioPlayer.m; sourceTree = "<group>"; };
 		D51D833617977E910086D902 /* RFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFButton.h; sourceTree = "<group>"; };
@@ -542,8 +548,19 @@
 				D50EAAF7195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m */,
 				D50EAAF9195BC3B500548BF6 /* RFSegueDelegateDemoViewController.h */,
 				D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */,
+				D51000AC195BC9E000239810 /* RFAsynchronousSegueDemoViewController.h */,
+				D51000AD195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m */,
 			);
 			path = RFSegue;
+			sourceTree = "<group>";
+		};
+		D51000B2195BCACC00239810 /* RFAsynchronousSegue */ = {
+			isa = PBXGroup;
+			children = (
+				D51000B3195BCACC00239810 /* RFAsynchronousSegue.h */,
+				D51000B4195BCACC00239810 /* RFAsynchronousSegue.m */,
+			);
+			path = RFAsynchronousSegue;
 			sourceTree = "<group>";
 		};
 		D51D832F17977E910086D902 /* RFAudioPlayer */ = {
@@ -883,6 +900,7 @@
 			children = (
 				D549010B18FB7FD500EDA527 /* RFAPI */,
 				D56CDDDA185AE7580050241B /* RFAssetsCache */,
+				D51000B2195BCACC00239810 /* RFAsynchronousSegue */,
 				D51D832F17977E910086D902 /* RFAudioPlayer */,
 				D51D833517977E910086D902 /* RFButton */,
 				D51D833C17977E910086D902 /* RFCheckbox */,
@@ -1486,6 +1504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D55FD849192F421000ECA92B /* RFDrawView.m in Sources */,
+				D51000AE195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m in Sources */,
 				D520052B178CF43C00FEA64B /* main.m in Sources */,
 				D5B9EDAB19079F940093570F /* RFAPIDefine.m in Sources */,
 				D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */,
@@ -1601,6 +1620,7 @@
 				D5B9EDBA1907A08C0093570F /* JSONModelError.m in Sources */,
 				D56DF686194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m in Sources */,
 				D51D8427179780C00086D902 /* RFPopBarButtonItem.m in Sources */,
+				D51000B5195BCACC00239810 /* RFAsynchronousSegue.m in Sources */,
 				D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */,
 				D51D8428179780C00086D902 /* RFSegueDismissModalButton.m in Sources */,
 				D51D8429179780C00086D902 /* RFSeguePopButton.m in Sources */,
