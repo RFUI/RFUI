@@ -85,5 +85,15 @@ TODO:
 		<key>Has Demo</key>
 		<true/>
 	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFWindow</string>
+		<key>Status</key>
+		<string>Alpha</string>
+		<key>Detail</key>
+		<string>Works as expected. Will used in more project to verify that.</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
 </array>
 </plist>

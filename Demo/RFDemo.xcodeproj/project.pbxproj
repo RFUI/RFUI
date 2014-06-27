@@ -140,6 +140,9 @@
 		D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */; };
 		D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */; };
 		D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */; };
+		D55F9DF7195D3D800004DDCD /* RFWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55F9DF6195D3D800004DDCD /* RFWindow.storyboard */; };
+		D55F9DFA195D3DA00004DDCD /* RFWindowDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F9DF9195D3DA00004DDCD /* RFWindowDemoListViewController.m */; };
+		D55F9DFD195D3E580004DDCD /* RFWindowTouchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F9DFC195D3E580004DDCD /* RFWindowTouchDemoViewController.m */; };
 		D55FD840192F418700ECA92B /* UINavigationController+RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FD83F192F418700ECA92B /* UINavigationController+RFKit.m */; };
 		D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FD843192F41FE00ECA92B /* RFDrawImage.m */; };
 		D55FD849192F421000ECA92B /* RFDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = D55FD846192F421000ECA92B /* RFDrawView.m */; };
@@ -447,6 +450,11 @@
 		D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCellHeightDelegateDemoViewController.m; sourceTree = "<group>"; };
 		D54D40D1185EA2E800A09A35 /* RFAssetsCacheTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCacheTestHelper.h; sourceTree = "<group>"; };
 		D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCacheTestHelper.m; sourceTree = "<group>"; };
+		D55F9DF6195D3D800004DDCD /* RFWindow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFWindow.storyboard; sourceTree = "<group>"; };
+		D55F9DF8195D3DA00004DDCD /* RFWindowDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFWindowDemoListViewController.h; sourceTree = "<group>"; };
+		D55F9DF9195D3DA00004DDCD /* RFWindowDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFWindowDemoListViewController.m; sourceTree = "<group>"; };
+		D55F9DFB195D3E580004DDCD /* RFWindowTouchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFWindowTouchDemoViewController.h; sourceTree = "<group>"; };
+		D55F9DFC195D3E580004DDCD /* RFWindowTouchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFWindowTouchDemoViewController.m; sourceTree = "<group>"; };
 		D55FD83E192F418700ECA92B /* UINavigationController+RFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RFKit.h"; sourceTree = "<group>"; };
 		D55FD83F192F418700ECA92B /* UINavigationController+RFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RFKit.m"; sourceTree = "<group>"; };
 		D55FD842192F41FE00ECA92B /* RFDrawImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDrawImage.h; sourceTree = "<group>"; };
@@ -1130,6 +1138,7 @@
 				D549014818FB92B500EDA527 /* RFTableViewCellHeightDelegate */,
 				D5200745178D01CE00FEA64B /* RFTableViewPullToFetchPlugin */,
 				D58D09A0195187F7003A0463 /* RFTimer */,
+				D55F9DF4195D3C420004DDCD /* RFWindow */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1263,6 +1272,18 @@
 				D5B20E2D193718F700CBC939 /* WarAndPeace.plist */,
 			);
 			path = RFTableViewCellHeightDelegate;
+			sourceTree = "<group>";
+		};
+		D55F9DF4195D3C420004DDCD /* RFWindow */ = {
+			isa = PBXGroup;
+			children = (
+				D55F9DF6195D3D800004DDCD /* RFWindow.storyboard */,
+				D55F9DF8195D3DA00004DDCD /* RFWindowDemoListViewController.h */,
+				D55F9DF9195D3DA00004DDCD /* RFWindowDemoListViewController.m */,
+				D55F9DFB195D3E580004DDCD /* RFWindowTouchDemoViewController.h */,
+				D55F9DFC195D3E580004DDCD /* RFWindowTouchDemoViewController.m */,
+			);
+			path = RFWindow;
 			sourceTree = "<group>";
 		};
 		D55FD841192F41FE00ECA92B /* RFDrawImage */ = {
@@ -1499,6 +1520,7 @@
 				D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */,
 				D5200775178E53AD00FEA64B /* 800x600.png in Resources */,
 				D50EAAEF195BBAAD00548BF6 /* RFSegue.storyboard in Resources */,
+				D55F9DF7195D3D800004DDCD /* RFWindow.storyboard in Resources */,
 				D51D83F117977E920086D902 /* RFSidePanel.xib in Resources */,
 				D51D83F217977E920086D902 /* SidePanel-bg.png in Resources */,
 				D51D83F317977E920086D902 /* SidePanel-off.active.png in Resources */,
@@ -1628,6 +1650,7 @@
 				D549010E18FB7FD500EDA527 /* RFAPI.m in Sources */,
 				D5B9EDC01907A17C0093570F /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D598F4AB18D1499B009C142D /* RFLine.m in Sources */,
+				D55F9DFA195D3DA00004DDCD /* RFWindowDemoListViewController.m in Sources */,
 				D5B9EDB81907A08C0093570F /* JSONModelArray.m in Sources */,
 				D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */,
 				D549013718FB8FA600EDA527 /* RFSVProgressMessageManager.m in Sources */,
@@ -1644,6 +1667,7 @@
 				D51D8429179780C00086D902 /* RFSeguePopButton.m in Sources */,
 				D51D842A179780C00086D902 /* RFContainedSegue.m in Sources */,
 				D51D842B179780C00086D902 /* RFNavigationPushAsRootSegue.m in Sources */,
+				D55F9DFD195D3E580004DDCD /* RFWindowTouchDemoViewController.m in Sources */,
 				D51D842C179780C00086D902 /* RFNavigationPushSegue.m in Sources */,
 				D51D842D179780C00086D902 /* RFSegue.m in Sources */,
 				D51D8435179781480086D902 /* SSKeychain.m in Sources */,
