@@ -89,9 +89,9 @@
                         <constraints>
                             <constraint firstItem="Cnf-nF-0YE" firstAttribute="bottom" secondItem="H8n-OK-lCi" secondAttribute="bottom" constant="-4" id="4ek-8O-wdk"/>
                             <constraint firstItem="Cnf-nF-0YE" firstAttribute="leading" secondItem="zk2-gZ-hIu" secondAttribute="leading" id="CEs-f2-m6p"/>
+                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="top" secondItem="RJs-6O-d0B" secondAttribute="bottom" id="IOu-H9-x6V"/>
+                            <constraint firstItem="5EW-xT-Xlk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cnf-nF-0YE" secondAttribute="bottom" constant="5" id="SU4-Ov-RhS"/>
                             <constraint firstAttribute="trailing" secondItem="Cnf-nF-0YE" secondAttribute="trailing" id="Ta2-sO-e2I"/>
-                            <constraint firstItem="5EW-xT-Xlk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cnf-nF-0YE" secondAttribute="bottom" constant="5" id="lAf-t3-bdO"/>
-                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="top" secondItem="RJs-6O-d0B" secondAttribute="bottom" id="qVN-7W-qCr"/>
                             <constraint firstItem="Cnf-nF-0YE" firstAttribute="trailing" secondItem="H8n-OK-lCi" secondAttribute="trailing" constant="12" id="ra4-Gd-lyI"/>
                         </constraints>
                     </view>

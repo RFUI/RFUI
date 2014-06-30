@@ -35,14 +35,8 @@ RFUIInterfaceOrientationSupportDefault
 }
 
 - (IBAction)onPauseResumeButtonTapped:(UIButton *)sender {
-    if (sender.selected) {
-        self.timer.suspended = NO;
-        sender.selected = NO;
-    }
-    else {
-        self.timer.suspended = YES;
-        sender.selected = YES;
-    }
+    sender.selected = !sender.selected;
+    self.timer.suspended = sender.selected;
 }
 
 @end
