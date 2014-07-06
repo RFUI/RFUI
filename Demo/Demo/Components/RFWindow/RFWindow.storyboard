@@ -105,7 +105,7 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QYo-nF-IEX" secondAttribute="trailing" constant="15" id="xVm-XC-dm8"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKi-CO-bJk">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKi-CO-bJk">
                                 <rect key="frame" x="0.0" y="0.0" width="160" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>

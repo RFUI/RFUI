@@ -23,7 +23,6 @@
 		D51D83CB17977E920086D902 /* RFCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833E17977E910086D902 /* RFCheckbox.m */; };
 		D51D83CC17977E920086D902 /* NSManagedObject+RFCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834117977E910086D902 /* NSManagedObject+RFCoreData.m */; };
 		D51D83CD17977E920086D902 /* NSManagedObject+RFCoreDataSyncPurge.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834317977E910086D902 /* NSManagedObject+RFCoreDataSyncPurge.m */; };
-		D51D83CF17977E920086D902 /* RFCoreDataAutoFetchTableViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D834817977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.m */; };
 		D51D83DC17977E920086D902 /* RFGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836617977E910086D902 /* RFGridView.m */; };
 		D51D83DD17977E920086D902 /* RFImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836917977E910086D902 /* RFImageCropperView.m */; };
 		D51D83DE17977E920086D902 /* RFImageGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D836C17977E910086D902 /* RFImageGallery.m */; };
@@ -159,6 +158,7 @@
 		D56DF68C194FF48300CB1B14 /* RFSliderViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF68B194FF48300CB1B14 /* RFSliderViewDemoViewController.m */; };
 		D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */; };
 		D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */; };
+		D5705EEC19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5705EEA19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m */; };
 		D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D2C1938333700F21650 /* RootNavigationController.m */; };
 		D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */; };
 		D58D099F19515ED2003A0463 /* RFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D099E19515ED2003A0463 /* RFTimer.m */; };
@@ -218,9 +218,6 @@
 		D51D834217977E910086D902 /* NSManagedObject+RFCoreDataSyncPurge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+RFCoreDataSyncPurge.h"; sourceTree = "<group>"; };
 		D51D834317977E910086D902 /* NSManagedObject+RFCoreDataSyncPurge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+RFCoreDataSyncPurge.m"; sourceTree = "<group>"; };
 		D51D834417977E910086D902 /* RFCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCoreData.h; sourceTree = "<group>"; };
-		D51D834617977E910086D902 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
-		D51D834717977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFCoreDataAutoFetchTableViewPlugin.h; sourceTree = "<group>"; };
-		D51D834817977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFCoreDataAutoFetchTableViewPlugin.m; sourceTree = "<group>"; };
 		D51D835017977E910086D902 /* change.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = change.log; sourceTree = "<group>"; };
 		D51D836517977E910086D902 /* RFGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFGridView.h; sourceTree = "<group>"; };
 		D51D836617977E910086D902 /* RFGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFGridView.m; sourceTree = "<group>"; };
@@ -484,6 +481,9 @@
 		D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleLogger.m; sourceTree = "<group>"; };
 		D56DF69019500D7A00CB1B14 /* SimpleConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleConsoleView.h; sourceTree = "<group>"; };
 		D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleConsoleView.m; sourceTree = "<group>"; };
+		D5705EE819695D3E0059A934 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
+		D5705EE919695D3E0059A934 /* RFTableViewAutoFetchDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewAutoFetchDataSource.h; sourceTree = "<group>"; };
+		D5705EEA19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewAutoFetchDataSource.m; sourceTree = "<group>"; };
 		D58A5D2B1938333700F21650 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		D58A5D2C1938333700F21650 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		D58A5D30193836D000F21650 /* AutoLayoutMultiLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMultiLineLabel.h; sourceTree = "<group>"; };
@@ -623,16 +623,6 @@
 				D51D834417977E910086D902 /* RFCoreData.h */,
 			);
 			path = RFCoreData;
-			sourceTree = "<group>";
-		};
-		D51D834517977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				D51D834617977E910086D902 /* Readme.md */,
-				D51D834717977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.h */,
-				D51D834817977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin.m */,
-			);
-			path = RFCoreDataAutoFetchTableViewPlugin;
 			sourceTree = "<group>";
 		};
 		D51D834F17977E910086D902 /* RFGridView */ = {
@@ -928,7 +918,6 @@
 				D51D833517977E910086D902 /* RFButton */,
 				D51D833C17977E910086D902 /* RFCheckbox */,
 				D51D833F17977E910086D902 /* RFCoreData */,
-				D51D834517977E910086D902 /* RFCoreDataAutoFetchTableViewPlugin */,
 				D549012418FB8BF300EDA527 /* RFDelegateChain */,
 				D55FD841192F41FE00ECA92B /* RFDrawImage */,
 				D51D834F17977E910086D902 /* RFGridView */,
@@ -945,6 +934,7 @@
 				D56DF680194FF0F800CB1B14 /* RFSliderView */,
 				D51D83A317977E920086D902 /* RFSound */,
 				D51D83A617977E920086D902 /* RFStatusBarNotificationController */,
+				D5705EE719695D3E0059A934 /* RFTableViewAutoFetchDataSource */,
 				D549012818FB8BFE00EDA527 /* RFTableViewCellHeightDelegate */,
 				D5B20E3E19381B2800CBC939 /* RFTableViewPullToFetchPlugin */,
 				D51D83AF17977E920086D902 /* RFTabView */,
@@ -1353,6 +1343,16 @@
 			path = "Simple Console";
 			sourceTree = "<group>";
 		};
+		D5705EE719695D3E0059A934 /* RFTableViewAutoFetchDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D5705EE819695D3E0059A934 /* Readme.md */,
+				D5705EE919695D3E0059A934 /* RFTableViewAutoFetchDataSource.h */,
+				D5705EEA19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m */,
+			);
+			path = RFTableViewAutoFetchDataSource;
+			sourceTree = "<group>";
+		};
 		D58A5D2E1938365500F21650 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -1563,6 +1563,7 @@
 				D52006CC178CF4B100FEA64B /* NSObject+RFKit.m in Sources */,
 				D52006CD178CF4B100FEA64B /* NSString+RFKit.m in Sources */,
 				D52006CE178CF4B100FEA64B /* NSURL+RFKit.m in Sources */,
+				D5705EEC19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m in Sources */,
 				D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */,
 				D56DF683194FF12400CB1B14 /* RFSliderView.m in Sources */,
 				D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */,
@@ -1623,7 +1624,6 @@
 				D56CDDE3185AE7580050241B /* RFAssetsCache.m in Sources */,
 				D51D83CC17977E920086D902 /* NSManagedObject+RFCoreData.m in Sources */,
 				D51D83CD17977E920086D902 /* NSManagedObject+RFCoreDataSyncPurge.m in Sources */,
-				D51D83CF17977E920086D902 /* RFCoreDataAutoFetchTableViewPlugin.m in Sources */,
 				D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */,
 				D549011F18FB820200EDA527 /* AFNetworkReachabilityManager.m in Sources */,
 				D51D83DC17977E920086D902 /* RFGridView.m in Sources */,
