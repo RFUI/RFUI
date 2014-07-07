@@ -11,7 +11,6 @@
 #import "UITableView+RFKit.h"
 
 @interface RFTableViewCellHeightDelegateDemoViewController ()
-@property (strong, nonatomic) NSArray *tableData;
 @end
 
 @implementation RFTableViewCellHeightDelegateDemoViewController

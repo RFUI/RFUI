@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "RFTableViewCellHeightDelegate.h"
 
-@interface RFTableViewCellHeightDelegateDemoViewController : UIViewController <
+@interface RFTableViewCellHeightDelegateDemoViewController : UITableViewController <
     RFTableViewCellHeightDelegate
 >
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *tableData;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *editItem;
 - (IBAction)onEditItemTapped:(UIBarButtonItem *)sender;

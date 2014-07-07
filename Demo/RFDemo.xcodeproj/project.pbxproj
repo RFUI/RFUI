@@ -121,6 +121,7 @@
 		D5200773178E53AD00FEA64B /* 300x600.png in Resources */ = {isa = PBXBuildFile; fileRef = D520076F178E53AD00FEA64B /* 300x600.png */; };
 		D5200774178E53AD00FEA64B /* 50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = D5200770178E53AD00FEA64B /* 50x50.png */; };
 		D5200775178E53AD00FEA64B /* 800x600.png in Resources */ = {isa = PBXBuildFile; fileRef = D5200771178E53AD00FEA64B /* 800x600.png */; };
+		D532A393196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D532A392196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.m */; };
 		D549010E18FB7FD500EDA527 /* RFAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D549010D18FB7FD500EDA527 /* RFAPI.m */; };
 		D549011F18FB820200EDA527 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D549011418FB820200EDA527 /* AFNetworkReachabilityManager.m */; };
 		D549012018FB820200EDA527 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D549011618FB820200EDA527 /* AFSecurityPolicy.m */; };
@@ -415,6 +416,8 @@
 		D520076F178E53AD00FEA64B /* 300x600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 300x600.png; sourceTree = "<group>"; };
 		D5200770178E53AD00FEA64B /* 50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50x50.png; sourceTree = "<group>"; };
 		D5200771178E53AD00FEA64B /* 800x600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 800x600.png; sourceTree = "<group>"; };
+		D532A391196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewCellHeightDelegateAsynchronousDemoViewController.h; sourceTree = "<group>"; };
+		D532A392196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCellHeightDelegateAsynchronousDemoViewController.m; sourceTree = "<group>"; };
 		D549010C18FB7FD500EDA527 /* RFAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAPI.h; sourceTree = "<group>"; };
 		D549010D18FB7FD500EDA527 /* RFAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAPI.m; sourceTree = "<group>"; };
 		D549011318FB820200EDA527 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
@@ -1257,6 +1260,8 @@
 			isa = PBXGroup;
 			children = (
 				D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */,
+				D532A391196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.h */,
+				D532A392196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.m */,
 				D549014B18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.h */,
 				D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */,
 				D5B20E2D193718F700CBC939 /* WarAndPeace.plist */,
@@ -1639,6 +1644,7 @@
 				D50EAAF2195BBAD400548BF6 /* RFSegueDemoListViewController.m in Sources */,
 				D56CDDE5185AE7580050241B /* RFAssetsCacheData.m in Sources */,
 				D51D83F017977E920086D902 /* RFSidePanel.m in Sources */,
+				D532A393196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.m in Sources */,
 				D51D83F717977E920086D902 /* RFSlideNavigationController.m in Sources */,
 				D598F4A118D14971009C142D /* UIResponder+RFKit.m in Sources */,
 				D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */,
