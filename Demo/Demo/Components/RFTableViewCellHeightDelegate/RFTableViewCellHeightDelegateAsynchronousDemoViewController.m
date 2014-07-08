@@ -18,8 +18,10 @@
     [super awakeFromNib];
 
     self.cellHeightManager = [[RFTableViewCellHeightDelegate alloc] init];
-    NSMutableArray *data = [NSMutableArray arrayWithCapacity:10];
-    for (int i = 1; i <= 10; i++) {
+
+//    return;
+    NSMutableArray *data = [NSMutableArray arrayWithCapacity:20];
+    for (int i = 1; i <= 20; i++) {
         NSMutableString *item = [NSMutableString new];
         for (int j = i; j > 0; j--) {
             [item appendFormat:@"%d<br>", j];
@@ -36,13 +38,23 @@
 }
 
 - (void)tableView:(UITableView *)tableView configureCell:(id)aCell forIndexPath:(NSIndexPath *)indexPath offscreenRendering:(BOOL)isOffscreenRendering {
+    if (isOffscreenRendering) return;
+
     RDCHWebCell *cell = aCell;
-    NSString *html = [NSString stringWithFormat:@"<div style=\"line-height:1.5;color:#555\">%@</div>", self.tableData[indexPath.row]];
+    NSString *content = self.tableData[indexPath.row];
+    NSString *html = [NSString stringWithFormat:@"<div style=\"line-height:1.5;color:#555\">%@</div>", content];
+    cell.debugContent = content;
     [cell.webView loadHTMLString:html baseURL:nil];
 }
 
 - (NSString *)tableView:(UITableView *)tableView cellReuseIdentifierForRowAtIndexPath:(NSIndexPath *)indexPath {
     return @"WebCell";
+}
+
+- (IBAction)reloadTable:(id)sender {
+//    [self.cellHeightManager invalidateCanonicalCellHeight];
+    [self.cellHeightManager invalidateCellHeightCache];
+    [self.tableView reloadData];
 }
 
 @end
@@ -62,6 +74,7 @@
     self.heightLayoutConstraint.constant = webView.scrollView.contentSize.height;
 
     UITableView *tableView = (id)[self superviewOfClass:[UITableView class]];
+    if (!tableView) return;
     NSIndexPath *indexPath = [tableView indexPathForCell:self];
     if (!indexPath) return;
 
@@ -70,7 +83,7 @@
         CGFloat height = [ch calculateCellHeightWithCell:self tableView:tableView atIndexPath:indexPath];
         dout_float(height)
         [ch setCanonicalHeight:height atIndexPath:indexPath];
-        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     }
 }
 

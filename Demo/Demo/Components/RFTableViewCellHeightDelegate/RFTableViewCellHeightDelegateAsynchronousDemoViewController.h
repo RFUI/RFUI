@@ -18,4 +18,6 @@
 >
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightLayoutConstraint;
+
+@property (copy, nonatomic) NSString *debugContent;
 @end

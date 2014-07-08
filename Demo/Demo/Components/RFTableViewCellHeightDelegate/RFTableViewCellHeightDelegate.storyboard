@@ -190,7 +190,7 @@
                                         <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-yL-p0x">
                                             <rect key="frame" x="0.0" y="0.0" width="252" height="122"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="750" constant="10" id="0Xb-Ed-ki8"/>
                                             </constraints>
@@ -223,7 +223,13 @@
                             <outlet property="delegate" destination="JHA-Gv-ThL" id="G6h-DG-Rlm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Asynchrony Test" id="HRm-X3-qqG"/>
+                    <navigationItem key="navigationItem" title="Asynchrony Test" id="HRm-X3-qqG">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="Rsq-rR-u7N">
+                            <connections>
+                                <action selector="reloadTable:" destination="JHA-Gv-ThL" id="hdN-dJ-hUI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DS6-xd-Nkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
