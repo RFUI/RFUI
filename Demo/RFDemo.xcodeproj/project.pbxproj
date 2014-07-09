@@ -184,6 +184,7 @@
 		D5B9EDBD1907A0BF0093570F /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDBC1907A0BF0093570F /* JSONValueTransformer.m */; };
 		D5B9EDC01907A17C0093570F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDBF1907A17C0093570F /* AFNetworkActivityIndicatorManager.m */; };
 		D5B9EDC31907A60E0093570F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDC21907A60E0093570F /* AFURLSessionManager.m */; };
+		D5BE7E2F196CDC820077F71A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BE7E2E196CDC820077F71A /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -532,6 +533,7 @@
 		D5B9EDBF1907A17C0093570F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		D5B9EDC11907A60E0093570F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		D5B9EDC21907A60E0093570F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		D5BE7E2E196CDC820077F71A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../RFDemo/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -888,6 +890,7 @@
 		D5200525178CF43B00FEA64B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D5BE7E2E196CDC820077F71A /* Images.xcassets */,
 				D520076D178E53AD00FEA64B /* TestImage */,
 				D5200526178CF43B00FEA64B /* Demo-Info.plist */,
 				D5200527178CF43B00FEA64B /* InfoPlist.strings */,
@@ -1533,6 +1536,7 @@
 				D56DF689194FF46200CB1B14 /* RFSliderView.storyboard in Resources */,
 				D51D83F517977E920086D902 /* SidePanel-on.active.png in Resources */,
 				D51D83F617977E920086D902 /* SidePanel-on.png in Resources */,
+				D5BE7E2F196CDC820077F71A /* Images.xcassets in Resources */,
 				D51D83FA17977E920086D902 /* RFStatusBarNotificationWindow.xib in Resources */,
 				D5B20E3019371D1500CBC939 /* LICENSE-SVProgressHUD in Resources */,
 			);
@@ -1769,6 +1773,8 @@
 		D5200542178CF43C00FEA64B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1793,6 +1799,8 @@
 		D5200543178CF43C00FEA64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
