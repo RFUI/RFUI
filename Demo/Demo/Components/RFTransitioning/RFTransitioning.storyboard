@@ -36,13 +36,25 @@
                                             <segue destination="E0e-ve-yfp" kind="modal" id="Qpp-AI-56C"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lmr-QV-R5E">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="VGE-f4-CAx" style="IBUITableViewCellStyleDefault" id="lmr-QV-R5E">
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lmr-QV-R5E" id="Xbl-bR-tg2">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Navigation Bar Hidden Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VGE-f4-CAx">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pLh-dv-fS0" kind="modal" id="5Nu-AH-jqE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -173,9 +185,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aee-mC-Dng" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="-384"/>
+            <point key="canvasLocation" x="1143" y="-768"/>
         </scene>
-        <!--Transitioning Move In From Bottom View Controller-->
+        <!--Transitioning Move In From Bottom View Controller - Try Pull Down-->
         <scene sceneID="TKD-uF-KtF">
             <objects>
                 <viewController id="AnK-IE-YyC" customClass="RFDTransitioningMoveInFromBottomViewController" sceneMemberID="viewController">
@@ -188,11 +200,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Okf-jw-vdO"/>
+                    <navigationItem key="navigationItem" title="Try Pull Down" id="Okf-jw-vdO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ST-pK-XVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="-1095"/>
+            <point key="canvasLocation" x="1143" y="-1508"/>
         </scene>
         <!--Transitioning Navigation Controller-->
         <scene sceneID="fzz-Z6-57L">
@@ -243,7 +255,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="To3-M1-pHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1621" y="-384"/>
+            <point key="canvasLocation" x="1609" y="-768"/>
+        </scene>
+        <!--Transitioning Navigation Controller-->
+        <scene sceneID="LtA-Lg-7Nb">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="pLh-dv-fS0" customClass="RFDTransitioningNavigationController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="17l-Vk-C3b"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sAi-NW-zi4" customClass="RFDTransitioningNavigationBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rzk-U4-lyq" kind="relationship" relationship="rootViewController" id="EXO-3n-7yK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKT-By-Mwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="268"/>
+        </scene>
+        <!--Transitioning Bar Hidden Source View Controller-->
+        <scene sceneID="yrY-8X-iBZ">
+            <objects>
+                <viewController id="rzk-U4-lyq" customClass="RFDTransitioningBarHiddenSourceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nT9-dg-xCb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ywd-w4-lBo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="39a-b0-hqx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGL-7C-Dhp">
+                                <rect key="frame" x="136" y="106" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vEP-T5-MY5" kind="push" id="0I5-OM-aW8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JsF-6V-1cm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vao-o6-Z9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="267"/>
+        </scene>
+        <!--Transitioning Bar Hidden Test View Controller-->
+        <scene sceneID="LS4-h0-S2K">
+            <objects>
+                <viewController id="vEP-T5-MY5" customClass="RFDTransitioningBarHiddenTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hHj-yp-Vjd"/>
+                        <viewControllerLayoutGuide type="bottom" id="gcO-9i-DlA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="soV-vs-cJe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to pop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieb-oc-wsQ">
+                                <rect key="frame" x="95" y="80" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ieb-oc-wsQ" firstAttribute="centerX" secondItem="soV-vs-cJe" secondAttribute="centerX" id="RY7-1k-GLT"/>
+                            <constraint firstItem="Ieb-oc-wsQ" firstAttribute="top" secondItem="hHj-yp-Vjd" secondAttribute="bottom" constant="60" id="nAg-Z5-5mM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GdP-z5-U4e"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqs-sw-Rtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="267"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

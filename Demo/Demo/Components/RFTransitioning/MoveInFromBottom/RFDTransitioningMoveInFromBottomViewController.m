@@ -2,9 +2,6 @@
 #import "RFDTransitioningMoveInFromBottomViewController.h"
 #import "RFMoveInFromBottomTransitioning.h"
 
-@interface RFDTransitioningMoveInFromBottomViewController ()
-@end
-
 @implementation RFDTransitioningMoveInFromBottomViewController
 RFUIInterfaceOrientationSupportDefault
 

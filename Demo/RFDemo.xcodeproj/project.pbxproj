@@ -174,6 +174,8 @@
 		D58C5DF91988E39B003CBF7E /* RFDTransitioningMoveInFromBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5DF81988E39B003CBF7E /* RFDTransitioningMoveInFromBottomViewController.m */; };
 		D58C5DFC1988E626003CBF7E /* RFDMagicMoveSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5DFB1988E626003CBF7E /* RFDMagicMoveSourceViewController.m */; };
 		D58C5DFF1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5DFE1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m */; };
+		D58C5E031988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5E021988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m */; };
+		D58C5E061988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5E051988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m */; };
 		D58D099F19515ED2003A0463 /* RFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D099E19515ED2003A0463 /* RFTimer.m */; };
 		D58D09A219518809003A0463 /* RFTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D09A119518809003A0463 /* RFTimer.storyboard */; };
 		D58D09A519518826003A0463 /* RFTimerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D09A419518826003A0463 /* RFTimerDemoViewController.m */; };
@@ -528,6 +530,10 @@
 		D58C5DFB1988E626003CBF7E /* RFDMagicMoveSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDMagicMoveSourceViewController.m; sourceTree = "<group>"; };
 		D58C5DFD1988E829003CBF7E /* RFDMagicMoveDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDMagicMoveDestinationViewController.h; sourceTree = "<group>"; };
 		D58C5DFE1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDMagicMoveDestinationViewController.m; sourceTree = "<group>"; };
+		D58C5E011988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDTransitioningBarHiddenTestViewController.h; sourceTree = "<group>"; };
+		D58C5E021988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDTransitioningBarHiddenTestViewController.m; sourceTree = "<group>"; };
+		D58C5E041988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDTransitioningBarHiddenSourceViewController.h; sourceTree = "<group>"; };
+		D58C5E051988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDTransitioningBarHiddenSourceViewController.m; sourceTree = "<group>"; };
 		D58D099D19515ED2003A0463 /* RFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTimer.h; sourceTree = "<group>"; };
 		D58D099E19515ED2003A0463 /* RFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTimer.m; sourceTree = "<group>"; };
 		D58D09A119518809003A0463 /* RFTimer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFTimer.storyboard; sourceTree = "<group>"; };
@@ -1458,6 +1464,7 @@
 		D58C5DEC1988E02D003CBF7E /* RFTransitioning */ = {
 			isa = PBXGroup;
 			children = (
+				D58C5E001988EAE6003CBF7E /* Bar Hidden */,
 				D58C5DF61988E366003CBF7E /* MagicMove */,
 				D58C5DF51988E35C003CBF7E /* MoveInFromBottom */,
 				D58C5DED1988E074003CBF7E /* RFTransitioning.storyboard */,
@@ -1485,6 +1492,17 @@
 				D58C5DFE1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m */,
 			);
 			path = MagicMove;
+			sourceTree = "<group>";
+		};
+		D58C5E001988EAE6003CBF7E /* Bar Hidden */ = {
+			isa = PBXGroup;
+			children = (
+				D58C5E041988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.h */,
+				D58C5E051988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m */,
+				D58C5E011988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.h */,
+				D58C5E021988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m */,
+			);
+			path = "Bar Hidden";
 			sourceTree = "<group>";
 		};
 		D58D099C19515EB2003A0463 /* RFTimer */ = {
@@ -1669,6 +1687,7 @@
 				D5B9EDC31907A60E0093570F /* AFURLSessionManager.m in Sources */,
 				D52006C5178CF4B100FEA64B /* NSBundle+RFKit.m in Sources */,
 				D56CDDEF185AE9ED0050241B /* RFAssetsCacheDemoViewController.m in Sources */,
+				D58C5E031988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m in Sources */,
 				D52006C6178CF4B100FEA64B /* NSDate+RFKit.m in Sources */,
 				D5B9EDB71907A08C0093570F /* JSONModel.m in Sources */,
 				D52006C7178CF4B100FEA64B /* NSDateFormatter+RFKit.m in Sources */,
@@ -1703,6 +1722,7 @@
 				D58D099F19515ED2003A0463 /* RFTimer.m in Sources */,
 				D52006D5178CF4B100FEA64B /* UIStoryboard+RFKit.m in Sources */,
 				D52006D6178CF4B100FEA64B /* UITableView+RFKit.m in Sources */,
+				D58C5E061988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m in Sources */,
 				D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */,
 				D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */,
 				D52006D7178CF4B100FEA64B /* UIView+RFAnimate.m in Sources */,

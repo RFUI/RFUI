@@ -12,6 +12,10 @@
 
 @end
 
-
 @interface RFDTransitioningNavigationBar : UINavigationBar
+@end
+
+@interface RFDTransitioningBarHiddenControl : NSObject <
+    UINavigationControllerDelegate
+>
 @end
