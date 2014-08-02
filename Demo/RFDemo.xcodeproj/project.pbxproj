@@ -199,6 +199,7 @@
 		D5B9EDC01907A17C0093570F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDBF1907A17C0093570F /* AFNetworkActivityIndicatorManager.m */; };
 		D5B9EDC31907A60E0093570F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDC21907A60E0093570F /* AFURLSessionManager.m */; };
 		D5BE7E2F196CDC820077F71A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BE7E2E196CDC820077F71A /* Images.xcassets */; };
+		D5E72B59198D06EF0048B677 /* RFAPICacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B58198D06EF0048B677 /* RFAPICacheManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -576,6 +577,8 @@
 		D5B9EDC11907A60E0093570F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		D5B9EDC21907A60E0093570F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		D5BE7E2E196CDC820077F71A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../RFDemo/Images.xcassets; sourceTree = "<group>"; };
+		D5E72B57198D06EF0048B677 /* RFAPICacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAPICacheManager.h; sourceTree = "<group>"; };
+		D5E72B58198D06EF0048B677 /* RFAPICacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAPICacheManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1243,9 +1246,11 @@
 		D549010B18FB7FD500EDA527 /* RFAPI */ = {
 			isa = PBXGroup;
 			children = (
-				D5B9EDA419079F940093570F /* RFAPIDefine */,
 				D549010C18FB7FD500EDA527 /* RFAPI.h */,
 				D549010D18FB7FD500EDA527 /* RFAPI.m */,
+				D5E72B57198D06EF0048B677 /* RFAPICacheManager.h */,
+				D5E72B58198D06EF0048B677 /* RFAPICacheManager.m */,
+				D5B9EDA419079F940093570F /* RFAPIDefine */,
 			);
 			path = RFAPI;
 			sourceTree = "<group>";
@@ -1787,6 +1792,7 @@
 				D598F4A118D14971009C142D /* UIResponder+RFKit.m in Sources */,
 				D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */,
 				D51D83F817977E920086D902 /* RFSoundService.m in Sources */,
+				D5E72B59198D06EF0048B677 /* RFAPICacheManager.m in Sources */,
 				D58C5DFF1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m in Sources */,
 				D51000C8195BF53100239810 /* RFPresentSegue.m in Sources */,
 				D51D83F917977E920086D902 /* RFStatusBarNotificationWindow.m in Sources */,
