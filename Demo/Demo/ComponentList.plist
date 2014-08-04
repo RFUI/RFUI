@@ -24,6 +24,16 @@
 	</dict>
 	<dict>
 		<key>Name</key>
+		<string>RFNavigationController</string>
+		<key>Status</key>
+		<string>TEST</string>
+		<key>Detail</key>
+		<string>Testing</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
 		<string>RFScrollViewPageControl</string>
 		<key>Status</key>
 		<string>Alpha</string>

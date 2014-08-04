@@ -34,7 +34,12 @@
     NSString *stroyboardName = [(ComponentListCell *)[tableView cellForRowAtIndexPath:indexPath] stroyboardName];
     if (stroyboardName) {
         UIViewController *vc = [[UIStoryboard storyboardWithName:stroyboardName bundle:nil] instantiateInitialViewController];
-        [self.navigationController pushViewController:vc animated:YES];
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            [self presentViewController:vc animated:YES completion:nil];
+        }
+        else {
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
