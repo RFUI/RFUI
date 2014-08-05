@@ -201,6 +201,8 @@
 		D5B9EDC31907A60E0093570F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B9EDC21907A60E0093570F /* AFURLSessionManager.m */; };
 		D5BE7E2F196CDC820077F71A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BE7E2E196CDC820077F71A /* Images.xcassets */; };
 		D5D1AFE8198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D1AFE7198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.m */; };
+		D5D1AFF5198F49CC00FE0656 /* UITextFiledDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D1AFF2198F49CC00FE0656 /* UITextFiledDelegateChain.m */; };
+		D5D1AFF6198F49CC00FE0656 /* UITextViewDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D1AFF4198F49CC00FE0656 /* UITextViewDelegateChain.m */; };
 		D5E72B59198D06EF0048B677 /* RFAPICacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B58198D06EF0048B677 /* RFAPICacheManager.m */; };
 		D5E72B5D198D07720048B677 /* RFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B5C198D07720048B677 /* RFNavigationController.m */; };
 		D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E72B5F198D0D460048B677 /* RFNavigationController.storyboard */; };
@@ -587,6 +589,10 @@
 		D5BE7E2E196CDC820077F71A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../RFDemo/Images.xcassets; sourceTree = "<group>"; };
 		D5D1AFE6198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDNavigationStatusBarHiddenViewController.h; sourceTree = "<group>"; };
 		D5D1AFE7198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDNavigationStatusBarHiddenViewController.m; sourceTree = "<group>"; };
+		D5D1AFF1198F49CC00FE0656 /* UITextFiledDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFiledDelegateChain.h; sourceTree = "<group>"; };
+		D5D1AFF2198F49CC00FE0656 /* UITextFiledDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFiledDelegateChain.m; sourceTree = "<group>"; };
+		D5D1AFF3198F49CC00FE0656 /* UITextViewDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewDelegateChain.h; sourceTree = "<group>"; };
+		D5D1AFF4198F49CC00FE0656 /* UITextViewDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewDelegateChain.m; sourceTree = "<group>"; };
 		D5E72B57198D06EF0048B677 /* RFAPICacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAPICacheManager.h; sourceTree = "<group>"; };
 		D5E72B58198D06EF0048B677 /* RFAPICacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAPICacheManager.m; sourceTree = "<group>"; };
 		D5E72B5B198D07720048B677 /* RFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNavigationController.h; sourceTree = "<group>"; };
@@ -1277,6 +1283,7 @@
 		D549012418FB8BF300EDA527 /* RFDelegateChain */ = {
 			isa = PBXGroup;
 			children = (
+				D5D1AFF0198F49CC00FE0656 /* UIKit */,
 				D549012518FB8BF300EDA527 /* RFDelegateChain.h */,
 				D549012618FB8BF300EDA527 /* RFDelegateChain.m */,
 			);
@@ -1609,6 +1616,17 @@
 			path = Frameworks/JSONModel;
 			sourceTree = "<group>";
 		};
+		D5D1AFF0198F49CC00FE0656 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D5D1AFF1198F49CC00FE0656 /* UITextFiledDelegateChain.h */,
+				D5D1AFF2198F49CC00FE0656 /* UITextFiledDelegateChain.m */,
+				D5D1AFF3198F49CC00FE0656 /* UITextViewDelegateChain.h */,
+				D5D1AFF4198F49CC00FE0656 /* UITextViewDelegateChain.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		D5E72B5A198D07500048B677 /* RFNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1778,6 +1796,7 @@
 				D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */,
 				D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */,
 				D52006D7178CF4B100FEA64B /* UIView+RFAnimate.m in Sources */,
+				D5D1AFF6198F49CC00FE0656 /* UITextViewDelegateChain.m in Sources */,
 				D52006D8178CF4B100FEA64B /* UIView+RFKit.m in Sources */,
 				D52006D9178CF4B100FEA64B /* UIViewController+RFKit.m in Sources */,
 				D52006DA178CF4B100FEA64B /* UIWebView+RFKit.m in Sources */,
@@ -1880,6 +1899,7 @@
 				D51D844D179781930086D902 /* AFHTTPRequestOperation.m in Sources */,
 				D549012018FB820200EDA527 /* AFSecurityPolicy.m in Sources */,
 				D58C5DEA1988DFCF003CBF7E /* RFMoveInFromBottomTransitioning.m in Sources */,
+				D5D1AFF5198F49CC00FE0656 /* UITextFiledDelegateChain.m in Sources */,
 				D56CDDE4185AE7580050241B /* RFAssetsCache.xcdatamodeld in Sources */,
 				D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */,
 				D51D8452179781930086D902 /* AFURLConnectionOperation.m in Sources */,
