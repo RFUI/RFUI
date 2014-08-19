@@ -10,7 +10,7 @@
 #import "RFTableViewCellHeightDelegate.h"
 
 @interface ComponentList : UITableViewController <
-    RFTableViewCellHeightDelegate
+    RFTableViewCellHeightDataSource
 >
 @property(strong, nonatomic) NSMutableArray *tableData;
 
