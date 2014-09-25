@@ -78,7 +78,7 @@ RFUIInterfaceOrientationSupportAll
     CGFloat height = self.height;
 
     // Adjust frame
-    [self.pageViews enumerateObjectsWithOptions:0 usingBlock:^(UIView * view, NSUInteger idx, BOOL *stop) {
+    [self.pageViews enumerateObjectsWithOptions:(NSEnumerationOptions)0 usingBlock:^(UIView * view, NSUInteger idx, BOOL *stop) {
         view.frame = CGRectMake(idx * width, 10, width, height - 20);
     }];
 
