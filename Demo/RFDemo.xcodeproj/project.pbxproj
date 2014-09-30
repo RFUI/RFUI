@@ -138,6 +138,9 @@
 		D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */; };
 		D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */; };
 		D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */; };
+		D551BEDD19DA318F00ED54E3 /* RFImageCropper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D551BEDC19DA318F00ED54E3 /* RFImageCropper.storyboard */; };
+		D551BEE019DA31C800ED54E3 /* RFDImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D551BEDF19DA31C800ED54E3 /* RFDImageCropperViewController.m */; };
+		D551BEE319DA3F9900ED54E3 /* UIScrollView+RFScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = D551BEE219DA3F9900ED54E3 /* UIScrollView+RFScrolling.m */; };
 		D55F9DF7195D3D800004DDCD /* RFWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55F9DF6195D3D800004DDCD /* RFWindow.storyboard */; };
 		D55F9DFA195D3DA00004DDCD /* RFWindowDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F9DF9195D3DA00004DDCD /* RFWindowDemoListViewController.m */; };
 		D55F9DFD195D3E580004DDCD /* RFWindowTouchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F9DFC195D3E580004DDCD /* RFWindowTouchDemoViewController.m */; };
@@ -473,6 +476,11 @@
 		D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCellHeightDelegateDemoViewController.m; sourceTree = "<group>"; };
 		D54D40D1185EA2E800A09A35 /* RFAssetsCacheTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCacheTestHelper.h; sourceTree = "<group>"; };
 		D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCacheTestHelper.m; sourceTree = "<group>"; };
+		D551BEDC19DA318F00ED54E3 /* RFImageCropper.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFImageCropper.storyboard; sourceTree = "<group>"; };
+		D551BEDE19DA31C800ED54E3 /* RFDImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDImageCropperViewController.h; sourceTree = "<group>"; };
+		D551BEDF19DA31C800ED54E3 /* RFDImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDImageCropperViewController.m; sourceTree = "<group>"; };
+		D551BEE119DA3F9900ED54E3 /* UIScrollView+RFScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RFScrolling.h"; sourceTree = "<group>"; };
+		D551BEE219DA3F9900ED54E3 /* UIScrollView+RFScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RFScrolling.m"; sourceTree = "<group>"; };
 		D55F9DF6195D3D800004DDCD /* RFWindow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFWindow.storyboard; sourceTree = "<group>"; };
 		D55F9DF8195D3DA00004DDCD /* RFWindowDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFWindowDemoListViewController.h; sourceTree = "<group>"; };
 		D55F9DF9195D3DA00004DDCD /* RFWindowDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFWindowDemoListViewController.m; sourceTree = "<group>"; };
@@ -1118,8 +1126,6 @@
 		D5200612178CF4B100FEA64B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D55FD83E192F418700ECA92B /* UINavigationController+RFKit.h */,
-				D55FD83F192F418700ECA92B /* UINavigationController+RFKit.m */,
 				D5200613178CF4B100FEA64B /* UIAlertView+RFKit.h */,
 				D5200614178CF4B100FEA64B /* UIAlertView+RFKit.m */,
 				D5200615178CF4B100FEA64B /* UIButton+RFKit.h */,
@@ -1130,8 +1136,12 @@
 				D520061A178CF4B100FEA64B /* UIDevice+RFKit.m */,
 				D520061B178CF4B100FEA64B /* UIImage+RFKit.h */,
 				D520061C178CF4B100FEA64B /* UIImage+RFKit.m */,
+				D55FD83E192F418700ECA92B /* UINavigationController+RFKit.h */,
+				D55FD83F192F418700ECA92B /* UINavigationController+RFKit.m */,
 				D598F49F18D14971009C142D /* UIResponder+RFKit.h */,
 				D598F4A018D14971009C142D /* UIResponder+RFKit.m */,
+				D551BEE119DA3F9900ED54E3 /* UIScrollView+RFScrolling.h */,
+				D551BEE219DA3F9900ED54E3 /* UIScrollView+RFScrolling.m */,
 				D520061D178CF4B100FEA64B /* UISearchBar+RFKit.h */,
 				D520061E178CF4B100FEA64B /* UISearchBar+RFKit.m */,
 				D520061F178CF4B100FEA64B /* UIStoryboard+RFKit.h */,
@@ -1196,6 +1206,7 @@
 		D5200709178CF6A300FEA64B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D551BEDB19DA317A00ED54E3 /* RFImageCropper */,
 				D56CDDE7185AE99B0050241B /* RFAssetsCache */,
 				D5E72B5E198D0CF30048B677 /* RFNavigationController */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
@@ -1344,6 +1355,16 @@
 				D5B20E2D193718F700CBC939 /* WarAndPeace.plist */,
 			);
 			path = RFTableViewCellHeightDelegate;
+			sourceTree = "<group>";
+		};
+		D551BEDB19DA317A00ED54E3 /* RFImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				D551BEDC19DA318F00ED54E3 /* RFImageCropper.storyboard */,
+				D551BEDE19DA31C800ED54E3 /* RFDImageCropperViewController.h */,
+				D551BEDF19DA31C800ED54E3 /* RFDImageCropperViewController.m */,
+			);
+			path = RFImageCropper;
 			sourceTree = "<group>";
 		};
 		D55F9DF4195D3C420004DDCD /* RFWindow */ = {
@@ -1733,6 +1754,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5200529178CF43B00FEA64B /* InfoPlist.strings in Resources */,
+				D551BEDD19DA318F00ED54E3 /* RFImageCropper.storyboard in Resources */,
 				D5200531178CF43C00FEA64B /* Default.png in Resources */,
 				D56CDDE9185AE9B60050241B /* RFAssetsCache.storyboard in Resources */,
 				D549014018FB90F200EDA527 /* SVProgressHUD.bundle in Resources */,
@@ -1813,6 +1835,7 @@
 				D5B9EDBD1907A0BF0093570F /* JSONValueTransformer.m in Sources */,
 				D52006D2178CF4B100FEA64B /* UIDevice+RFKit.m in Sources */,
 				D52006D3178CF4B100FEA64B /* UIImage+RFKit.m in Sources */,
+				D551BEE019DA31C800ED54E3 /* RFDImageCropperViewController.m in Sources */,
 				D58C5DE91988DFCF003CBF7E /* RFMagicMoveTransitioning.m in Sources */,
 				D5E72B66198D16BE0048B677 /* RFDNavigationRootController.m in Sources */,
 				D52006D4178CF4B100FEA64B /* UISearchBar+RFKit.m in Sources */,
@@ -1824,6 +1847,7 @@
 				D52006D5178CF4B100FEA64B /* UIStoryboard+RFKit.m in Sources */,
 				D52006D6178CF4B100FEA64B /* UITableView+RFKit.m in Sources */,
 				D58C5E061988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m in Sources */,
+				D551BEE319DA3F9900ED54E3 /* UIScrollView+RFScrolling.m in Sources */,
 				D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */,
 				D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */,
 				D52006D7178CF4B100FEA64B /* UIView+RFAnimate.m in Sources */,

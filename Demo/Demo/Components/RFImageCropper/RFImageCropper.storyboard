@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uzH-Cx-Ejy">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Image Cropper-->
+        <scene sceneID="48O-L2-Uud">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="uzH-Cx-Ejy" customClass="RFDImageCropperViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XpR-eH-C0Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lj6-BN-tza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0cj-4r-lEf">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsT-ul-9Yo" customClass="RFImageCropperView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.36862745099999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JsT-ul-9Yo" firstAttribute="leading" secondItem="0cj-4r-lEf" secondAttribute="leading" id="VJy-RI-yMH"/>
+                            <constraint firstItem="Lj6-BN-tza" firstAttribute="top" secondItem="JsT-ul-9Yo" secondAttribute="bottom" id="W1s-fX-MSz"/>
+                            <constraint firstAttribute="trailing" secondItem="JsT-ul-9Yo" secondAttribute="trailing" id="dRR-N3-gov"/>
+                            <constraint firstItem="JsT-ul-9Yo" firstAttribute="top" secondItem="XpR-eH-C0Q" secondAttribute="bottom" id="kcP-hi-TLj"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="300x300" id="ceH-ro-cz1">
+                            <connections>
+                                <action selector="onCropSizeChangeTo1x1:" destination="uzH-Cx-Ejy" id="LBO-9x-aJ2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="3:4" id="tfr-za-taC">
+                            <connections>
+                                <action selector="onCropSizeChangeTo3x4:" destination="uzH-Cx-Ejy" id="XkA-Ba-x9l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="4:3" id="l8l-X3-ZIh">
+                            <connections>
+                                <action selector="onCropSizeChangeTo4x3:" destination="uzH-Cx-Ejy" id="vlr-f1-P9L"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="VuV-CK-bUk"/>
+                        <barButtonItem title="Crop" id="nte-mY-0i3">
+                            <connections>
+                                <action selector="onCrop:" destination="uzH-Cx-Ejy" id="Cdx-aJ-U8h"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Image Cropper" id="CWO-EK-BAG">
+                        <barButtonItem key="rightBarButtonItem" title="Pick" id="Uvx-2A-jrI">
+                            <connections>
+                                <action selector="onPickPhoto:" destination="uzH-Cx-Ejy" id="llm-6G-7Kz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageCropper" destination="JsT-ul-9Yo" id="sx4-O5-LXc"/>
+                        <segue destination="8ch-YP-cuC" kind="push" id="BEv-0P-5pM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mig-qu-x74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="396"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7vH-s3-Cfa">
+            <objects>
+                <viewController id="8ch-YP-cuC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="433-yx-1Tq"/>
+                        <viewControllerLayoutGuide type="bottom" id="2BA-HX-LFr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Knn-sO-Xuu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DhJ-Be-BEM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DhJ-Be-BEM" firstAttribute="top" secondItem="433-yx-1Tq" secondAttribute="bottom" id="U4d-ey-mK9"/>
+                            <constraint firstItem="DhJ-Be-BEM" firstAttribute="leading" secondItem="Knn-sO-Xuu" secondAttribute="leading" id="dVk-0N-k9N"/>
+                            <constraint firstItem="2BA-HX-LFr" firstAttribute="top" secondItem="DhJ-Be-BEM" secondAttribute="bottom" id="kiE-yx-2kT"/>
+                            <constraint firstAttribute="trailing" secondItem="DhJ-Be-BEM" secondAttribute="trailing" id="wS0-ag-o47"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Bb-8P-ZTI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMS-Nj-OHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="396"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

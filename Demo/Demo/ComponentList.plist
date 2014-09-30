@@ -28,7 +28,17 @@
 		<key>Status</key>
 		<string>TEST</string>
 		<key>Detail</key>
-		<string>Testing</string>
+		<string>iOS 7 required. Testing</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>RFImageCropper</string>
+		<key>Status</key>
+		<string>Alpha</string>
+		<key>Detail</key>
+		<string>Seems ready to release. Will used in more project to verify that.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>
