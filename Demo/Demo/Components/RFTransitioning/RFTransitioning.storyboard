@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mjH-Rs-opj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mjH-Rs-opj">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - RFTransitioning-->
+        <!--RFTransitioning-->
         <scene sceneID="L93-Ri-6yp">
             <objects>
                 <tableViewController id="mjH-Rs-opj" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="-457" y="-350"/>
         </scene>
-        <!--Table View Controller - Style List-->
+        <!--Style List-->
         <scene sceneID="c42-CY-Te6">
             <objects>
                 <tableViewController id="JIk-Tf-G7y" sceneMemberID="viewController">
@@ -142,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="617" y="-767"/>
         </scene>
-        <!--Magic Move Source View Controller - Source-->
+        <!--Source-->
         <scene sceneID="EbL-Gv-bIu">
             <objects>
                 <viewController id="7jC-IY-3wu" customClass="RFDMagicMoveSourceViewController" sceneMemberID="viewController">
@@ -156,17 +156,14 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2u-Lg-KcO">
                                 <rect key="frame" x="28" y="155" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-lh-ApY">
                                 <rect key="frame" x="168" y="326" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWm-Xv-NLD">
                                 <rect key="frame" x="137" y="79" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -187,7 +184,7 @@
             </objects>
             <point key="canvasLocation" x="1143" y="-768"/>
         </scene>
-        <!--Transitioning Move In From Bottom View Controller - Try Pull Down-->
+        <!--Try Pull Down-->
         <scene sceneID="TKD-uF-KtF">
             <objects>
                 <viewController id="AnK-IE-YyC" customClass="RFDTransitioningMoveInFromBottomViewController" sceneMemberID="viewController">
@@ -222,7 +219,7 @@
             </objects>
             <point key="canvasLocation" x="83" y="-768"/>
         </scene>
-        <!--Magic Move Destination View Controller - Destination-->
+        <!--Destination-->
         <scene sceneID="NgO-8g-fr7">
             <objects>
                 <viewController id="bNG-Vx-fmP" customClass="RFDMagicMoveDestinationViewController" sceneMemberID="viewController">
@@ -236,12 +233,10 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s0E-c1-r0o">
                                 <rect key="frame" x="71" y="321" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDd-wh-SHu">
                                 <rect key="frame" x="177" y="158" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.79225852269999997" blue="0.1678187085" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -288,7 +283,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGL-7C-Dhp">
                                 <rect key="frame" x="136" y="106" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -299,7 +293,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JsF-6V-1cm"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="JsF-6V-1cm">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="zKB-6H-247" customClass="RFDismissModalBarButtonItem">
+                            <connections>
+                                <outlet property="masterViewController" destination="rzk-U4-lyq" id="zr4-hf-R42"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vao-o6-Z9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,7 +321,6 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to pop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieb-oc-wsQ">
                                 <rect key="frame" x="95" y="80" width="131" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
