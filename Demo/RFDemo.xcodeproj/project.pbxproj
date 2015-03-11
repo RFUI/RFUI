@@ -644,8 +644,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51D8459179782AD0086D902 /* AVFoundation.framework in Frameworks */,
 				D51D845D179782DE0086D902 /* AudioToolbox.framework in Frameworks */,
+				D51D8459179782AD0086D902 /* AVFoundation.framework in Frameworks */,
 				D51D845B179782C30086D902 /* CoreData.framework in Frameworks */,
 				D5200523178CF43B00FEA64B /* CoreGraphics.framework in Frameworks */,
 				D5200521178CF43B00FEA64B /* Foundation.framework in Frameworks */,
@@ -671,17 +671,17 @@
 		D50EAAED195BBA9600548BF6 /* RFSegue */ = {
 			isa = PBXGroup;
 			children = (
+				D51000AC195BC9E000239810 /* RFAsynchronousSegueDemoViewController.h */,
+				D51000AD195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m */,
 				D50EAAEE195BBAAD00548BF6 /* RFSegue.storyboard */,
+				D50EAAF9195BC3B500548BF6 /* RFSegueDelegateDemoViewController.h */,
+				D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */,
 				D50EAAF0195BBAD400548BF6 /* RFSegueDemoListViewController.h */,
 				D50EAAF1195BBAD400548BF6 /* RFSegueDemoListViewController.m */,
 				D50EAAF3195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.h */,
 				D50EAAF4195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m */,
 				D50EAAF6195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.h */,
 				D50EAAF7195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m */,
-				D50EAAF9195BC3B500548BF6 /* RFSegueDelegateDemoViewController.h */,
-				D50EAAFA195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m */,
-				D51000AC195BC9E000239810 /* RFAsynchronousSegueDemoViewController.h */,
-				D51000AD195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m */,
 			);
 			path = RFSegue;
 			sourceTree = "<group>";
@@ -873,11 +873,11 @@
 		D51D840B179780BF0086D902 /* RFSegue */ = {
 			isa = PBXGroup;
 			children = (
-				D51D840C179780C00086D902 /* Change.md */,
 				D51D840D179780C00086D902 /* LICENSE */,
+				D51D8410179780C00086D902 /* Return */,
+				D51D840C179780C00086D902 /* Change.md */,
 				D51D840E179780C00086D902 /* Readme.md */,
 				D51D840F179780C00086D902 /* Readme~zh-hans.md */,
-				D51D8410179780C00086D902 /* Return */,
 				D51D8419179780C00086D902 /* RFContainedSegue.h */,
 				D51D841A179780C00086D902 /* RFContainedSegue.m */,
 				D51D841B179780C00086D902 /* RFNavigationPushAsRootSegue.h */,
@@ -924,6 +924,7 @@
 		D51D8437179781930086D902 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				D51D8449179781930086D902 /* LICENSE */,
 				D51D843A179781930086D902 /* AFHTTPRequestOperation.h */,
 				D51D843B179781930086D902 /* AFHTTPRequestOperation.m */,
 				D5B9EDBE1907A17C0093570F /* AFNetworkActivityIndicatorManager.h */,
@@ -940,7 +941,6 @@
 				D549011A18FB820200EDA527 /* AFURLResponseSerialization.m */,
 				D5B9EDC11907A60E0093570F /* AFURLSessionManager.h */,
 				D5B9EDC21907A60E0093570F /* AFURLSessionManager.m */,
-				D51D8449179781930086D902 /* LICENSE */,
 			);
 			name = AFNetworking;
 			path = Frameworks/AFNetworking;
@@ -950,10 +950,10 @@
 			isa = PBXGroup;
 			children = (
 				D5200524178CF43B00FEA64B /* Demo */,
-				D5200544178CF4B000FEA64B /* RFUI */,
-				D5FF4E3B1AAFF717007BD7F4 /* RFUI Tests */,
 				D520051D178CF43B00FEA64B /* Frameworks */,
 				D520051C178CF43B00FEA64B /* Products */,
+				D5200544178CF4B000FEA64B /* RFUI */,
+				D5FF4E3B1AAFF717007BD7F4 /* RFUI Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -970,18 +970,18 @@
 			isa = PBXGroup;
 			children = (
 				D51D8437179781930086D902 /* AFNetworking */,
+				D5B9EDAE1907A08C0093570F /* JSONModel */,
+				D51D842E179781480086D902 /* SSKeychain */,
+				D549013A18FB90F200EDA527 /* SVProgressHUD */,
 				D51D845C179782DE0086D902 /* AudioToolbox.framework */,
 				D51D8458179782AD0086D902 /* AVFoundation.framework */,
 				D51D845A179782C30086D902 /* CoreData.framework */,
 				D5200522178CF43B00FEA64B /* CoreGraphics.framework */,
 				D5200520178CF43B00FEA64B /* Foundation.framework */,
-				D5B9EDAE1907A08C0093570F /* JSONModel */,
 				D51D8460179783430086D902 /* MediaPlayer.framework */,
 				D549014418FB918500EDA527 /* MobileCoreServices.framework */,
 				D51D845E179783030086D902 /* QuartzCore.framework */,
 				D51D8456179782870086D902 /* Security.framework */,
-				D51D842E179781480086D902 /* SSKeychain */,
-				D549013A18FB90F200EDA527 /* SVProgressHUD */,
 				D549014618FB91B000EDA527 /* SystemConfiguration.framework */,
 				D520051E178CF43B00FEA64B /* UIKit.framework */,
 			);
@@ -1002,15 +1002,15 @@
 		D5200525178CF43B00FEA64B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5BE7E2E196CDC820077F71A /* Images.xcassets */,
 				D520076D178E53AD00FEA64B /* TestImage */,
-				D5200526178CF43B00FEA64B /* Demo-Info.plist */,
-				D5200527178CF43B00FEA64B /* InfoPlist.strings */,
-				D520052A178CF43C00FEA64B /* main.m */,
-				D520052C178CF43C00FEA64B /* Demo-Prefix.pch */,
+				D5200534178CF43C00FEA64B /* Default-568h@2x.png */,
 				D5200530178CF43C00FEA64B /* Default.png */,
 				D5200532178CF43C00FEA64B /* Default@2x.png */,
-				D5200534178CF43C00FEA64B /* Default-568h@2x.png */,
+				D5200526178CF43B00FEA64B /* Demo-Info.plist */,
+				D520052C178CF43C00FEA64B /* Demo-Prefix.pch */,
+				D5BE7E2E196CDC820077F71A /* Images.xcassets */,
+				D5200527178CF43B00FEA64B /* InfoPlist.strings */,
+				D520052A178CF43C00FEA64B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1072,11 +1072,11 @@
 			isa = PBXGroup;
 			children = (
 				D52005F5178CF4B100FEA64B /* LICENSE */,
+				D52005F9178CF4B100FEA64B /* RFKit */,
 				D52005F6178CF4B100FEA64B /* Readme.md */,
 				D51D840A17977EB40086D902 /* RFInitializing.h */,
 				D52005F7178CF4B100FEA64B /* RFKeyboard.h */,
 				D52005F8178CF4B100FEA64B /* RFKeyboard.m */,
-				D52005F9178CF4B100FEA64B /* RFKit */,
 				D5200671178CF4B100FEA64B /* RFUI.h */,
 				D5200672178CF4B100FEA64B /* RFUI.m */,
 				D5200673178CF4B100FEA64B /* RFUIDebug.h */,
@@ -1089,12 +1089,12 @@
 			isa = PBXGroup;
 			children = (
 				D5321EF31AAF2CAF008EBFE2 /* category */,
-				D520062F178CF4B100FEA64B /* dout.h */,
-				D5200630178CF4B100FEA64B /* dout.m */,
 				D5321F2C1AAF2CB0008EBFE2 /* doutkit */,
 				D5321F311AAF2CB0008EBFE2 /* external */,
 				D5321EED1AAF2C90008EBFE2 /* extobjc */,
 				D520063B178CF4B100FEA64B /* LICENSE */,
+				D520062F178CF4B100FEA64B /* dout.h */,
+				D5200630178CF4B100FEA64B /* dout.m */,
 				D5200645178CF4B100FEA64B /* README.md */,
 				D5200646178CF4B100FEA64B /* README~zh-hans.md */,
 				D520064C178CF4B100FEA64B /* RFARC.h */,
@@ -1115,8 +1115,8 @@
 		D5200709178CF6A300FEA64B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D551BEDB19DA317A00ED54E3 /* RFImageCropper */,
 				D56CDDE7185AE99B0050241B /* RFAssetsCache */,
+				D551BEDB19DA317A00ED54E3 /* RFImageCropper */,
 				D5E72B5E198D0CF30048B677 /* RFNavigationController */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
 				D50EAAED195BBA9600548BF6 /* RFSegue */,
@@ -1148,11 +1148,11 @@
 		D5200745178D01CE00FEA64B /* RFTableViewPullToFetchPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				D5200760178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.h */,
+				D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */,
 				D5200746178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard */,
 				D520075B178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.h */,
 				D520075C178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m */,
-				D5200760178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.h */,
-				D5200761178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m */,
 			);
 			path = RFTableViewPullToFetchPlugin;
 			sourceTree = "<group>";
@@ -1324,11 +1324,11 @@
 		D549010B18FB7FD500EDA527 /* RFAPI */ = {
 			isa = PBXGroup;
 			children = (
+				D5B9EDA419079F940093570F /* RFAPIDefine */,
 				D549010C18FB7FD500EDA527 /* RFAPI.h */,
 				D549010D18FB7FD500EDA527 /* RFAPI.m */,
 				D5E72B57198D06EF0048B677 /* RFAPICacheManager.h */,
 				D5E72B58198D06EF0048B677 /* RFAPICacheManager.m */,
-				D5B9EDA419079F940093570F /* RFAPIDefine */,
 			);
 			path = RFAPI;
 			sourceTree = "<group>";
@@ -1406,9 +1406,9 @@
 		D551BEDB19DA317A00ED54E3 /* RFImageCropper */ = {
 			isa = PBXGroup;
 			children = (
-				D551BEDC19DA318F00ED54E3 /* RFImageCropper.storyboard */,
 				D551BEDE19DA31C800ED54E3 /* RFDImageCropperViewController.h */,
 				D551BEDF19DA31C800ED54E3 /* RFDImageCropperViewController.m */,
+				D551BEDC19DA318F00ED54E3 /* RFImageCropper.storyboard */,
 			);
 			path = RFImageCropper;
 			sourceTree = "<group>";
@@ -1463,10 +1463,10 @@
 		D56DF680194FF0F800CB1B14 /* RFSliderView */ = {
 			isa = PBXGroup;
 			children = (
-				D56DF681194FF12400CB1B14 /* RFSliderView.h */,
-				D56DF682194FF12400CB1B14 /* RFSliderView.m */,
 				D56DF684194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.h */,
 				D56DF685194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m */,
+				D56DF681194FF12400CB1B14 /* RFSliderView.h */,
+				D56DF682194FF12400CB1B14 /* RFSliderView.m */,
 			);
 			path = RFSliderView;
 			sourceTree = "<group>";
@@ -1484,10 +1484,10 @@
 		D56DF68D19500D7100CB1B14 /* Simple Console */ = {
 			isa = PBXGroup;
 			children = (
-				D56DF68E19500D7A00CB1B14 /* SimpleLogger.h */,
-				D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */,
 				D56DF69019500D7A00CB1B14 /* SimpleConsoleView.h */,
 				D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */,
+				D56DF68E19500D7A00CB1B14 /* SimpleLogger.h */,
+				D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */,
 			);
 			path = "Simple Console";
 			sourceTree = "<group>";
@@ -1505,8 +1505,8 @@
 		D58A5D2E1938365500F21650 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D56DF68D19500D7100CB1B14 /* Simple Console */,
 				D58A5D2F193836BF00F21650 /* AutoLayoutMultiLineLabel */,
+				D56DF68D19500D7100CB1B14 /* Simple Console */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -1523,14 +1523,14 @@
 		D58C5DD31988DFCF003CBF7E /* RFTransitioning */ = {
 			isa = PBXGroup;
 			children = (
+				D58C5DD61988DFCF003CBF7E /* RFInteractiveTransitioning */,
+				D58C5DDD1988DFCF003CBF7E /* RFTransitioningStyle */,
 				D58C5DD41988DFCF003CBF7E /* RFAnimationTransitioning.h */,
 				D58C5DD51988DFCF003CBF7E /* RFAnimationTransitioning.m */,
-				D58C5DD61988DFCF003CBF7E /* RFInteractiveTransitioning */,
 				D58C5DD91988DFCF003CBF7E /* RFNavigationControllerTransitionDelegate.h */,
 				D58C5DDA1988DFCF003CBF7E /* RFNavigationControllerTransitionDelegate.m */,
 				D58C5DDB1988DFCF003CBF7E /* RFNavigationPopInteractionController.h */,
 				D58C5DDC1988DFCF003CBF7E /* RFNavigationPopInteractionController.m */,
-				D58C5DDD1988DFCF003CBF7E /* RFTransitioningStyle */,
 				D58C5DE31988DFCF003CBF7E /* UIViewController+RFTransitioning.h */,
 				D58C5DE41988DFCF003CBF7E /* UIViewController+RFTransitioning.m */,
 			);
@@ -1564,9 +1564,9 @@
 				D58C5E001988EAE6003CBF7E /* Bar Hidden */,
 				D58C5DF61988E366003CBF7E /* MagicMove */,
 				D58C5DF51988E35C003CBF7E /* MoveInFromBottom */,
-				D58C5DED1988E074003CBF7E /* RFTransitioning.storyboard */,
 				D58C5DF21988E12E003CBF7E /* RFDTransitioningNavigationController.h */,
 				D58C5DF31988E12E003CBF7E /* RFDTransitioningNavigationController.m */,
+				D58C5DED1988E074003CBF7E /* RFTransitioning.storyboard */,
 			);
 			path = RFTransitioning;
 			sourceTree = "<group>";
@@ -1583,10 +1583,10 @@
 		D58C5DF61988E366003CBF7E /* MagicMove */ = {
 			isa = PBXGroup;
 			children = (
-				D58C5DFA1988E626003CBF7E /* RFDMagicMoveSourceViewController.h */,
-				D58C5DFB1988E626003CBF7E /* RFDMagicMoveSourceViewController.m */,
 				D58C5DFD1988E829003CBF7E /* RFDMagicMoveDestinationViewController.h */,
 				D58C5DFE1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m */,
+				D58C5DFA1988E626003CBF7E /* RFDMagicMoveSourceViewController.h */,
+				D58C5DFB1988E626003CBF7E /* RFDMagicMoveSourceViewController.m */,
 			);
 			path = MagicMove;
 			sourceTree = "<group>";
@@ -1667,8 +1667,6 @@
 		D5B9EDAE1907A08C0093570F /* JSONModel */ = {
 			isa = PBXGroup;
 			children = (
-				D5B9EDBB1907A0BF0093570F /* JSONValueTransformer.h */,
-				D5B9EDBC1907A0BF0093570F /* JSONValueTransformer.m */,
 				D5B9EDAF1907A08C0093570F /* JSONModel.h */,
 				D5B9EDB01907A08C0093570F /* JSONModel.m */,
 				D5B9EDB11907A08C0093570F /* JSONModelArray.h */,
@@ -1677,6 +1675,8 @@
 				D5B9EDB41907A08C0093570F /* JSONModelClassProperty.m */,
 				D5B9EDB51907A08C0093570F /* JSONModelError.h */,
 				D5B9EDB61907A08C0093570F /* JSONModelError.m */,
+				D5B9EDBB1907A0BF0093570F /* JSONValueTransformer.h */,
+				D5B9EDBC1907A0BF0093570F /* JSONValueTransformer.m */,
 			);
 			name = JSONModel;
 			path = Frameworks/JSONModel;
@@ -1694,14 +1694,14 @@
 		D5D1AFF0198F49CC00FE0656 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				D5321F531AAF2D3A008EBFE2 /* UIWebViewDelegateChain.h */,
-				D5321F541AAF2D3A008EBFE2 /* UIWebViewDelegateChain.m */,
 				D5D7786B1A13234F003D9440 /* UISearchBarDelegateChain.h */,
 				D5D7786C1A13234F003D9440 /* UISearchBarDelegateChain.m */,
 				D5D1AFF1198F49CC00FE0656 /* UITextFiledDelegateChain.h */,
 				D5D1AFF2198F49CC00FE0656 /* UITextFiledDelegateChain.m */,
 				D5D1AFF3198F49CC00FE0656 /* UITextViewDelegateChain.h */,
 				D5D1AFF4198F49CC00FE0656 /* UITextViewDelegateChain.m */,
+				D5321F531AAF2D3A008EBFE2 /* UIWebViewDelegateChain.h */,
+				D5321F541AAF2D3A008EBFE2 /* UIWebViewDelegateChain.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1734,8 +1734,8 @@
 		D5FF4E3B1AAFF717007BD7F4 /* RFUI Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */,
 				D5FF4E3C1AAFF717007BD7F4 /* Supporting Files */,
+				D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */,
 				D5FF4E451AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.h */,
 				D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */,
 			);
@@ -1751,6 +1751,23 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D5EBBB531AB043CB00CD5653 /* SortProjectFile */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-w \"sort-Xcode-project-file.pl\" \"$PROJECT_FILE_PATH\"";
+			buildConfigurationList = D5EBBB541AB043CB00CD5653 /* Build configuration list for PBXLegacyTarget "SortProjectFile" */;
+			buildPhases = (
+			);
+			buildToolPath = perl;
+			buildWorkingDirectory = $SRCROOT/Scripts;
+			dependencies = (
+			);
+			name = SortProjectFile;
+			passBuildSettingsInEnvironment = 1;
+			productName = SortProjectFile;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		D520051A178CF43B00FEA64B /* RFDemo */ = {
@@ -1797,6 +1814,9 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = RFUI;
 				TargetAttributes = {
+					D5EBBB531AB043CB00CD5653 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					D5FF4E391AAFF717007BD7F4 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = D520051A178CF43B00FEA64B;
@@ -1817,6 +1837,7 @@
 			targets = (
 				D520051A178CF43B00FEA64B /* RFDemo */,
 				D5FF4E391AAFF717007BD7F4 /* RFUI Tests */,
+				D5EBBB531AB043CB00CD5653 /* SortProjectFile */,
 			);
 		};
 /* End PBXProject section */
@@ -1826,38 +1847,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5200529178CF43B00FEA64B /* InfoPlist.strings in Resources */,
-				D551BEDD19DA318F00ED54E3 /* RFImageCropper.storyboard in Resources */,
-				D5200531178CF43C00FEA64B /* Default.png in Resources */,
-				D56CDDE9185AE9B60050241B /* RFAssetsCache.storyboard in Resources */,
-				D549014018FB90F200EDA527 /* SVProgressHUD.bundle in Resources */,
-				D5200533178CF43C00FEA64B /* Default@2x.png in Resources */,
-				D5200535178CF43C00FEA64B /* Default-568h@2x.png in Resources */,
-				D58D09A219518809003A0463 /* RFTimer.storyboard in Resources */,
-				D5200538178CF43C00FEA64B /* MainStoryboard.storyboard in Resources */,
-				D520070F178CFA0400FEA64B /* ComponentList.plist in Resources */,
-				D5200747178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard in Resources */,
-				D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */,
-				D5B20E2E193718F700CBC939 /* WarAndPeace.plist in Resources */,
 				D5200772178E53AD00FEA64B /* 1400x600.png in Resources */,
 				D5200773178E53AD00FEA64B /* 300x600.png in Resources */,
 				D5200774178E53AD00FEA64B /* 50x50.png in Resources */,
-				D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */,
 				D5200775178E53AD00FEA64B /* 800x600.png in Resources */,
+				D520070F178CFA0400FEA64B /* ComponentList.plist in Resources */,
+				D5200535178CF43C00FEA64B /* Default-568h@2x.png in Resources */,
+				D5200531178CF43C00FEA64B /* Default.png in Resources */,
+				D5200533178CF43C00FEA64B /* Default@2x.png in Resources */,
+				D5BE7E2F196CDC820077F71A /* Images.xcassets in Resources */,
+				D5200529178CF43B00FEA64B /* InfoPlist.strings in Resources */,
+				D5B20E3019371D1500CBC939 /* LICENSE-SVProgressHUD in Resources */,
+				D5200538178CF43C00FEA64B /* MainStoryboard.storyboard in Resources */,
+				D56CDDE9185AE9B60050241B /* RFAssetsCache.storyboard in Resources */,
+				D551BEDD19DA318F00ED54E3 /* RFImageCropper.storyboard in Resources */,
+				D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */,
+				D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */,
 				D50EAAEF195BBAAD00548BF6 /* RFSegue.storyboard in Resources */,
-				D55F9DF7195D3D800004DDCD /* RFWindow.storyboard in Resources */,
 				D51D83F117977E920086D902 /* RFSidePanel.xib in Resources */,
+				D56DF689194FF46200CB1B14 /* RFSliderView.storyboard in Resources */,
+				D51D83FA17977E920086D902 /* RFStatusBarNotificationWindow.xib in Resources */,
+				D549014A18FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard in Resources */,
+				D5200747178D01E300FEA64B /* RFTableViewPullToFetchPlugin.storyboard in Resources */,
+				D58D09A219518809003A0463 /* RFTimer.storyboard in Resources */,
+				D58C5DEE1988E074003CBF7E /* RFTransitioning.storyboard in Resources */,
+				D55F9DF7195D3D800004DDCD /* RFWindow.storyboard in Resources */,
 				D51D83F217977E920086D902 /* SidePanel-bg.png in Resources */,
 				D51D83F317977E920086D902 /* SidePanel-off.active.png in Resources */,
 				D51D83F417977E920086D902 /* SidePanel-off.png in Resources */,
-				D56DF689194FF46200CB1B14 /* RFSliderView.storyboard in Resources */,
 				D51D83F517977E920086D902 /* SidePanel-on.active.png in Resources */,
 				D51D83F617977E920086D902 /* SidePanel-on.png in Resources */,
-				D58C5DEE1988E074003CBF7E /* RFTransitioning.storyboard in Resources */,
-				D5BE7E2F196CDC820077F71A /* Images.xcassets in Resources */,
-				D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */,
-				D51D83FA17977E920086D902 /* RFStatusBarNotificationWindow.xib in Resources */,
-				D5B20E3019371D1500CBC939 /* LICENSE-SVProgressHUD in Resources */,
+				D549014018FB90F200EDA527 /* SVProgressHUD.bundle in Resources */,
+				D5B20E2E193718F700CBC939 /* WarAndPeace.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1875,171 +1896,171 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D55FD849192F421000ECA92B /* RFDrawView.m in Sources */,
-				D51000AE195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m in Sources */,
-				D5321F3D1AAF2CB0008EBFE2 /* NSObject+RFKit.m in Sources */,
-				D5E72B63198D15A20048B677 /* RFDNavigationTabShowViewController.m in Sources */,
-				D520052B178CF43C00FEA64B /* main.m in Sources */,
-				D5B9EDAB19079F940093570F /* RFAPIDefine.m in Sources */,
-				D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */,
-				D520052F178CF43C00FEA64B /* AppDelegate.m in Sources */,
-				D5321F461AAF2CB0008EBFE2 /* UINavigationController+RFKit.m in Sources */,
-				D52006C3178CF4B100FEA64B /* RFKeyboard.m in Sources */,
-				D5B9EDC31907A60E0093570F /* AFURLSessionManager.m in Sources */,
-				D56CDDEF185AE9ED0050241B /* RFAssetsCacheDemoViewController.m in Sources */,
-				D58C5E031988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m in Sources */,
-				D5B9EDB71907A08C0093570F /* JSONModel.m in Sources */,
-				D5321F481AAF2CB0008EBFE2 /* UIScrollView+RFScrolling.m in Sources */,
-				D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */,
-				D5B20E4119381B2800CBC939 /* RFTableViewPullToFetchPlugin.m in Sources */,
-				D58C5DF91988E39B003CBF7E /* RFDTransitioningMoveInFromBottomViewController.m in Sources */,
-				D5705EEC19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m in Sources */,
-				D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */,
-				D56DF683194FF12400CB1B14 /* RFSliderView.m in Sources */,
-				D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */,
-				D5321F501AAF2CB0008EBFE2 /* RFAlloctionProxy.m in Sources */,
-				D55FD84A192F421000ECA92B /* RFRoundingCornersView.m in Sources */,
-				D58D09A519518826003A0463 /* RFTimerDemoViewController.m in Sources */,
-				D5B9EDBD1907A0BF0093570F /* JSONValueTransformer.m in Sources */,
-				D551BEE019DA31C800ED54E3 /* RFDImageCropperViewController.m in Sources */,
-				D58C5DE91988DFCF003CBF7E /* RFMagicMoveTransitioning.m in Sources */,
-				D5E72B66198D16BE0048B677 /* RFDNavigationRootController.m in Sources */,
-				D5B9EDA319079F740093570F /* UIView+RFLayerApperance.m in Sources */,
-				D549012B18FB8BFE00EDA527 /* RFTableViewCellHeightDelegate.m in Sources */,
-				D549013818FB8FA600EDA527 /* RFMessageManager+RFDisplay.m in Sources */,
-				D58C5DF41988E12E003CBF7E /* RFDTransitioningNavigationController.m in Sources */,
-				D5321F351AAF2CB0008EBFE2 /* NSArray+RFKit.m in Sources */,
-				D5321F3F1AAF2CB0008EBFE2 /* NSURL+RFKit.m in Sources */,
-				D58D099F19515ED2003A0463 /* RFTimer.m in Sources */,
-				D58C5E061988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m in Sources */,
-				D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */,
-				D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */,
-				D5321F591AAF2D64008EBFE2 /* UITableView+RFTableViewCellHeight.m in Sources */,
-				D5D1AFF6198F49CC00FE0656 /* UITextViewDelegateChain.m in Sources */,
-				D52006DE178CF4B100FEA64B /* dout.m in Sources */,
-				D549013618FB8FA600EDA527 /* RFAlertViewMessageManager.m in Sources */,
-				D58C5DE71988DFCF003CBF7E /* RFNavigationControllerTransitionDelegate.m in Sources */,
-				D58C5DE81988DFCF003CBF7E /* RFNavigationPopInteractionController.m in Sources */,
-				D5321F3C1AAF2CB0008EBFE2 /* NSNumberFormatter+RFKit.m in Sources */,
-				D5321F611AAF2DCC008EBFE2 /* RFKVOWrapper.m in Sources */,
-				D5B20E4419381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m in Sources */,
-				D5321F421AAF2CB0008EBFE2 /* UIButton+RFKit.m in Sources */,
-				D5B9EDAC19079F940093570F /* RFAPIDefineConfigFileKeys.m in Sources */,
-				D56DF68C194FF48300CB1B14 /* RFSliderViewDemoViewController.m in Sources */,
-				D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */,
-				D52006EB178CF4B100FEA64B /* RFDispatch.m in Sources */,
-				D52006EC178CF4B100FEA64B /* RFGeometry.m in Sources */,
-				D52006ED178CF4B100FEA64B /* RFPerformance.m in Sources */,
-				D52006F9178CF4B100FEA64B /* RFUI.m in Sources */,
-				D5B9EDAD19079F940093570F /* RFAPIDefineManager.m in Sources */,
-				D5E72B5D198D07720048B677 /* RFNavigationController.m in Sources */,
-				D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */,
-				D520070D178CF76A00FEA64B /* ComponentList.m in Sources */,
+				D51D844D179781930086D902 /* AFHTTPRequestOperation.m in Sources */,
+				D5B9EDC01907A17C0093570F /* AFNetworkActivityIndicatorManager.m in Sources */,
+				D549011F18FB820200EDA527 /* AFNetworkReachabilityManager.m in Sources */,
+				D549012018FB820200EDA527 /* AFSecurityPolicy.m in Sources */,
+				D51D8452179781930086D902 /* AFURLConnectionOperation.m in Sources */,
 				D549012118FB820200EDA527 /* AFURLRequestSerialization.m in Sources */,
-				D5321F491AAF2CB0008EBFE2 /* UISearchBar+RFKit.m in Sources */,
-				D549013918FB8FA600EDA527 /* RFMessageManager.m in Sources */,
-				D520075D178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m in Sources */,
-				D5321F551AAF2D3A008EBFE2 /* UIWebViewDelegateChain.m in Sources */,
-				D5200762178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m in Sources */,
-				D5321F4C1AAF2CB0008EBFE2 /* UIView+RFAnimate.m in Sources */,
+				D549012218FB820200EDA527 /* AFURLResponseSerialization.m in Sources */,
+				D5B9EDC31907A60E0093570F /* AFURLSessionManager.m in Sources */,
+				D520052F178CF43C00FEA64B /* AppDelegate.m in Sources */,
+				D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */,
+				D520070D178CF76A00FEA64B /* ComponentList.m in Sources */,
+				D52006DE178CF4B100FEA64B /* dout.m in Sources */,
+				D5321EF21AAF2C90008EBFE2 /* EXTScope.m in Sources */,
+				D5B9EDB71907A08C0093570F /* JSONModel.m in Sources */,
+				D5B9EDB81907A08C0093570F /* JSONModelArray.m in Sources */,
 				D5B9EDB91907A08C0093570F /* JSONModelClassProperty.m in Sources */,
-				D5200766178E47FC00FEA64B /* RFScrollViewPageControl.m in Sources */,
-				D520076C178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m in Sources */,
-				D5321F4E1AAF2CB0008EBFE2 /* UIViewController+RFKit.m in Sources */,
+				D5B9EDBA1907A08C0093570F /* JSONModelError.m in Sources */,
+				D5B9EDBD1907A0BF0093570F /* JSONValueTransformer.m in Sources */,
+				D520052B178CF43C00FEA64B /* main.m in Sources */,
+				D5321F351AAF2CB0008EBFE2 /* NSArray+RFKit.m in Sources */,
+				D5321F361AAF2CB0008EBFE2 /* NSBundle+RFKit.m in Sources */,
+				D5321F371AAF2CB0008EBFE2 /* NSDate+RFKit.m in Sources */,
+				D5321F381AAF2CB0008EBFE2 /* NSDateFormatter+RFKit.m in Sources */,
+				D5321F391AAF2CB0008EBFE2 /* NSDictionary+RFKit.m in Sources */,
+				D5321F3A1AAF2CB0008EBFE2 /* NSFileManager+RFKit.m in Sources */,
+				D5321F3B1AAF2CB0008EBFE2 /* NSJSONSerialization+RFKit.m in Sources */,
+				D5321F401AAF2CB0008EBFE2 /* NSLayoutConstraint+RFKit.m in Sources */,
+				D51D83CC17977E920086D902 /* NSManagedObject+RFCoreData.m in Sources */,
+				D51D83CD17977E920086D902 /* NSManagedObject+RFCoreDataSyncPurge.m in Sources */,
+				D5321F3C1AAF2CB0008EBFE2 /* NSNumberFormatter+RFKit.m in Sources */,
+				D5321F3D1AAF2CB0008EBFE2 /* NSObject+RFKit.m in Sources */,
+				D5321F3E1AAF2CB0008EBFE2 /* NSString+RFKit.m in Sources */,
+				D5321F3F1AAF2CB0008EBFE2 /* NSURL+RFKit.m in Sources */,
+				D549013618FB8FA600EDA527 /* RFAlertViewMessageManager.m in Sources */,
+				D5321F501AAF2CB0008EBFE2 /* RFAlloctionProxy.m in Sources */,
+				D58C5DE51988DFCF003CBF7E /* RFAnimationTransitioning.m in Sources */,
+				D549010E18FB7FD500EDA527 /* RFAPI.m in Sources */,
+				D5E72B59198D06EF0048B677 /* RFAPICacheManager.m in Sources */,
+				D5B9EDAB19079F940093570F /* RFAPIDefine.m in Sources */,
+				D5B9EDAC19079F940093570F /* RFAPIDefineConfigFileKeys.m in Sources */,
+				D5B9EDAD19079F940093570F /* RFAPIDefineManager.m in Sources */,
+				D56CDDE3185AE7580050241B /* RFAssetsCache.m in Sources */,
+				D56CDDE4185AE7580050241B /* RFAssetsCache.xcdatamodeld in Sources */,
+				D56CDDE5185AE7580050241B /* RFAssetsCacheData.m in Sources */,
+				D56CDDEF185AE9ED0050241B /* RFAssetsCacheDemoViewController.m in Sources */,
+				D56CDDE6185AE7580050241B /* RFAssetsCacheRecord.m in Sources */,
+				D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */,
+				D51000C4195BE69800239810 /* RFAsynchronousPresentSegue.m in Sources */,
+				D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */,
+				D51000B5195BCACC00239810 /* RFAsynchronousSegue.m in Sources */,
+				D51000AE195BC9E100239810 /* RFAsynchronousSegueDemoViewController.m in Sources */,
 				D51D83C617977E920086D902 /* RFAudioPlayer.m in Sources */,
 				D51D83C817977E920086D902 /* RFButton.m in Sources */,
-				D51D83C917977E920086D902 /* RFControl.m in Sources */,
 				D51D83CB17977E920086D902 /* RFCheckbox.m in Sources */,
-				D5321F401AAF2CB0008EBFE2 /* NSLayoutConstraint+RFKit.m in Sources */,
-				D549012218FB820200EDA527 /* AFURLResponseSerialization.m in Sources */,
-				D56CDDE3185AE7580050241B /* RFAssetsCache.m in Sources */,
-				D51D83CC17977E920086D902 /* NSManagedObject+RFCoreData.m in Sources */,
-				D5321F391AAF2CB0008EBFE2 /* NSDictionary+RFKit.m in Sources */,
-				D51D83CD17977E920086D902 /* NSManagedObject+RFCoreDataSyncPurge.m in Sources */,
-				D5321EF21AAF2C90008EBFE2 /* EXTScope.m in Sources */,
-				D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */,
-				D549011F18FB820200EDA527 /* AFNetworkReachabilityManager.m in Sources */,
+				D51D842A179780C00086D902 /* RFContainedSegue.m in Sources */,
+				D51D83C917977E920086D902 /* RFControl.m in Sources */,
+				D549012718FB8BF300EDA527 /* RFDelegateChain.m in Sources */,
+				D551BEE019DA31C800ED54E3 /* RFDImageCropperViewController.m in Sources */,
+				D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */,
+				D52006EB178CF4B100FEA64B /* RFDispatch.m in Sources */,
+				D58C5DFF1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m in Sources */,
+				D58C5DFC1988E626003CBF7E /* RFDMagicMoveSourceViewController.m in Sources */,
+				D59E4730198F2A0100FD76A5 /* RFDNavigationBarHiddenViewController.m in Sources */,
+				D5E72B66198D16BE0048B677 /* RFDNavigationRootController.m in Sources */,
+				D5D1AFE8198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.m in Sources */,
+				D5E72B63198D15A20048B677 /* RFDNavigationTabShowViewController.m in Sources */,
+				D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */,
+				D55FD849192F421000ECA92B /* RFDrawView.m in Sources */,
+				D58C5E061988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m in Sources */,
+				D58C5E031988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m in Sources */,
+				D58C5DF91988E39B003CBF7E /* RFDTransitioningMoveInFromBottomViewController.m in Sources */,
+				D58C5DF41988E12E003CBF7E /* RFDTransitioningNavigationController.m in Sources */,
+				D5321F511AAF2CB0008EBFE2 /* RFFrameChangeProxy.m in Sources */,
+				D56DF686194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m in Sources */,
+				D52006EC178CF4B100FEA64B /* RFGeometry.m in Sources */,
 				D51D83DC17977E920086D902 /* RFGridView.m in Sources */,
 				D51D83DD17977E920086D902 /* RFImageCropperView.m in Sources */,
-				D5321F361AAF2CB0008EBFE2 /* NSBundle+RFKit.m in Sources */,
 				D51D83DE17977E920086D902 /* RFImageGallery.m in Sources */,
-				D51D83E217977E920086D902 /* RFNoticeView.m in Sources */,
-				D51D83E317977E920086D902 /* RFPlugin.m in Sources */,
-				D5321F4D1AAF2CB0008EBFE2 /* UIView+RFKit.m in Sources */,
-				D51D83E617977E920086D902 /* RFRefreshButton.m in Sources */,
-				D51D83E717977E920086D902 /* RFReusingPool.m in Sources */,
-				D5321F381AAF2CB0008EBFE2 /* NSDateFormatter+RFKit.m in Sources */,
-				D51D83E817977E920086D902 /* RFReusingRange.m in Sources */,
-				D549012718FB8BF300EDA527 /* RFDelegateChain.m in Sources */,
-				D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */,
-				D50EAAF2195BBAD400548BF6 /* RFSegueDemoListViewController.m in Sources */,
-				D56CDDE5185AE7580050241B /* RFAssetsCacheData.m in Sources */,
-				D51D83F017977E920086D902 /* RFSidePanel.m in Sources */,
-				D532A393196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.m in Sources */,
-				D5321F441AAF2CB0008EBFE2 /* UIDevice+RFKit.m in Sources */,
-				D51D83F717977E920086D902 /* RFSlideNavigationController.m in Sources */,
-				D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */,
-				D51D83F817977E920086D902 /* RFSoundService.m in Sources */,
-				D5E72B59198D06EF0048B677 /* RFAPICacheManager.m in Sources */,
-				D5321F621AAF2DCC008EBFE2 /* RFSwizzle.m in Sources */,
-				D58C5DFF1988E829003CBF7E /* RFDMagicMoveDestinationViewController.m in Sources */,
-				D51000C8195BF53100239810 /* RFPresentSegue.m in Sources */,
-				D59E4730198F2A0100FD76A5 /* RFDNavigationBarHiddenViewController.m in Sources */,
-				D51D83F917977E920086D902 /* RFStatusBarNotificationWindow.m in Sources */,
-				D5321F4F1AAF2CB0008EBFE2 /* UIWebView+RFKit.m in Sources */,
-				D51D83FD17977E920086D902 /* RFTabBar.m in Sources */,
-				D51000C4195BE69800239810 /* RFAsynchronousPresentSegue.m in Sources */,
-				D5321F521AAF2CB0008EBFE2 /* UncaughtExceptionHandler.m in Sources */,
-				D549010E18FB7FD500EDA527 /* RFAPI.m in Sources */,
-				D5B9EDC01907A17C0093570F /* AFNetworkActivityIndicatorManager.m in Sources */,
-				D5D7786D1A13234F003D9440 /* UISearchBarDelegateChain.m in Sources */,
+				D52006C3178CF4B100FEA64B /* RFKeyboard.m in Sources */,
+				D5321F611AAF2DCC008EBFE2 /* RFKVOWrapper.m in Sources */,
 				D598F4AB18D1499B009C142D /* RFLine.m in Sources */,
-				D55F9DFA195D3DA00004DDCD /* RFWindowDemoListViewController.m in Sources */,
-				D5B9EDB81907A08C0093570F /* JSONModelArray.m in Sources */,
-				D5321F3B1AAF2CB0008EBFE2 /* NSJSONSerialization+RFKit.m in Sources */,
-				D5D1AFE8198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.m in Sources */,
-				D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */,
-				D549013718FB8FA600EDA527 /* RFSVProgressMessageManager.m in Sources */,
-				D598F4AC18D1499B009C142D /* UIButton+RFResizableBackgroundImage.m in Sources */,
-				D58C5DE61988DFCF003CBF7E /* RFPullDownToPopInteractionController.m in Sources */,
-				D50EAAF8195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m in Sources */,
-				D51D840617977E920086D902 /* RFWindow.m in Sources */,
-				D5321F4A1AAF2CB0008EBFE2 /* UIStoryboard+RFKit.m in Sources */,
-				D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */,
-				D5B9EDBA1907A08C0093570F /* JSONModelError.m in Sources */,
-				D58C5DFC1988E626003CBF7E /* RFDMagicMoveSourceViewController.m in Sources */,
-				D56DF686194FF2A800CB1B14 /* RFFullSizeCollectionViewFlowLayout.m in Sources */,
-				D51D8427179780C00086D902 /* RFPopBarButtonItem.m in Sources */,
-				D51000B5195BCACC00239810 /* RFAsynchronousSegue.m in Sources */,
-				D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */,
-				D51D8428179780C00086D902 /* RFSegueDismissModalButton.m in Sources */,
-				D5321F411AAF2CB0008EBFE2 /* UIAlertView+RFKit.m in Sources */,
-				D51D8429179780C00086D902 /* RFSeguePopButton.m in Sources */,
-				D58C5DE51988DFCF003CBF7E /* RFAnimationTransitioning.m in Sources */,
-				D51D842A179780C00086D902 /* RFContainedSegue.m in Sources */,
+				D58C5DE91988DFCF003CBF7E /* RFMagicMoveTransitioning.m in Sources */,
+				D549013818FB8FA600EDA527 /* RFMessageManager+RFDisplay.m in Sources */,
+				D549013918FB8FA600EDA527 /* RFMessageManager.m in Sources */,
+				D58C5DEA1988DFCF003CBF7E /* RFMoveInFromBottomTransitioning.m in Sources */,
+				D5E72B5D198D07720048B677 /* RFNavigationController.m in Sources */,
+				D58C5DE71988DFCF003CBF7E /* RFNavigationControllerTransitionDelegate.m in Sources */,
+				D58C5DE81988DFCF003CBF7E /* RFNavigationPopInteractionController.m in Sources */,
 				D51D842B179780C00086D902 /* RFNavigationPushAsRootSegue.m in Sources */,
-				D58C5DEB1988DFCF003CBF7E /* UIViewController+RFTransitioning.m in Sources */,
-				D5321F4B1AAF2CB0008EBFE2 /* UITableView+RFKit.m in Sources */,
-				D5321F471AAF2CB0008EBFE2 /* UIResponder+RFKit.m in Sources */,
-				D55F9DFD195D3E580004DDCD /* RFWindowTouchDemoViewController.m in Sources */,
-				D5321F371AAF2CB0008EBFE2 /* NSDate+RFKit.m in Sources */,
 				D51D842C179780C00086D902 /* RFNavigationPushSegue.m in Sources */,
-				D5321F3A1AAF2CB0008EBFE2 /* NSFileManager+RFKit.m in Sources */,
+				D51D83E217977E920086D902 /* RFNoticeView.m in Sources */,
+				D52006ED178CF4B100FEA64B /* RFPerformance.m in Sources */,
+				D51D83E317977E920086D902 /* RFPlugin.m in Sources */,
+				D51D8427179780C00086D902 /* RFPopBarButtonItem.m in Sources */,
+				D51000C8195BF53100239810 /* RFPresentSegue.m in Sources */,
+				D58C5DE61988DFCF003CBF7E /* RFPullDownToPopInteractionController.m in Sources */,
+				D5200762178D03B500FEA64B /* RFPullToFetchTableViewConfigViewController.m in Sources */,
+				D51D83E617977E920086D902 /* RFRefreshButton.m in Sources */,
 				D5BAEF7C19D420DC0037A78C /* RFRefreshControl.m in Sources */,
+				D51D83E717977E920086D902 /* RFReusingPool.m in Sources */,
+				D51D83E817977E920086D902 /* RFReusingRange.m in Sources */,
+				D55FD84A192F421000ECA92B /* RFRoundingCornersView.m in Sources */,
+				D5200766178E47FC00FEA64B /* RFScrollViewPageControl.m in Sources */,
+				D520076C178E48A200FEA64B /* RFScrollViewPageControlDemoViewController.m in Sources */,
 				D51D842D179780C00086D902 /* RFSegue.m in Sources */,
+				D50EAAFB195BC3B500548BF6 /* RFSegueDelegateDemoViewController.m in Sources */,
+				D50EAAF2195BBAD400548BF6 /* RFSegueDemoListViewController.m in Sources */,
+				D51D8428179780C00086D902 /* RFSegueDismissModalButton.m in Sources */,
+				D51D8429179780C00086D902 /* RFSeguePopButton.m in Sources */,
+				D50EAAF5195BC07700548BF6 /* RFSegueShouldPerformDemoViewController.m in Sources */,
+				D50EAAF8195BC08700548BF6 /* RFSegueShouldReturnDemoViewController.m in Sources */,
+				D51D83F017977E920086D902 /* RFSidePanel.m in Sources */,
+				D51D83F717977E920086D902 /* RFSlideNavigationController.m in Sources */,
+				D56DF683194FF12400CB1B14 /* RFSliderView.m in Sources */,
+				D56DF68C194FF48300CB1B14 /* RFSliderViewDemoViewController.m in Sources */,
+				D51D83F817977E920086D902 /* RFSoundService.m in Sources */,
+				D51D83F917977E920086D902 /* RFStatusBarNotificationWindow.m in Sources */,
+				D549013718FB8FA600EDA527 /* RFSVProgressMessageManager.m in Sources */,
+				D5321F621AAF2DCC008EBFE2 /* RFSwizzle.m in Sources */,
+				D51D83FD17977E920086D902 /* RFTabBar.m in Sources */,
+				D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */,
+				D5705EEC19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m in Sources */,
+				D549012B18FB8BFE00EDA527 /* RFTableViewCellHeightDelegate.m in Sources */,
+				D532A393196AF1C40014EE90 /* RFTableViewCellHeightDelegateAsynchronousDemoViewController.m in Sources */,
+				D549014D18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m in Sources */,
+				D5B20E4119381B2800CBC939 /* RFTableViewPullToFetchPlugin.m in Sources */,
+				D520075D178D02B300FEA64B /* RFTableViewPullToFetchPluginDemoViewController.m in Sources */,
+				D58D099F19515ED2003A0463 /* RFTimer.m in Sources */,
+				D58D09A519518826003A0463 /* RFTimerDemoViewController.m in Sources */,
+				D52006F9178CF4B100FEA64B /* RFUI.m in Sources */,
+				D51D840617977E920086D902 /* RFWindow.m in Sources */,
+				D55F9DFA195D3DA00004DDCD /* RFWindowDemoListViewController.m in Sources */,
+				D55F9DFD195D3E580004DDCD /* RFWindowTouchDemoViewController.m in Sources */,
+				D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */,
+				D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */,
+				D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */,
 				D51D8435179781480086D902 /* SSKeychain.m in Sources */,
 				D51D8436179781480086D902 /* SSKeychainQuery.m in Sources */,
-				D51D844D179781930086D902 /* AFHTTPRequestOperation.m in Sources */,
-				D549012018FB820200EDA527 /* AFSecurityPolicy.m in Sources */,
-				D5321F3E1AAF2CB0008EBFE2 /* NSString+RFKit.m in Sources */,
-				D58C5DEA1988DFCF003CBF7E /* RFMoveInFromBottomTransitioning.m in Sources */,
-				D5D1AFF5198F49CC00FE0656 /* UITextFiledDelegateChain.m in Sources */,
-				D5321F511AAF2CB0008EBFE2 /* RFFrameChangeProxy.m in Sources */,
-				D56CDDE4185AE7580050241B /* RFAssetsCache.xcdatamodeld in Sources */,
-				D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */,
+				D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */,
+				D5321F411AAF2CB0008EBFE2 /* UIAlertView+RFKit.m in Sources */,
+				D5321F421AAF2CB0008EBFE2 /* UIButton+RFKit.m in Sources */,
+				D598F4AC18D1499B009C142D /* UIButton+RFResizableBackgroundImage.m in Sources */,
 				D5321F431AAF2CB0008EBFE2 /* UIColor+RFKit.m in Sources */,
+				D5321F441AAF2CB0008EBFE2 /* UIDevice+RFKit.m in Sources */,
 				D5321F451AAF2CB0008EBFE2 /* UIImage+RFKit.m in Sources */,
-				D51D8452179781930086D902 /* AFURLConnectionOperation.m in Sources */,
+				D5321F461AAF2CB0008EBFE2 /* UINavigationController+RFKit.m in Sources */,
+				D5321F471AAF2CB0008EBFE2 /* UIResponder+RFKit.m in Sources */,
+				D5321F481AAF2CB0008EBFE2 /* UIScrollView+RFScrolling.m in Sources */,
+				D5B20E4419381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m in Sources */,
+				D5321F491AAF2CB0008EBFE2 /* UISearchBar+RFKit.m in Sources */,
+				D5D7786D1A13234F003D9440 /* UISearchBarDelegateChain.m in Sources */,
+				D5321F4A1AAF2CB0008EBFE2 /* UIStoryboard+RFKit.m in Sources */,
+				D5321F4B1AAF2CB0008EBFE2 /* UITableView+RFKit.m in Sources */,
+				D5321F591AAF2D64008EBFE2 /* UITableView+RFTableViewCellHeight.m in Sources */,
+				D5D1AFF5198F49CC00FE0656 /* UITextFiledDelegateChain.m in Sources */,
+				D5D1AFF6198F49CC00FE0656 /* UITextViewDelegateChain.m in Sources */,
+				D5321F4C1AAF2CB0008EBFE2 /* UIView+RFAnimate.m in Sources */,
+				D5321F4D1AAF2CB0008EBFE2 /* UIView+RFKit.m in Sources */,
+				D5B9EDA319079F740093570F /* UIView+RFLayerApperance.m in Sources */,
+				D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */,
+				D5321F4E1AAF2CB0008EBFE2 /* UIViewController+RFKit.m in Sources */,
+				D58C5DEB1988DFCF003CBF7E /* UIViewController+RFTransitioning.m in Sources */,
+				D5321F4F1AAF2CB0008EBFE2 /* UIWebView+RFKit.m in Sources */,
+				D5321F551AAF2D3A008EBFE2 /* UIWebViewDelegateChain.m in Sources */,
+				D5321F521AAF2CB0008EBFE2 /* UncaughtExceptionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2188,6 +2209,22 @@
 			};
 			name = Release;
 		};
+		D5EBBB551AB043CB00CD5653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ProjectFilePath = "${SRCROOT}/${PROJECT}.xcodeproj";
+			};
+			name = Debug;
+		};
+		D5EBBB561AB043CB00CD5653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ProjectFilePath = "${SRCROOT}/${PROJECT}.xcodeproj";
+			};
+			name = Release;
+		};
 		D5FF4E421AAFF717007BD7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2270,6 +2307,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D5EBBB541AB043CB00CD5653 /* Build configuration list for PBXLegacyTarget "SortProjectFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5EBBB551AB043CB00CD5653 /* Debug */,
+				D5EBBB561AB043CB00CD5653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D5FF4E441AAFF717007BD7F4 /* Build configuration list for PBXNativeTarget "RFUI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2277,6 +2323,7 @@
 				D5FF4E431AAFF717007BD7F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
