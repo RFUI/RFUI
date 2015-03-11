@@ -215,7 +215,19 @@
 		D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E72B5F198D0D460048B677 /* RFNavigationController.storyboard */; };
 		D5E72B63198D15A20048B677 /* RFDNavigationTabShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B62198D15A20048B677 /* RFDNavigationTabShowViewController.m */; };
 		D5E72B66198D16BE0048B677 /* RFDNavigationRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B65198D16BE0048B677 /* RFDNavigationRootController.m */; };
+		D5FF4E3F1AAFF717007BD7F4 /* RFSwizzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */; };
+		D5FF4E471AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5FF4E401AAFF717007BD7F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5200513178CF43B00FEA64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D520051A178CF43B00FEA64B;
+			remoteInfo = RFDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D50EAAEE195BBAAD00548BF6 /* RFSegue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFSegue.storyboard; sourceTree = "<group>"; };
@@ -620,6 +632,11 @@
 		D5E72B62198D15A20048B677 /* RFDNavigationTabShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDNavigationTabShowViewController.m; sourceTree = "<group>"; };
 		D5E72B64198D16BE0048B677 /* RFDNavigationRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDNavigationRootController.h; sourceTree = "<group>"; };
 		D5E72B65198D16BE0048B677 /* RFDNavigationRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDNavigationRootController.m; sourceTree = "<group>"; };
+		D5FF4E3A1AAFF717007BD7F4 /* RFUI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RFUI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FF4E3D1AAFF717007BD7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFSwizzleTests.m; sourceTree = "<group>"; };
+		D5FF4E451AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSwizzleTestsObjects.h; sourceTree = "<group>"; };
+		D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSwizzleTestsObjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -638,6 +655,13 @@
 				D51D8457179782880086D902 /* Security.framework in Frameworks */,
 				D549014718FB91B000EDA527 /* SystemConfiguration.framework in Frameworks */,
 				D520051F178CF43B00FEA64B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FF4E371AAFF717007BD7F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,6 +951,7 @@
 			children = (
 				D5200524178CF43B00FEA64B /* Demo */,
 				D5200544178CF4B000FEA64B /* RFUI */,
+				D5FF4E3B1AAFF717007BD7F4 /* RFUI Tests */,
 				D520051D178CF43B00FEA64B /* Frameworks */,
 				D520051C178CF43B00FEA64B /* Products */,
 			);
@@ -936,6 +961,7 @@
 			isa = PBXGroup;
 			children = (
 				D520051B178CF43B00FEA64B /* RFDemo.app */,
+				D5FF4E3A1AAFF717007BD7F4 /* RFUI Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1705,6 +1731,25 @@
 			path = RFNavigationController;
 			sourceTree = "<group>";
 		};
+		D5FF4E3B1AAFF717007BD7F4 /* RFUI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */,
+				D5FF4E3C1AAFF717007BD7F4 /* Supporting Files */,
+				D5FF4E451AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.h */,
+				D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */,
+			);
+			path = "RFUI Tests";
+			sourceTree = "<group>";
+		};
+		D5FF4E3C1AAFF717007BD7F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5FF4E3D1AAFF717007BD7F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1725,6 +1770,24 @@
 			productReference = D520051B178CF43B00FEA64B /* RFDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D5FF4E391AAFF717007BD7F4 /* RFUI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FF4E441AAFF717007BD7F4 /* Build configuration list for PBXNativeTarget "RFUI Tests" */;
+			buildPhases = (
+				D5FF4E361AAFF717007BD7F4 /* Sources */,
+				D5FF4E371AAFF717007BD7F4 /* Frameworks */,
+				D5FF4E381AAFF717007BD7F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5FF4E411AAFF717007BD7F4 /* PBXTargetDependency */,
+			);
+			name = "RFUI Tests";
+			productName = "RFUI Tests";
+			productReference = D5FF4E3A1AAFF717007BD7F4 /* RFUI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1733,6 +1796,12 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = RFUI;
+				TargetAttributes = {
+					D5FF4E391AAFF717007BD7F4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D520051A178CF43B00FEA64B;
+					};
+				};
 			};
 			buildConfigurationList = D5200516178CF43B00FEA64B /* Build configuration list for PBXProject "RFDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1747,6 +1816,7 @@
 			projectRoot = "";
 			targets = (
 				D520051A178CF43B00FEA64B /* RFDemo */,
+				D5FF4E391AAFF717007BD7F4 /* RFUI Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -1788,6 +1858,13 @@
 				D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */,
 				D51D83FA17977E920086D902 /* RFStatusBarNotificationWindow.xib in Resources */,
 				D5B20E3019371D1500CBC939 /* LICENSE-SVProgressHUD in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FF4E381AAFF717007BD7F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1966,7 +2043,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5FF4E361AAFF717007BD7F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FF4E3F1AAFF717007BD7F4 /* RFSwizzleTests.m in Sources */,
+				D5FF4E471AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5FF4E411AAFF717007BD7F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D520051A178CF43B00FEA64B /* RFDemo */;
+			targetProxy = D5FF4E401AAFF717007BD7F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D5200527178CF43B00FEA64B /* InfoPlist.strings */ = {
@@ -2094,6 +2188,67 @@
 			};
 			name = Release;
 		};
+		D5FF4E421AAFF717007BD7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "RFUI Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFDemo.app/RFDemo";
+			};
+			name = Debug;
+		};
+		D5FF4E431AAFF717007BD7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "RFUI Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFDemo.app/RFDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2114,6 +2269,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D5FF4E441AAFF717007BD7F4 /* Build configuration list for PBXNativeTarget "RFUI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FF4E421AAFF717007BD7F4 /* Debug */,
+				D5FF4E431AAFF717007BD7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
