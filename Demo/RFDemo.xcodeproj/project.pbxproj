@@ -53,8 +53,6 @@
 		D51D842B179780C00086D902 /* RFNavigationPushAsRootSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D841C179780C00086D902 /* RFNavigationPushAsRootSegue.m */; };
 		D51D842C179780C00086D902 /* RFNavigationPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D841E179780C00086D902 /* RFNavigationPushSegue.m */; };
 		D51D842D179780C00086D902 /* RFSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D8420179780C00086D902 /* RFSegue.m */; };
-		D51D8435179781480086D902 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D8431179781480086D902 /* SSKeychain.m */; };
-		D51D8436179781480086D902 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D8433179781480086D902 /* SSKeychainQuery.m */; };
 		D51D844D179781930086D902 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D843B179781930086D902 /* AFHTTPRequestOperation.m */; };
 		D51D8452179781930086D902 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D8446179781930086D902 /* AFURLConnectionOperation.m */; };
 		D51D8457179782880086D902 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51D8456179782870086D902 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -323,11 +321,6 @@
 		D51D841F179780C00086D902 /* RFSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegue.h; sourceTree = "<group>"; };
 		D51D8420179780C00086D902 /* RFSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegue.m; sourceTree = "<group>"; };
 		D51D8421179780C00086D902 /* RFSegueDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegueDelegate.h; sourceTree = "<group>"; };
-		D51D842F179781480086D902 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D51D8430179781480086D902 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
-		D51D8431179781480086D902 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
-		D51D8432179781480086D902 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
-		D51D8433179781480086D902 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		D51D843A179781930086D902 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		D51D843B179781930086D902 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		D51D8445179781930086D902 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
@@ -359,7 +352,6 @@
 		D52005F8178CF4B100FEA64B /* RFKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFKeyboard.m; sourceTree = "<group>"; };
 		D520062F178CF4B100FEA64B /* dout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dout.h; sourceTree = "<group>"; };
 		D5200630178CF4B100FEA64B /* dout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dout.m; sourceTree = "<group>"; };
-		D520063B178CF4B100FEA64B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D5200645178CF4B100FEA64B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D5200646178CF4B100FEA64B /* README~zh-hans.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README~zh-hans.md"; sourceTree = "<group>"; };
 		D520064C178CF4B100FEA64B /* RFARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFARC.h; sourceTree = "<group>"; };
@@ -908,19 +900,6 @@
 			path = Return;
 			sourceTree = "<group>";
 		};
-		D51D842E179781480086D902 /* SSKeychain */ = {
-			isa = PBXGroup;
-			children = (
-				D51D842F179781480086D902 /* LICENSE */,
-				D51D8430179781480086D902 /* SSKeychain.h */,
-				D51D8431179781480086D902 /* SSKeychain.m */,
-				D51D8432179781480086D902 /* SSKeychainQuery.h */,
-				D51D8433179781480086D902 /* SSKeychainQuery.m */,
-			);
-			name = SSKeychain;
-			path = Frameworks/SSKeychain;
-			sourceTree = "<group>";
-		};
 		D51D8437179781930086D902 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -971,7 +950,6 @@
 			children = (
 				D51D8437179781930086D902 /* AFNetworking */,
 				D5B9EDAE1907A08C0093570F /* JSONModel */,
-				D51D842E179781480086D902 /* SSKeychain */,
 				D549013A18FB90F200EDA527 /* SVProgressHUD */,
 				D51D845C179782DE0086D902 /* AudioToolbox.framework */,
 				D51D8458179782AD0086D902 /* AVFoundation.framework */,
@@ -1092,7 +1070,6 @@
 				D5321F2C1AAF2CB0008EBFE2 /* doutkit */,
 				D5321F311AAF2CB0008EBFE2 /* external */,
 				D5321EED1AAF2C90008EBFE2 /* extobjc */,
-				D520063B178CF4B100FEA64B /* LICENSE */,
 				D520062F178CF4B100FEA64B /* dout.h */,
 				D5200630178CF4B100FEA64B /* dout.m */,
 				D5200645178CF4B100FEA64B /* README.md */,
@@ -2032,8 +2009,6 @@
 				D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */,
 				D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */,
 				D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */,
-				D51D8435179781480086D902 /* SSKeychain.m in Sources */,
-				D51D8436179781480086D902 /* SSKeychainQuery.m in Sources */,
 				D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */,
 				D5321F411AAF2CB0008EBFE2 /* UIAlertView+RFKit.m in Sources */,
 				D5321F421AAF2CB0008EBFE2 /* UIButton+RFKit.m in Sources */,
