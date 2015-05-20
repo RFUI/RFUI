@@ -74,7 +74,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>RFTabBarController</string>
+		<string>RFTabController</string>
 		<key>Status</key>
 		<string>TEST</string>
 		<key>Detail</key>

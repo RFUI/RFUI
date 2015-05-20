@@ -40,6 +40,16 @@
     dout_debug(@"%@ > View Did Disappear", self.logIdentifier);
 }
 
+- (void)willMoveToParentViewController:(UIViewController *)parent {
+    [super willMoveToParentViewController:parent];
+    dout_debug(@"%@ > Will Move to Parent View Controller: %p", self.logIdentifier, parent);
+}
+
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+    [super didMoveToParentViewController:parent];
+    dout_debug(@"%@ > Did Move to Parent View Controller: %p", self.logIdentifier, parent);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     dout_debug(@"%@ > Did Receive Memory Warning", self.logIdentifier);

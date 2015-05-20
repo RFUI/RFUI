@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 RFUI. All rights reserved.
 //
 
-#import "RFTabBarController.h"
+#import "RFTabController.h"
 
-@interface RFDTabBarRootController : RFTabBarController
+@interface RFDBasicTabController : RFTabController
 
 @end

@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 RFUI. All rights reserved.
 //
 
-#import "RFDTabBarRootController.h"
+#import "RFDTabController.h"
 
-@interface RFDTabBarRootController ()
+@interface RFDBasicTabController ()
 @property (strong, nonatomic) UIViewController *tab1ViewController;
 @property (strong, nonatomic) UIViewController *tab2ViewController;
 @property (strong, nonatomic) UIViewController *tab3ViewController;
 @end
 
-@implementation RFDTabBarRootController
+@implementation RFDBasicTabController
 
 - (UIViewController *)tab1ViewController {
     if (_tab1ViewController) return _tab1ViewController;
