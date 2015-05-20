@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MwZ-m2-cfe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MwZ-m2-cfe">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Cell Auto Height-->
+        <!--Cell Auto Height-->
         <scene sceneID="dUn-fn-BYM">
             <objects>
                 <tableViewController id="MwZ-m2-cfe" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="-216" y="145"/>
         </scene>
-        <!--Table View Cell Height Delegate Demo View Controller - Static-->
+        <!--Static-->
         <scene sceneID="km2-KL-NSV">
             <objects>
                 <tableViewController id="LMm-lC-Xne" customClass="RFTableViewCellHeightDelegateDemoViewController" sceneMemberID="viewController">
@@ -89,7 +89,6 @@
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ccV-gD-gsg" customClass="RFTableViewCellHeightDelegateDemoLabel">
                                             <rect key="frame" x="20" y="5" width="280" height="49"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.089999999999999997" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
@@ -115,7 +114,6 @@
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="211" translatesAutoresizingMaskIntoConstraints="NO" id="Jpg-8J-Ayv" customClass="RFTableViewCellHeightDelegateDemoLabel">
                                             <rect key="frame" x="76" y="13" width="211" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -123,7 +121,6 @@
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nBJ-fg-gHv">
                                             <rect key="frame" x="11" y="12" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="Hiu-0n-830"/>
@@ -171,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="324" y="-93"/>
         </scene>
-        <!--Table View Cell Height Delegate Asynchronous Demo View Controller - Asynchrony Test-->
+        <!--Asynchrony Test-->
         <scene sceneID="1YH-51-ZBd">
             <objects>
                 <tableViewController id="JHA-Gv-ThL" customClass="RFTableViewCellHeightDelegateAsynchronousDemoViewController" sceneMemberID="viewController">
@@ -189,7 +186,6 @@
                                     <subviews>
                                         <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-yL-p0x">
                                             <rect key="frame" x="0.0" y="0.0" width="252" height="122"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="750" constant="10" id="0Xb-Ed-ki8"/>
@@ -200,7 +196,6 @@
                                         </webView>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2o4-lC-XJ3">
                                             <rect key="frame" x="262" y="45" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </switch>
                                     </subviews>
                                     <constraints>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GhY-GP-DtK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GhY-GP-DtK">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - RFNavigationController-->
+        <!--RFNavigationController-->
         <scene sceneID="PCg-5a-aHY">
             <objects>
                 <tableViewController id="apO-gk-EGN" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="401" y="188"/>
         </scene>
-        <!--Navigation Status Bar Hidden View Controller - Stauts Bar Hidden-->
+        <!--Stauts Bar Hidden-->
         <scene sceneID="Zmj-DN-Ug3">
             <objects>
                 <viewController id="iCd-1I-l8n" customClass="RFDNavigationStatusBarHiddenViewController" sceneMemberID="viewController">
@@ -86,7 +86,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Li0-E3-s97">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -111,7 +110,7 @@
             </objects>
             <point key="canvasLocation" x="911" y="188"/>
         </scene>
-        <!--Navigation Tab Show View Controller - Tab Show-->
+        <!--Tab Show-->
         <scene sceneID="dUI-Th-DPU">
             <objects>
                 <viewController id="xKl-aL-B8v" customClass="RFDNavigationTabShowViewController" sceneMemberID="viewController">
@@ -125,11 +124,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5o8-gl-mnx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8o-w4-bTS">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="ahA-It-EQe"/>
@@ -137,7 +134,6 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abc-c6-dkC">
                                         <rect key="frame" x="0.0" y="494" width="320" height="10"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="gpC-WG-yFq"/>
@@ -176,7 +172,7 @@
             </objects>
             <point key="canvasLocation" x="1424" y="188"/>
         </scene>
-        <!--Navigation Bar Hidden View Controller - Navigation Bar Hidden-->
+        <!--Navigation Bar Hidden-->
         <scene sceneID="vI8-py-Gp9">
             <objects>
                 <viewController id="oDF-xn-2PW" customClass="RFDNavigationBarHiddenViewController" sceneMemberID="viewController">
@@ -190,11 +186,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqS-Ah-vWf">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DF4-Zx-uus" customClass="RFSeguePopButton">
                                         <rect key="frame" x="20" y="20" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Pop">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -241,7 +235,6 @@
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bottom Bar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5l-qG-hVT">
                             <rect key="frame" x="110" y="14" width="100" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
