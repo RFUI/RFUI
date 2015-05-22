@@ -209,6 +209,7 @@
 		D5D1AFE8198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D1AFE7198F2F4D00FE0656 /* RFDNavigationStatusBarHiddenViewController.m */; };
 		D5D1AFF5198F49CC00FE0656 /* UITextFiledDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D1AFF2198F49CC00FE0656 /* UITextFiledDelegateChain.m */; };
 		D5D1AFF6198F49CC00FE0656 /* UITextViewDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D1AFF4198F49CC00FE0656 /* UITextViewDelegateChain.m */; };
+		D5D4877B1B0EE757000638F5 /* RFPageTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D4877A1B0EE757000638F5 /* RFPageTabController.m */; };
 		D5D7786D1A13234F003D9440 /* UISearchBarDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D7786C1A13234F003D9440 /* UISearchBarDelegateChain.m */; };
 		D5E72B59198D06EF0048B677 /* RFAPICacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B58198D06EF0048B677 /* RFAPICacheManager.m */; };
 		D5E72B5D198D07720048B677 /* RFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B5C198D07720048B677 /* RFNavigationController.m */; };
@@ -622,6 +623,8 @@
 		D5D1AFF2198F49CC00FE0656 /* UITextFiledDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFiledDelegateChain.m; sourceTree = "<group>"; };
 		D5D1AFF3198F49CC00FE0656 /* UITextViewDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewDelegateChain.h; sourceTree = "<group>"; };
 		D5D1AFF4198F49CC00FE0656 /* UITextViewDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewDelegateChain.m; sourceTree = "<group>"; };
+		D5D487791B0EE757000638F5 /* RFPageTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPageTabController.h; sourceTree = "<group>"; };
+		D5D4877A1B0EE757000638F5 /* RFPageTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPageTabController.m; sourceTree = "<group>"; };
 		D5D7786B1A13234F003D9440 /* UISearchBarDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISearchBarDelegateChain.h; sourceTree = "<group>"; };
 		D5D7786C1A13234F003D9440 /* UISearchBarDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISearchBarDelegateChain.m; sourceTree = "<group>"; };
 		D5E72B57198D06EF0048B677 /* RFAPICacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAPICacheManager.h; sourceTree = "<group>"; };
@@ -1396,6 +1399,8 @@
 			children = (
 				D54A10EA1B0C87DC00F967AD /* RFTabController.h */,
 				D54A10EB1B0C87DC00F967AD /* RFTabController.m */,
+				D5D487791B0EE757000638F5 /* RFPageTabController.h */,
+				D5D4877A1B0EE757000638F5 /* RFPageTabController.m */,
 			);
 			path = RFTabController;
 			sourceTree = "<group>";
@@ -1937,6 +1942,7 @@
 				D5321F381AAF2CB0008EBFE2 /* NSDateFormatter+RFKit.m in Sources */,
 				D5321F391AAF2CB0008EBFE2 /* NSDictionary+RFKit.m in Sources */,
 				D5321F3A1AAF2CB0008EBFE2 /* NSFileManager+RFKit.m in Sources */,
+				D5D4877B1B0EE757000638F5 /* RFPageTabController.m in Sources */,
 				D5321F3B1AAF2CB0008EBFE2 /* NSJSONSerialization+RFKit.m in Sources */,
 				D5321F401AAF2CB0008EBFE2 /* NSLayoutConstraint+RFKit.m in Sources */,
 				D51D83CC17977E920086D902 /* NSManagedObject+RFCoreData.m in Sources */,

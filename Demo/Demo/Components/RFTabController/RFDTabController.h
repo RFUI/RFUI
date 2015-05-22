@@ -8,6 +8,24 @@
 
 #import "RFTabController.h"
 
-@interface RFDBasicTabController : RFTabController
+@interface RFDBasicTabController : RFTabController <
+    RFTabControllerDelegate
+>
+@property (strong, nonatomic) UIViewController *tab1ViewController;
+@property (strong, nonatomic) UIViewController *tab2ViewController;
+@property (strong, nonatomic) UIViewController *tab3ViewController;
 
+@property (weak, nonatomic) IBOutlet UISwitch *shouldChangeSelectionSwitch;
+@end
+
+#import "RFPageTabController.h"
+
+@interface RFDPageTabController : RFPageTabController <
+    RFTabControllerDelegate
+>
+@property (strong, nonatomic) UIViewController *tab1ViewController;
+@property (strong, nonatomic) UIViewController *tab2ViewController;
+@property (strong, nonatomic) UIViewController *tab3ViewController;
+
+@property (weak, nonatomic) IBOutlet UISwitch *shouldChangeSelectionSwitch;
 @end
