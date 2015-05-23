@@ -37,14 +37,19 @@
     return _tab3ViewController;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.viewControllers = [NSArray arrayWithObjects:self.tab1ViewController, self.tab2ViewController, self.tab3ViewController, nil];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.viewControllers = [NSArray arrayWithObjects:self.tab1ViewController, self.tab2ViewController, self.tab3ViewController, nil];
     self.delegate = self;
 }
 
 - (IBAction)onTabButtonTapped:(UIButton *)sender {
-    [self setSelectedIndex:sender.tag animated:YES];
+    [self setSelectedIndex:sender.tag animated:YES completion:nil];
 }
 
 - (IBAction)onSimulateMemoryWarningButtonTapped:(id)sender {
@@ -90,18 +95,26 @@
     return _tab3ViewController;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.viewControllers = [NSArray arrayWithObjects:self.tab1ViewController, self.tab2ViewController, self.tab3ViewController, nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.viewControllers = [NSArray arrayWithObjects:self.tab1ViewController, self.tab2ViewController, self.tab3ViewController, nil];
     self.delegate = self;
 }
 
 - (IBAction)onTabButtonTapped:(UIButton *)sender {
-    [self setSelectedIndex:sender.tag animated:YES];
+    [self setSelectedIndex:sender.tag animated:YES completion:nil];
 }
 
 - (IBAction)onShouldChangeSelectionSwitchChanged:(id)sender {
     self.selectedViewController = self.selectedViewController;
+}
+
+- (IBAction)onScrollEnabledSwitchChanged:(UISwitch *)sender {
+    self.scrollEnabled = sender.on;
 }
 
 - (IBAction)onSimulateMemoryWarningButtonTapped:(id)sender {

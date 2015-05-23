@@ -131,7 +131,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4j-91-mt0" userLabel="Control Panel">
-                                <rect key="frame" x="79" y="417" width="241" height="83"/>
+                                <rect key="frame" x="79" y="380" width="241" height="120"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UP0-u3-FB7">
                                         <rect key="frame" x="184" y="44" width="51" height="31"/>
@@ -154,17 +154,34 @@
                                             <action selector="onSimulateMemoryWarningButtonTapped:" destination="RSK-hl-bED" eventType="touchUpInside" id="uZB-R7-eOh"/>
                                         </connections>
                                     </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agF-CC-b1v">
+                                        <rect key="frame" x="184" y="81" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="onScrollEnabledSwitchChanged:" destination="RSK-hl-bED" eventType="valueChanged" id="bLw-D5-458"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll Enable" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRK-Tn-EEf">
+                                        <rect key="frame" x="12" y="88" width="164" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="wNQ-D6-xqb" firstAttribute="leading" secondItem="Q4j-91-mt0" secondAttribute="leading" constant="12" id="3MX-Hg-IbG"/>
                                     <constraint firstAttribute="trailing" secondItem="Y73-aR-7Sh" secondAttribute="trailing" constant="8" id="90y-65-x6H"/>
+                                    <constraint firstItem="TRK-Tn-EEf" firstAttribute="leading" secondItem="Q4j-91-mt0" secondAttribute="leading" constant="12" id="PRA-2H-Eer"/>
                                     <constraint firstItem="UP0-u3-FB7" firstAttribute="top" secondItem="Y73-aR-7Sh" secondAttribute="bottom" constant="6" id="RT7-5f-GIU"/>
-                                    <constraint firstAttribute="bottom" secondItem="UP0-u3-FB7" secondAttribute="bottom" constant="8" id="SQB-sv-hDk"/>
+                                    <constraint firstItem="agF-CC-b1v" firstAttribute="leading" secondItem="TRK-Tn-EEf" secondAttribute="trailing" constant="8" id="Wdb-9F-waE"/>
                                     <constraint firstItem="Y73-aR-7Sh" firstAttribute="leading" secondItem="Q4j-91-mt0" secondAttribute="leading" constant="12" id="dRT-He-Hcc"/>
                                     <constraint firstItem="Y73-aR-7Sh" firstAttribute="top" secondItem="Q4j-91-mt0" secondAttribute="top" constant="8" id="dX9-rM-UVQ"/>
+                                    <constraint firstItem="agF-CC-b1v" firstAttribute="top" secondItem="UP0-u3-FB7" secondAttribute="bottom" constant="6" id="eDv-fE-Uve"/>
+                                    <constraint firstAttribute="trailing" secondItem="agF-CC-b1v" secondAttribute="trailing" constant="8" id="k9Q-7G-sr4"/>
+                                    <constraint firstItem="agF-CC-b1v" firstAttribute="centerY" secondItem="TRK-Tn-EEf" secondAttribute="centerY" id="kkp-zu-VS9"/>
                                     <constraint firstAttribute="trailing" secondItem="UP0-u3-FB7" secondAttribute="trailing" constant="8" id="lrK-Cr-71b"/>
                                     <constraint firstItem="UP0-u3-FB7" firstAttribute="centerY" secondItem="wNQ-D6-xqb" secondAttribute="centerY" id="nCs-fc-9c9"/>
+                                    <constraint firstAttribute="bottom" secondItem="agF-CC-b1v" secondAttribute="bottom" constant="8" id="tZp-fW-yhf"/>
                                     <constraint firstItem="UP0-u3-FB7" firstAttribute="leading" secondItem="wNQ-D6-xqb" secondAttribute="trailing" constant="8" id="ubi-Qb-GB9"/>
                                 </constraints>
                             </view>
@@ -183,11 +200,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Page" id="ZL5-cC-SbI"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="forceUnloadInvisibleWhenMemoryWarningReceived" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="scrollEnabledSwitch" destination="agF-CC-b1v" id="Rqc-q1-1RF"/>
                         <outlet property="shouldChangeSelectionSwitch" destination="UP0-u3-FB7" id="JJM-8C-FHg"/>
                         <outlet property="wrapperView" destination="yYx-lI-qkc" id="jqE-lB-9Wo"/>
                     </connections>
@@ -418,7 +435,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="JbX-IC-WkL" firstAttribute="centerY" secondItem="9kc-dj-jny" secondAttribute="centerY" id="0wV-Yc-Ovd"/>
                                     <constraint firstItem="JbX-IC-WkL" firstAttribute="top" secondItem="eIv-eW-vHc" secondAttribute="bottom" constant="6" id="2t1-wc-BTD"/>

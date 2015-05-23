@@ -28,4 +28,5 @@
 @property (strong, nonatomic) UIViewController *tab3ViewController;
 
 @property (weak, nonatomic) IBOutlet UISwitch *shouldChangeSelectionSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *scrollEnabledSwitch;
 @end
