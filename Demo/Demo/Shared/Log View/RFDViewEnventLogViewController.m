@@ -59,4 +59,8 @@
     return [NSString stringWithFormat:@"%p(%@)", self, self.title?: @"No title"];
 }
 
+- (void)dealloc {
+    dout_debug(@"%@ > Dealloc", self.logIdentifier);
+}
+
 @end

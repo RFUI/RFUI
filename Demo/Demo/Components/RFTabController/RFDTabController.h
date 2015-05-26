@@ -30,3 +30,9 @@
 @property (weak, nonatomic) IBOutlet UISwitch *shouldChangeSelectionSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *scrollEnabledSwitch;
 @end
+
+@interface RFDDataSourcePageTabController : RFDPageTabController <
+    RFTabControllerDataSource
+>
+@property (weak, nonatomic) IBOutlet UISwitch *shouldUnloadFirstViewController;
+@end

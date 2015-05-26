@@ -62,6 +62,10 @@
     return self.shouldChangeSelectionSwitch.on;
 }
 
+- (void)RFTabController:(RFTabController *)tabController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index {
+    doutwork()
+}
+
 @end
 
 
@@ -95,13 +99,13 @@
     return _tab3ViewController;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    self.viewControllers = [NSArray arrayWithObjects:self.tab1ViewController, self.tab2ViewController, self.tab3ViewController, nil];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setup];
+}
+
+- (void)setup {
+    self.viewControllers = [NSArray arrayWithObjects:self.tab1ViewController, self.tab2ViewController, self.tab3ViewController, nil];
     self.delegate = self;
 }
 
@@ -124,11 +128,42 @@
 #pragma mark - RFTabControllerDelegate
 
 - (BOOL)RFTabController:(RFTabController *)tabController shouldSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index {
-    if (viewController == tabController.selectedViewController) {
-        doutwork()
-        return YES;
-    }
+    doutwork()
     return self.shouldChangeSelectionSwitch.on;
+}
+
+- (void)RFTabController:(RFTabController *)tabController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index {
+    doutwork()
+}
+
+@end
+
+
+@implementation RFDDataSourcePageTabController
+
+- (void)setup {
+    self.dataSource = self;
+    self.viewControllers = nil;
+    self.tab1ViewController = nil;
+    self.tab2ViewController = nil;
+    self.tab3ViewController = nil;
+}
+
+- (NSUInteger)RFNumberOfViewControllerInTabController:(RFTabController *)tabController {
+    doutwork()
+    return 3;
+}
+
+- (UIViewController *)RFTabController:(RFTabController *)tabController viewControllerAtIndex:(NSUInteger)index {
+    doutwork()
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:[NSString stringWithFormat:@"T%d", (int)(index + 1)]];
+    return vc;
+}
+
+- (BOOL)RFTabController:(RFTabController *)tabController shouldUnlodadViewControllerAtIndex:(NSUInteger)index {
+    if (index) return YES;
+
+    return self.shouldUnloadFirstViewController.on;
 }
 
 @end

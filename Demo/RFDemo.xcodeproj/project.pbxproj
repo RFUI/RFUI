@@ -134,6 +134,7 @@
 		D54A10F11B0C884600F967AD /* RFDTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54A10EF1B0C884600F967AD /* RFDTabController.m */; };
 		D54A10F21B0C884600F967AD /* RFTabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54A10F01B0C884600F967AD /* RFTabController.storyboard */; };
 		D54D40D3185EA2E800A09A35 /* RFAssetsCacheTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */; };
+		D54E20261B146612008F1393 /* RFDataSourceArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D54E20251B146612008F1393 /* RFDataSourceArray.m */; };
 		D551BEDD19DA318F00ED54E3 /* RFImageCropper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D551BEDC19DA318F00ED54E3 /* RFImageCropper.storyboard */; };
 		D551BEE019DA31C800ED54E3 /* RFDImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D551BEDF19DA31C800ED54E3 /* RFDImageCropperViewController.m */; };
 		D55F9DF7195D3D800004DDCD /* RFWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55F9DF6195D3D800004DDCD /* RFWindow.storyboard */; };
@@ -216,7 +217,6 @@
 		D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E72B5F198D0D460048B677 /* RFNavigationController.storyboard */; };
 		D5E72B63198D15A20048B677 /* RFDNavigationTabShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B62198D15A20048B677 /* RFDNavigationTabShowViewController.m */; };
 		D5E72B66198D16BE0048B677 /* RFDNavigationRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E72B65198D16BE0048B677 /* RFDNavigationRootController.m */; };
-		D5FF4E3F1AAFF717007BD7F4 /* RFSwizzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */; };
 		D5FF4E471AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */; };
 /* End PBXBuildFile section */
 
@@ -498,6 +498,8 @@
 		D54A10F01B0C884600F967AD /* RFTabController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFTabController.storyboard; sourceTree = "<group>"; };
 		D54D40D1185EA2E800A09A35 /* RFAssetsCacheTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAssetsCacheTestHelper.h; sourceTree = "<group>"; };
 		D54D40D2185EA2E800A09A35 /* RFAssetsCacheTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAssetsCacheTestHelper.m; sourceTree = "<group>"; };
+		D54E20241B146612008F1393 /* RFDataSourceArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDataSourceArray.h; sourceTree = "<group>"; };
+		D54E20251B146612008F1393 /* RFDataSourceArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDataSourceArray.m; sourceTree = "<group>"; };
 		D551BEDC19DA318F00ED54E3 /* RFImageCropper.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFImageCropper.storyboard; sourceTree = "<group>"; };
 		D551BEDE19DA31C800ED54E3 /* RFDImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDImageCropperViewController.h; sourceTree = "<group>"; };
 		D551BEDF19DA31C800ED54E3 /* RFDImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDImageCropperViewController.m; sourceTree = "<group>"; };
@@ -638,7 +640,6 @@
 		D5E72B65198D16BE0048B677 /* RFDNavigationRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDNavigationRootController.m; sourceTree = "<group>"; };
 		D5FF4E3A1AAFF717007BD7F4 /* RFUI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RFUI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FF4E3D1AAFF717007BD7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFSwizzleTests.m; sourceTree = "<group>"; };
 		D5FF4E451AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSwizzleTestsObjects.h; sourceTree = "<group>"; };
 		D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSwizzleTestsObjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1024,6 +1025,7 @@
 				D51D833517977E910086D902 /* RFButton */,
 				D51D833C17977E910086D902 /* RFCheckbox */,
 				D51D833F17977E910086D902 /* RFCoreData */,
+				D54E20231B1465A9008F1393 /* RFDataSourceArray */,
 				D549012418FB8BF300EDA527 /* RFDelegateChain */,
 				D55FD841192F41FE00ECA92B /* RFDrawImage */,
 				D51D834F17977E910086D902 /* RFGridView */,
@@ -1397,10 +1399,10 @@
 		D54A10E91B0C87DC00F967AD /* RFTabController */ = {
 			isa = PBXGroup;
 			children = (
-				D54A10EA1B0C87DC00F967AD /* RFTabController.h */,
-				D54A10EB1B0C87DC00F967AD /* RFTabController.m */,
 				D5D487791B0EE757000638F5 /* RFPageTabController.h */,
 				D5D4877A1B0EE757000638F5 /* RFPageTabController.m */,
+				D54A10EA1B0C87DC00F967AD /* RFTabController.h */,
+				D54A10EB1B0C87DC00F967AD /* RFTabController.m */,
 			);
 			path = RFTabController;
 			sourceTree = "<group>";
@@ -1413,6 +1415,15 @@
 				D54A10F01B0C884600F967AD /* RFTabController.storyboard */,
 			);
 			path = RFTabController;
+			sourceTree = "<group>";
+		};
+		D54E20231B1465A9008F1393 /* RFDataSourceArray */ = {
+			isa = PBXGroup;
+			children = (
+				D54E20241B146612008F1393 /* RFDataSourceArray.h */,
+				D54E20251B146612008F1393 /* RFDataSourceArray.m */,
+			);
+			path = RFDataSourceArray;
 			sourceTree = "<group>";
 		};
 		D551BEDB19DA317A00ED54E3 /* RFImageCropper */ = {
@@ -1757,7 +1768,6 @@
 			isa = PBXGroup;
 			children = (
 				D5FF4E3C1AAFF717007BD7F4 /* Supporting Files */,
-				D5FF4E3E1AAFF717007BD7F4 /* RFSwizzleTests.m */,
 				D5FF4E451AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.h */,
 				D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */,
 			);
@@ -1942,7 +1952,6 @@
 				D5321F381AAF2CB0008EBFE2 /* NSDateFormatter+RFKit.m in Sources */,
 				D5321F391AAF2CB0008EBFE2 /* NSDictionary+RFKit.m in Sources */,
 				D5321F3A1AAF2CB0008EBFE2 /* NSFileManager+RFKit.m in Sources */,
-				D5D4877B1B0EE757000638F5 /* RFPageTabController.m in Sources */,
 				D5321F3B1AAF2CB0008EBFE2 /* NSJSONSerialization+RFKit.m in Sources */,
 				D5321F401AAF2CB0008EBFE2 /* NSLayoutConstraint+RFKit.m in Sources */,
 				D51D83CC17977E920086D902 /* NSManagedObject+RFCoreData.m in Sources */,
@@ -1974,7 +1983,7 @@
 				D51D83CB17977E920086D902 /* RFCheckbox.m in Sources */,
 				D51D842A179780C00086D902 /* RFContainedSegue.m in Sources */,
 				D51D83C917977E920086D902 /* RFControl.m in Sources */,
-				D54A10F11B0C884600F967AD /* RFDTabController.m in Sources */,
+				D54E20261B146612008F1393 /* RFDataSourceArray.m in Sources */,
 				D549012718FB8BF300EDA527 /* RFDelegateChain.m in Sources */,
 				D551BEE019DA31C800ED54E3 /* RFDImageCropperViewController.m in Sources */,
 				D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */,
@@ -1987,6 +1996,7 @@
 				D5E72B63198D15A20048B677 /* RFDNavigationTabShowViewController.m in Sources */,
 				D55FD844192F41FE00ECA92B /* RFDrawImage.m in Sources */,
 				D55FD849192F421000ECA92B /* RFDrawView.m in Sources */,
+				D54A10F11B0C884600F967AD /* RFDTabController.m in Sources */,
 				D58C5E061988EB1C003CBF7E /* RFDTransitioningBarHiddenSourceViewController.m in Sources */,
 				D58C5E031988EB06003CBF7E /* RFDTransitioningBarHiddenTestViewController.m in Sources */,
 				D58C5DF91988E39B003CBF7E /* RFDTransitioningMoveInFromBottomViewController.m in Sources */,
@@ -2011,6 +2021,7 @@
 				D51D842B179780C00086D902 /* RFNavigationPushAsRootSegue.m in Sources */,
 				D51D842C179780C00086D902 /* RFNavigationPushSegue.m in Sources */,
 				D51D83E217977E920086D902 /* RFNoticeView.m in Sources */,
+				D5D4877B1B0EE757000638F5 /* RFPageTabController.m in Sources */,
 				D52006ED178CF4B100FEA64B /* RFPerformance.m in Sources */,
 				D51D83E317977E920086D902 /* RFPlugin.m in Sources */,
 				D51D8427179780C00086D902 /* RFPopBarButtonItem.m in Sources */,
@@ -2091,7 +2102,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5FF4E3F1AAFF717007BD7F4 /* RFSwizzleTests.m in Sources */,
 				D5FF4E471AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
