@@ -46,9 +46,9 @@
 		<key>Name</key>
 		<string>RFScrollViewPageControl</string>
 		<key>Status</key>
-		<string>Alpha</string>
+		<string>BETA</string>
 		<key>Detail</key>
-		<string>Seems ready to release. Will used in more project to verify that.</string>
+		<string>Seems ready to release.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>
@@ -66,7 +66,7 @@
 		<key>Name</key>
 		<string>RFSliderView</string>
 		<key>Status</key>
-		<string>TEST</string>
+		<string>Alpha</string>
 		<key>Detail</key>
 		<string>Works as expected. Will used in more project to verify that. Also, API will be improved.</string>
 		<key>Has Demo</key>
@@ -76,9 +76,9 @@
 		<key>Name</key>
 		<string>RFTabController</string>
 		<key>Status</key>
-		<string>TEST</string>
+		<string>Alpha</string>
 		<key>Detail</key>
-		<string></string>
+		<string>Seems work. Needs more test.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>
@@ -109,9 +109,9 @@ TODO:
 		<key>Name</key>
 		<string>RFTimer</string>
 		<key>Status</key>
-		<string>TEST</string>
+		<string>Alpha</string>
 		<key>Detail</key>
-		<string>Seems work. Needs more test.</string>
+		<string>Works as expected. Will used in more project to verify that.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>
