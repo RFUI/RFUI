@@ -156,6 +156,12 @@
 		D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF68F19500D7A00CB1B14 /* SimpleLogger.m */; };
 		D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56DF69119500D7A00CB1B14 /* SimpleConsoleView.m */; };
 		D5705EEC19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5705EEA19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m */; };
+		D57B0DEB1B8ABA72001D7964 /* UICollectionViewDataSourceChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B0DE41B8ABA72001D7964 /* UICollectionViewDataSourceChain.m */; };
+		D57B0DEC1B8ABA72001D7964 /* UICollectionViewDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B0DE61B8ABA72001D7964 /* UICollectionViewDelegateChain.m */; };
+		D57B0DED1B8ABA72001D7964 /* UICollectionViewDelegateFlowLayoutChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B0DE81B8ABA72001D7964 /* UICollectionViewDelegateFlowLayoutChain.m */; };
+		D57B0DEE1B8ABA72001D7964 /* UIScrollViewDelegateChain.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B0DEA1B8ABA72001D7964 /* UIScrollViewDelegateChain.m */; };
+		D57B0DF01B8ABAC0001D7964 /* RFDelegateChain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57B0DEF1B8ABAC0001D7964 /* RFDelegateChain.storyboard */; };
+		D57B0DF31B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B0DF21B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m */; };
 		D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D2C1938333700F21650 /* RootNavigationController.m */; };
 		D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */; };
 		D58C5DE51988DFCF003CBF7E /* RFAnimationTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5DD51988DFCF003CBF7E /* RFAnimationTransitioning.m */; };
@@ -545,6 +551,17 @@
 		D5705EE819695D3E0059A934 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
 		D5705EE919695D3E0059A934 /* RFTableViewAutoFetchDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewAutoFetchDataSource.h; sourceTree = "<group>"; };
 		D5705EEA19695D3E0059A934 /* RFTableViewAutoFetchDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewAutoFetchDataSource.m; sourceTree = "<group>"; };
+		D57B0DE31B8ABA72001D7964 /* UICollectionViewDataSourceChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDataSourceChain.h; sourceTree = "<group>"; };
+		D57B0DE41B8ABA72001D7964 /* UICollectionViewDataSourceChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDataSourceChain.m; sourceTree = "<group>"; };
+		D57B0DE51B8ABA72001D7964 /* UICollectionViewDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDelegateChain.h; sourceTree = "<group>"; };
+		D57B0DE61B8ABA72001D7964 /* UICollectionViewDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDelegateChain.m; sourceTree = "<group>"; };
+		D57B0DE71B8ABA72001D7964 /* UICollectionViewDelegateFlowLayoutChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDelegateFlowLayoutChain.h; sourceTree = "<group>"; };
+		D57B0DE81B8ABA72001D7964 /* UICollectionViewDelegateFlowLayoutChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDelegateFlowLayoutChain.m; sourceTree = "<group>"; };
+		D57B0DE91B8ABA72001D7964 /* UIScrollViewDelegateChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollViewDelegateChain.h; sourceTree = "<group>"; };
+		D57B0DEA1B8ABA72001D7964 /* UIScrollViewDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewDelegateChain.m; sourceTree = "<group>"; };
+		D57B0DEF1B8ABAC0001D7964 /* RFDelegateChain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFDelegateChain.storyboard; sourceTree = "<group>"; };
+		D57B0DF11B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDDelegateChainScrollviewChainTestViewController.h; sourceTree = "<group>"; };
+		D57B0DF21B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDDelegateChainScrollviewChainTestViewController.m; sourceTree = "<group>"; };
 		D58A5D2B1938333700F21650 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		D58A5D2C1938333700F21650 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		D58A5D30193836D000F21650 /* AutoLayoutMultiLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMultiLineLabel.h; sourceTree = "<group>"; };
@@ -1124,6 +1141,7 @@
 			children = (
 				D56CDDE7185AE99B0050241B /* RFAssetsCache */,
 				D5DB01DE1B5A0952006B0307 /* RFContainerView */,
+				D57B0DE21B8ABA3E001D7964 /* RFDelegateChain */,
 				D551BEDB19DA317A00ED54E3 /* RFImageCropper */,
 				D5E72B5E198D0CF30048B677 /* RFNavigationController */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
@@ -1541,6 +1559,16 @@
 			path = RFTableViewAutoFetchDataSource;
 			sourceTree = "<group>";
 		};
+		D57B0DE21B8ABA3E001D7964 /* RFDelegateChain */ = {
+			isa = PBXGroup;
+			children = (
+				D57B0DF11B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.h */,
+				D57B0DF21B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m */,
+				D57B0DEF1B8ABAC0001D7964 /* RFDelegateChain.storyboard */,
+			);
+			path = RFDelegateChain;
+			sourceTree = "<group>";
+		};
 		D58A5D2E1938365500F21650 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -1743,6 +1771,14 @@
 		D5D1AFF0198F49CC00FE0656 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D57B0DE31B8ABA72001D7964 /* UICollectionViewDataSourceChain.h */,
+				D57B0DE41B8ABA72001D7964 /* UICollectionViewDataSourceChain.m */,
+				D57B0DE51B8ABA72001D7964 /* UICollectionViewDelegateChain.h */,
+				D57B0DE61B8ABA72001D7964 /* UICollectionViewDelegateChain.m */,
+				D57B0DE71B8ABA72001D7964 /* UICollectionViewDelegateFlowLayoutChain.h */,
+				D57B0DE81B8ABA72001D7964 /* UICollectionViewDelegateFlowLayoutChain.m */,
+				D57B0DE91B8ABA72001D7964 /* UIScrollViewDelegateChain.h */,
+				D57B0DEA1B8ABA72001D7964 /* UIScrollViewDelegateChain.m */,
 				D5D7786B1A13234F003D9440 /* UISearchBarDelegateChain.h */,
 				D5D7786C1A13234F003D9440 /* UISearchBarDelegateChain.m */,
 				D5D1AFF1198F49CC00FE0656 /* UITextFiledDelegateChain.h */,
@@ -1930,6 +1966,7 @@
 				D5200538178CF43C00FEA64B /* MainStoryboard.storyboard in Resources */,
 				D56CDDE9185AE9B60050241B /* RFAssetsCache.storyboard in Resources */,
 				D5DB01E01B5A0975006B0307 /* RFContainerView.storyboard in Resources */,
+				D57B0DF01B8ABAC0001D7964 /* RFDelegateChain.storyboard in Resources */,
 				D551BEDD19DA318F00ED54E3 /* RFImageCropper.storyboard in Resources */,
 				D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */,
 				D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */,
@@ -1987,7 +2024,6 @@
 				D5B9EDBD1907A0BF0093570F /* JSONValueTransformer.m in Sources */,
 				D520052B178CF43C00FEA64B /* main.m in Sources */,
 				D5321F351AAF2CB0008EBFE2 /* NSArray+RFKit.m in Sources */,
-				D5DB01EC1B5A0DB4006B0307 /* RFDContainerViewLazyLoadTestViewController.m in Sources */,
 				D5321F361AAF2CB0008EBFE2 /* NSBundle+RFKit.m in Sources */,
 				D5321F371AAF2CB0008EBFE2 /* NSDate+RFKit.m in Sources */,
 				D5321F381AAF2CB0008EBFE2 /* NSDateFormatter+RFKit.m in Sources */,
@@ -2027,6 +2063,9 @@
 				D51D83C917977E920086D902 /* RFControl.m in Sources */,
 				D54E20261B146612008F1393 /* RFDataSourceArray.m in Sources */,
 				D5DB01E61B5A09DB006B0307 /* RFDContainerViewChildrenViewController.m in Sources */,
+				D5DB01EC1B5A0DB4006B0307 /* RFDContainerViewLazyLoadTestViewController.m in Sources */,
+				D5DB01EF1B5A496F006B0307 /* RFDContainerViewParentViewController.m in Sources */,
+				D57B0DF31B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m in Sources */,
 				D549012718FB8BF300EDA527 /* RFDelegateChain.m in Sources */,
 				D551BEE019DA31C800ED54E3 /* RFDImageCropperViewController.m in Sources */,
 				D51D8426179780C00086D902 /* RFDismissModalBarButtonItem.m in Sources */,
@@ -2115,6 +2154,9 @@
 				D5321F411AAF2CB0008EBFE2 /* UIAlertView+RFKit.m in Sources */,
 				D5321F421AAF2CB0008EBFE2 /* UIButton+RFKit.m in Sources */,
 				D598F4AC18D1499B009C142D /* UIButton+RFResizableBackgroundImage.m in Sources */,
+				D57B0DEB1B8ABA72001D7964 /* UICollectionViewDataSourceChain.m in Sources */,
+				D57B0DEC1B8ABA72001D7964 /* UICollectionViewDelegateChain.m in Sources */,
+				D57B0DED1B8ABA72001D7964 /* UICollectionViewDelegateFlowLayoutChain.m in Sources */,
 				D5321F431AAF2CB0008EBFE2 /* UIColor+RFKit.m in Sources */,
 				D5321F441AAF2CB0008EBFE2 /* UIDevice+RFKit.m in Sources */,
 				D5321F451AAF2CB0008EBFE2 /* UIImage+RFKit.m in Sources */,
@@ -2122,6 +2164,7 @@
 				D5321F471AAF2CB0008EBFE2 /* UIResponder+RFKit.m in Sources */,
 				D5321F481AAF2CB0008EBFE2 /* UIScrollView+RFScrolling.m in Sources */,
 				D5B20E4419381B8400CBC939 /* UIScrollView+RFScrollViewContentDistance.m in Sources */,
+				D57B0DEE1B8ABA72001D7964 /* UIScrollViewDelegateChain.m in Sources */,
 				D5321F491AAF2CB0008EBFE2 /* UISearchBar+RFKit.m in Sources */,
 				D5D7786D1A13234F003D9440 /* UISearchBarDelegateChain.m in Sources */,
 				D5321F4A1AAF2CB0008EBFE2 /* UIStoryboard+RFKit.m in Sources */,
@@ -2131,7 +2174,6 @@
 				D5D1AFF6198F49CC00FE0656 /* UITextViewDelegateChain.m in Sources */,
 				D5321F4C1AAF2CB0008EBFE2 /* UIView+RFAnimate.m in Sources */,
 				D5321F4D1AAF2CB0008EBFE2 /* UIView+RFKit.m in Sources */,
-				D5DB01EF1B5A496F006B0307 /* RFDContainerViewParentViewController.m in Sources */,
 				D5B9EDA319079F740093570F /* UIView+RFLayerApperance.m in Sources */,
 				D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */,
 				D5321F4E1AAF2CB0008EBFE2 /* UIViewController+RFKit.m in Sources */,

@@ -34,6 +34,16 @@
 	</dict>
 	<dict>
 		<key>Name</key>
+		<string>RFDelegateChain</string>
+		<key>Status</key>
+		<string>BETA</string>
+		<key>Detail</key>
+		<string></string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
 		<string>RFNavigationController</string>
 		<key>Status</key>
 		<string>TEST</string>

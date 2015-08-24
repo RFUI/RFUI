@@ -10,15 +10,15 @@ static NSString *const TitleKey = @"title";
 @implementation RFSliderViewDemoViewController
 RFUIInterfaceOrientationSupportAll
 
-#define _ItemWithImageName(NAME) \
+#define _itemWithImageName(NAME) \
     @{ ImageKey: [UIImage imageNamed:NAME], TitleKey: NAME }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.items = @[ _ItemWithImageName(@"300x600"), _ItemWithImageName(@"50x50"), _ItemWithImageName(@"800x600"), _ItemWithImageName(@"1400x600") ];
+    self.items = @[ _itemWithImageName(@"300x600"), _itemWithImageName(@"50x50"), _itemWithImageName(@"800x600"), _itemWithImageName(@"1400x600") ];
 }
 
-#undef _ItemWithImageName
+#undef _itemWithImageName
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.items.count;
