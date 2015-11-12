@@ -64,6 +64,16 @@
 	</dict>
 	<dict>
 		<key>Name</key>
+		<string>RFLine</string>
+		<key>Status</key>
+		<string>Good</string>
+		<key>Detail</key>
+		<string>Draw lines using view.</string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
 		<string>RFScrollViewPageControl</string>
 		<key>Status</key>
 		<string>BETA</string>

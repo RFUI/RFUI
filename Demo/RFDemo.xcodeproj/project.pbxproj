@@ -17,6 +17,8 @@
 		D51000C4195BE69800239810 /* RFAsynchronousPresentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000C1195BE69800239810 /* RFAsynchronousPresentSegue.m */; };
 		D51000C5195BE69800239810 /* RFAsynchronousPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000C3195BE69800239810 /* RFAsynchronousPushSegue.m */; };
 		D51000C8195BF53100239810 /* RFPresentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D51000C7195BF53100239810 /* RFPresentSegue.m */; };
+		D51C8A701BF49E6B007386CE /* NSError+RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D51C8A6F1BF49E6B007386CE /* NSError+RFKit.m */; };
+		D51C8A761BF4A245007386CE /* RFLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51C8A751BF4A245007386CE /* RFLine.storyboard */; };
 		D51D83C617977E920086D902 /* RFAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833117977E910086D902 /* RFAudioPlayer.m */; };
 		D51D83C817977E920086D902 /* RFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833717977E910086D902 /* RFButton.m */; };
 		D51D83C917977E920086D902 /* RFControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D833917977E910086D902 /* RFControl.m */; };
@@ -261,6 +263,9 @@
 		D51000C3195BE69800239810 /* RFAsynchronousPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAsynchronousPushSegue.m; sourceTree = "<group>"; };
 		D51000C6195BF53100239810 /* RFPresentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFPresentSegue.h; sourceTree = "<group>"; };
 		D51000C7195BF53100239810 /* RFPresentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFPresentSegue.m; sourceTree = "<group>"; };
+		D51C8A6E1BF49E6B007386CE /* NSError+RFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+RFKit.h"; sourceTree = "<group>"; };
+		D51C8A6F1BF49E6B007386CE /* NSError+RFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+RFKit.m"; sourceTree = "<group>"; };
+		D51C8A751BF4A245007386CE /* RFLine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFLine.storyboard; sourceTree = "<group>"; };
 		D51D833017977E910086D902 /* RFAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAudioPlayer.h; sourceTree = "<group>"; };
 		D51D833117977E910086D902 /* RFAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAudioPlayer.m; sourceTree = "<group>"; };
 		D51D833617977E910086D902 /* RFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFButton.h; sourceTree = "<group>"; };
@@ -735,6 +740,14 @@
 			path = RFAsynchronousSegue;
 			sourceTree = "<group>";
 		};
+		D51C8A711BF4A219007386CE /* RFLine */ = {
+			isa = PBXGroup;
+			children = (
+				D51C8A751BF4A245007386CE /* RFLine.storyboard */,
+			);
+			path = RFLine;
+			sourceTree = "<group>";
+		};
 		D51D832F17977E910086D902 /* RFAudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1143,6 +1156,7 @@
 				D5DB01DE1B5A0952006B0307 /* RFContainerView */,
 				D57B0DE21B8ABA3E001D7964 /* RFDelegateChain */,
 				D551BEDB19DA317A00ED54E3 /* RFImageCropper */,
+				D51C8A711BF4A219007386CE /* RFLine */,
 				D5E72B5E198D0CF30048B677 /* RFNavigationController */,
 				D5200767178E486000FEA64B /* RFScrollViewPageControl */,
 				D50EAAED195BBA9600548BF6 /* RFSegue */,
@@ -1247,6 +1261,8 @@
 				D5321EFC1AAF2CAF008EBFE2 /* NSDateFormatter+RFKit.m */,
 				D5321EFD1AAF2CAF008EBFE2 /* NSDictionary+RFKit.h */,
 				D5321EFE1AAF2CAF008EBFE2 /* NSDictionary+RFKit.m */,
+				D51C8A6E1BF49E6B007386CE /* NSError+RFKit.h */,
+				D51C8A6F1BF49E6B007386CE /* NSError+RFKit.m */,
 				D5321EFF1AAF2CAF008EBFE2 /* NSFileManager+RFKit.h */,
 				D5321F001AAF2CB0008EBFE2 /* NSFileManager+RFKit.m */,
 				D5321F011AAF2CB0008EBFE2 /* NSJSONSerialization+RFKit.h */,
@@ -1968,6 +1984,7 @@
 				D5DB01E01B5A0975006B0307 /* RFContainerView.storyboard in Resources */,
 				D57B0DF01B8ABAC0001D7964 /* RFDelegateChain.storyboard in Resources */,
 				D551BEDD19DA318F00ED54E3 /* RFImageCropper.storyboard in Resources */,
+				D51C8A761BF4A245007386CE /* RFLine.storyboard in Resources */,
 				D5E72B60198D0D460048B677 /* RFNavigationController.storyboard in Resources */,
 				D5200769178E487000FEA64B /* RFScrollViewPageControl.storyboard in Resources */,
 				D50EAAEF195BBAAD00548BF6 /* RFSegue.storyboard in Resources */,
@@ -2028,6 +2045,7 @@
 				D5321F371AAF2CB0008EBFE2 /* NSDate+RFKit.m in Sources */,
 				D5321F381AAF2CB0008EBFE2 /* NSDateFormatter+RFKit.m in Sources */,
 				D5321F391AAF2CB0008EBFE2 /* NSDictionary+RFKit.m in Sources */,
+				D51C8A701BF49E6B007386CE /* NSError+RFKit.m in Sources */,
 				D5321F3A1AAF2CB0008EBFE2 /* NSFileManager+RFKit.m in Sources */,
 				D5321F3B1AAF2CB0008EBFE2 /* NSJSONSerialization+RFKit.m in Sources */,
 				D5321F401AAF2CB0008EBFE2 /* NSLayoutConstraint+RFKit.m in Sources */,
