@@ -13,6 +13,7 @@
 @end
 
 @implementation RFTableViewCellHeightDelegateAsynchronousDemoViewController
+@dynamic tableData;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
