@@ -1,18 +1,18 @@
 //
 //  JSONModelArray.m
 //
-//  @version 0.13.0
-//  @author Marin Todorov, http://www.touch-code-magazine.com
+//  @version 1.2
+//  @author Marin Todorov (http://www.underplot.com) and contributors
 //
 
-// Copyright (c) 2012-2013 Marin Todorov, Underplot ltd.
+// Copyright (c) 2012-2015 Marin Todorov, Underplot ltd.
 // This code is distributed under the terms and conditions of the MIT license.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 // The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-// The MIT License in plain English: http://www.touch-code-magazine.com/JSONModel/MITLicense
+
 
 #import "JSONModelArray.h"
 #import "JSONModel.h"
@@ -23,7 +23,7 @@
     Class _targetClass;
 }
 
-- (id)initWithArray:(NSArray *)array modelClass:(Class)cls
+-(id)initWithArray:(NSArray *)array modelClass:(Class)cls
 {
     self = [super init];
     
@@ -34,22 +34,22 @@
     return self;
 }
 
-- (id)firstObject
+-(id)firstObject
 {
     return [self objectAtIndex:0];
 }
 
-- (id)lastObject
+-(id)lastObject
 {
     return [self objectAtIndex:_storage.count - 1];
 }
 
-- (id)objectAtIndex:(NSUInteger)index
+-(id)objectAtIndex:(NSUInteger)index
 {
 	return [self objectAtIndexedSubscript:index];
 }
 
-- (id)objectAtIndexedSubscript:(NSUInteger)index
+-(id)objectAtIndexedSubscript:(NSUInteger)index
 {
     id object = _storage[index];
     if (![object isMemberOfClass:_targetClass]) {
@@ -62,22 +62,22 @@
     return object;
 }
 
-- (void)forwardInvocation:(NSInvocation *)anInvocation
+-(void)forwardInvocation:(NSInvocation *)anInvocation
 {
     [anInvocation invokeWithTarget:_storage];
 }
 
 -(id)forwardingTargetForSelector:(SEL)selector
 {
-    static NSArray* overridenMethods = nil;
-    if (!overridenMethods) overridenMethods = @[@"initWithArray:modelClass:",@"objectAtIndex:",@"objectAtIndexedSubscript:", @"count",@"modelWithIndexValue:",@"description",@"mutableCopy",@"firstObject",@"lastObject"];
-    if ([overridenMethods containsObject:NSStringFromSelector(selector)]) {
+    static NSArray *overriddenMethods = nil;
+    if (!overriddenMethods) overriddenMethods = @[@"initWithArray:modelClass:", @"objectAtIndex:", @"objectAtIndexedSubscript:", @"count", @"modelWithIndexValue:", @"description", @"mutableCopy", @"firstObject", @"lastObject", @"countByEnumeratingWithState:objects:count:"];
+    if ([overriddenMethods containsObject:NSStringFromSelector(selector)]) {
         return self;
     }
     return _storage;
 }
 
-- (NSUInteger)count
+-(NSUInteger)count
 {
     return _storage.count;
 }
@@ -112,6 +112,34 @@
     }
     [res appendFormat:@"\n</JSONModelArray>"];
     return res;
+}
+
+-(NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state
+								 objects:(id __unsafe_unretained [])stackbuf
+								   count:(NSUInteger)stackbufLength
+{
+    NSUInteger count = 0;
+    
+    unsigned long countOfItemsAlreadyEnumerated = state->state;
+    
+    if (countOfItemsAlreadyEnumerated == 0) {
+        state->mutationsPtr = &state->extra[0];
+    }
+	
+    if (countOfItemsAlreadyEnumerated < [self count]) {
+        state->itemsPtr = stackbuf;
+        while ((countOfItemsAlreadyEnumerated < [self count]) && (count < stackbufLength)) {
+            stackbuf[count] = [self objectAtIndex:countOfItemsAlreadyEnumerated];
+            countOfItemsAlreadyEnumerated++;
+            count++;
+        }
+    } else {
+        count = 0;
+    }
+	
+    state->state = countOfItemsAlreadyEnumerated;
+    
+    return count;
 }
 
 @end
