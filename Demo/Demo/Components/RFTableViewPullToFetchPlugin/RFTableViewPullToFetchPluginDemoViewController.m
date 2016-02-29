@@ -143,14 +143,14 @@ RFUIInterfaceOrientationSupportAll
         int orgCount = _cellCount;
         _dout_int(_cellCount)
         _dout_int(cellCount)
-        
+
         _cellCount = cellCount;
-        
+
         if (cellCount > orgCount) {
-            [self.tableView insertRowsAtIndexPaths:[self indexPathsForRange:(NSRange){orgCount, fabs(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self.tableView insertRowsAtIndexPaths:[self indexPathsForRange:(NSRange){orgCount, abs(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
         else {
-            [self.tableView deleteRowsAtIndexPaths:[self indexPathsForRange:(NSRange){fminf(orgCount, cellCount), fabs(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self.tableView deleteRowsAtIndexPaths:[self indexPathsForRange:(NSRange){fminf(orgCount, cellCount), abs(cellCount-orgCount)}] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }
 }
