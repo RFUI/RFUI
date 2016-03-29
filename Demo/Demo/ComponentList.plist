@@ -14,6 +14,16 @@
 	</dict>
 	<dict>
 		<key>Name</key>
+		<string>RFAPI</string>
+		<key>Status</key>
+		<string>Alpha</string>
+		<key>Detail</key>
+		<string></string>
+		<key>Has Demo</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Name</key>
 		<string>RFAssetsCache</string>
 		<key>Status</key>
 		<string>TEST</string>

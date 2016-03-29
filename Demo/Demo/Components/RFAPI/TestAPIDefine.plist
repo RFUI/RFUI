@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DEFAULT</key>
+	<dict>
+		<key>Base</key>
+		<string>https://rfui.github.io</string>
+		<key>Path Prefix</key>
+		<string>RFUI/json/</string>
+		<key>Method</key>
+		<string>GET</string>
+		<key>Authorization</key>
+		<false/>
+		<key>Cache Policy</key>
+		<integer>0</integer>
+		<key>Offline Policy</key>
+		<integer>0</integer>
+		<key>Expire</key>
+		<string>60</string>
+	</dict>
+	<key>NullTest</key>
+	<dict>
+		<key>Path</key>
+		<string>null.json</string>
+		<key>Response Type</key>
+		<integer>2</integer>
+		<key>Response Class</key>
+		<string>RFDTestEntity</string>
+		<key>Response Accept Null</key>
+		<true/>
+	</dict>
+	<key>ObjSample</key>
+	<dict>
+		<key>Path</key>
+		<string>object_sample.json</string>
+		<key>Response Type</key>
+		<integer>2</integer>
+		<key>Response Class</key>
+		<string>RFDTestEntity</string>
+	</dict>
+	<key>ObjArraySample</key>
+	<dict>
+		<key>Path</key>
+		<string>array_sample.json</string>
+		<key>Response Type</key>
+		<integer>3</integer>
+		<key>Response Class</key>
+		<string>RFDTestEntity</string>
+	</dict>
+	<key>ObjEmpty</key>
+	<dict>
+		<key>Path</key>
+		<string>empty_struct.json</string>
+		<key>Response Type</key>
+		<integer>2</integer>
+		<key>Response Class</key>
+		<string>RFDTestEntity</string>
+	</dict>
+</dict>
+</plist>
