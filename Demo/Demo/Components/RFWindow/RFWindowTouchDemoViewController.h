@@ -10,5 +10,5 @@
 #import "RFWindow.h"
 
 @interface RFWindowTouchDemoViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UIButton *windowTriggerButton;
 @end
