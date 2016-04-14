@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GhY-GP-DtK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GhY-GP-DtK">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--RFNavigationController-->
+        <!--Master View Controller-->
         <scene sceneID="PCg-5a-aHY">
             <objects>
                 <tableViewController id="apO-gk-EGN" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -193,10 +193,20 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2Y-6Z-gXG">
+                                        <rect key="frame" x="30" y="418" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.043137254899999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="aML-2k-chd"/>
+                                            <constraint firstAttribute="height" constant="100" id="hfw-yX-1JY"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.79225852269999997" blue="0.1678187085" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="DF4-Zx-uus" firstAttribute="top" secondItem="SqS-Ah-vWf" secondAttribute="top" constant="20" id="Nen-U9-UEx"/>
+                                    <constraint firstAttribute="bottom" secondItem="y2Y-6Z-gXG" secondAttribute="bottom" constant="30" id="PWh-dM-1Rs"/>
+                                    <constraint firstItem="y2Y-6Z-gXG" firstAttribute="leading" secondItem="SqS-Ah-vWf" secondAttribute="leading" constant="30" id="Tyy-4b-uIb"/>
                                     <constraint firstItem="DF4-Zx-uus" firstAttribute="leading" secondItem="SqS-Ah-vWf" secondAttribute="leading" constant="20" id="bMM-E9-lfl"/>
                                 </constraints>
                             </view>
@@ -236,7 +246,7 @@
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bottom Bar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5l-qG-hVT">
                             <rect key="frame" x="110" y="14" width="100" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -246,9 +256,4 @@
             <point key="canvasLocation" x="-133" y="188"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

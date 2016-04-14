@@ -166,7 +166,6 @@
 		D57B0DF31B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B0DF21B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m */; };
 		D588BE9E1C841C2C000F2AD3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D588BE991C841C2C000F2AD3 /* AFHTTPRequestOperationManager.m */; };
 		D588BE9F1C841C2C000F2AD3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D588BE9B1C841C2C000F2AD3 /* AFHTTPSessionManager.m */; };
-		D588BEA01C841C2C000F2AD3 /* LICENSE-AFNetworking.md in Sources */ = {isa = PBXBuildFile; fileRef = D588BE9D1C841C2C000F2AD3 /* LICENSE-AFNetworking.md */; };
 		D588BEA41C844755000F2AD3 /* RFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D588BEA31C844755000F2AD3 /* RFKit.m */; };
 		D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D2C1938333700F21650 /* RootNavigationController.m */; };
 		D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */; };
@@ -2098,7 +2097,6 @@
 				D5B9EDB91907A08C0093570F /* JSONModelClassProperty.m in Sources */,
 				D5B9EDBA1907A08C0093570F /* JSONModelError.m in Sources */,
 				D5B9EDBD1907A0BF0093570F /* JSONValueTransformer.m in Sources */,
-				D588BEA01C841C2C000F2AD3 /* LICENSE-AFNetworking.md in Sources */,
 				D520052B178CF43C00FEA64B /* main.m in Sources */,
 				D5321F351AAF2CB0008EBFE2 /* NSArray+RFKit.m in Sources */,
 				D5321F361AAF2CB0008EBFE2 /* NSBundle+RFKit.m in Sources */,
@@ -2339,7 +2337,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2364,7 +2362,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2385,7 +2383,7 @@
 					"DOUT_FALG_TRACE=1",
 				);
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = (
 					"-Weverything",
@@ -2396,6 +2394,7 @@
 					"-Wno-covered-switch-default",
 					"-Wno-switch-enum",
 					"-Wno-assign-enum",
+					"-Wno-double-promotion",
 				);
 				WRAPPER_EXTENSION = app;
 			};
@@ -2409,7 +2408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = (
 					"-Weverything",
@@ -2420,6 +2419,7 @@
 					"-Wno-covered-switch-default",
 					"-Wno-switch-enum",
 					"-Wno-assign-enum",
+					"-Wno-double-promotion",
 				);
 				WRAPPER_EXTENSION = app;
 			};
