@@ -42,12 +42,12 @@
 
 - (void)willMoveToParentViewController:(UIViewController *)parent {
     [super willMoveToParentViewController:parent];
-    dout_debug(@"%@ > Will Move to Parent View Controller: %p", self.logIdentifier, parent);
+    dout_debug(@"%@ > Will Move to Parent View Controller: %p", self.logIdentifier, (void *)parent);
 }
 
 - (void)didMoveToParentViewController:(UIViewController *)parent {
     [super didMoveToParentViewController:parent];
-    dout_debug(@"%@ > Did Move to Parent View Controller: %p", self.logIdentifier, parent);
+    dout_debug(@"%@ > Did Move to Parent View Controller: %p", self.logIdentifier, (void *)parent);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,7 +56,7 @@
 }
 
 - (NSString *)logIdentifier {
-    return [NSString stringWithFormat:@"%p(%@)", self, self.title?: @"No title"];
+    return [NSString stringWithFormat:@"%p(%@)", (void *)self, self.title?: @"No title"];
 }
 
 - (void)dealloc {

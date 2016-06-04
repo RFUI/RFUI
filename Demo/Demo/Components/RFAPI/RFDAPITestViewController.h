@@ -12,8 +12,8 @@
     UITableViewDelegate,
     UITableViewDataSource
 >
-@property (nonatomic, weak) IBOutlet UITableView *operationList;
-@property (nonatomic, weak) IBOutlet UITextView *responseTextView;
+@property (nonatomic, nullable, weak) IBOutlet UITableView *operationList;
+@property (nonatomic, nullable, weak) IBOutlet UITextView *responseTextView;
 @end
 
 

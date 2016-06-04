@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ftl-Dh-ppI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ftl-Dh-ppI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -268,17 +268,17 @@ in this area</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Rd6-G2-b6O" secondAttribute="trailing" constant="30" id="0IG-Lv-RLZ"/>
-                            <constraint firstItem="inZ-rn-lUN" firstAttribute="top" secondItem="QKY-Iz-uBa" secondAttribute="bottom" id="2wL-PW-NF1"/>
-                            <constraint firstItem="Auh-fk-yPB" firstAttribute="top" secondItem="4BZ-tm-vpQ" secondAttribute="bottom" id="9kV-RN-rJQ"/>
-                            <constraint firstItem="Rd6-G2-b6O" firstAttribute="top" secondItem="QKY-Iz-uBa" secondAttribute="bottom" constant="17" id="DQl-iA-UP5"/>
+                            <constraint firstItem="inZ-rn-lUN" firstAttribute="top" secondItem="QKY-Iz-uBa" secondAttribute="bottom" id="0t2-n7-lPd"/>
+                            <constraint firstItem="Rd6-G2-b6O" firstAttribute="top" secondItem="QKY-Iz-uBa" secondAttribute="bottom" constant="17" id="2Fo-0f-0PD"/>
+                            <constraint firstItem="1Yv-p7-sRn" firstAttribute="top" secondItem="QKY-Iz-uBa" secondAttribute="bottom" id="3Wh-Jo-kQZ"/>
+                            <constraint firstItem="Auh-fk-yPB" firstAttribute="top" secondItem="g7H-2P-a6h" secondAttribute="bottom" id="9cT-ho-ude"/>
                             <constraint firstAttribute="trailing" secondItem="4BZ-tm-vpQ" secondAttribute="trailing" id="F1u-yh-yDl"/>
                             <constraint firstItem="yAi-Ka-vMS" firstAttribute="top" secondItem="MQg-6t-mns" secondAttribute="top" id="J7v-xO-QhC"/>
+                            <constraint firstItem="Auh-fk-yPB" firstAttribute="top" secondItem="inZ-rn-lUN" secondAttribute="bottom" id="NCH-05-kKj"/>
+                            <constraint firstItem="Auh-fk-yPB" firstAttribute="top" secondItem="4BZ-tm-vpQ" secondAttribute="bottom" id="PKn-0e-Jss"/>
                             <constraint firstItem="inZ-rn-lUN" firstAttribute="leading" secondItem="MQg-6t-mns" secondAttribute="leading" id="WDS-cI-8Pc"/>
-                            <constraint firstItem="Auh-fk-yPB" firstAttribute="top" secondItem="inZ-rn-lUN" secondAttribute="bottom" id="ft9-xy-8Fp"/>
                             <constraint firstAttribute="trailing" secondItem="inZ-rn-lUN" secondAttribute="trailing" id="gfZ-mz-0yV"/>
                             <constraint firstItem="g7H-2P-a6h" firstAttribute="leading" secondItem="MQg-6t-mns" secondAttribute="leading" id="rBF-5P-loK"/>
-                            <constraint firstItem="1Yv-p7-sRn" firstAttribute="top" secondItem="QKY-Iz-uBa" secondAttribute="bottom" id="rpW-L3-taT"/>
-                            <constraint firstItem="Auh-fk-yPB" firstAttribute="top" secondItem="g7H-2P-a6h" secondAttribute="bottom" id="vdw-km-e0j"/>
                             <constraint firstItem="yAi-Ka-vMS" firstAttribute="leading" secondItem="MQg-6t-mns" secondAttribute="leading" id="w71-pJ-cBu"/>
                             <constraint firstAttribute="trailing" secondItem="1Yv-p7-sRn" secondAttribute="trailing" id="y9F-2S-dIY"/>
                         </constraints>

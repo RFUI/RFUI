@@ -11,4 +11,11 @@
 @implementation RootNavigationController
 RFUIInterfaceOrientationSupportNavigation
 
+- (UIViewController *)childViewControllerForStatusBarStyle {
+    if (self.presentedViewController) {
+        return self.presentedViewController;
+    }
+    return self.topViewController;
+}
+
 @end
