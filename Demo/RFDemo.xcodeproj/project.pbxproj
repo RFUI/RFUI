@@ -2000,6 +2000,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = RFUI;
 				TargetAttributes = {
+					D520051A178CF43B00FEA64B = {
+						ProvisioningStyle = Automatic;
+					};
 					D5EBBB531AB043CB00CD5653 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -2388,6 +2391,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"RFDebugLevel=5",
@@ -2417,6 +2422,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.RFUI.${PRODUCT_NAME:rfc1034identifier}";
