@@ -1,32 +1,30 @@
 
 #import "RFDNavigationBarAppearanceTestViewController.h"
-#import "UIViewController+RFNavigationBehavingIBInspectableSupport.h"
+#import "UIViewController+RFDNavigationAppearance.h"
 
-@interface RFDNavigationBarAppearanceTestViewController ()
-@end
 
 @implementation RFDNavigationBarAppearanceTestViewController
 RFUIInterfaceOrientationSupportDefault
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     UIViewController *dst = segue.destinationViewController;
-    dst.prefersStatusBarHidden = !self.statusBarShownSwith.on;
-    dst.prefersNavigationBarHidden = !self.navigationBarShownSwith.on;
-    dst.prefersBottomBarShown = self.bottomBarShownSwith.on;
+    dst.RFPrefersStatusBarHidden = !self.statusBarShownSwith.on;
+    dst.RFPrefersNavigationBarHidden = !self.navigationBarShownSwith.on;
+    dst.RFPrefersBottomBarShown = self.bottomBarShownSwith.on;
 }
 
 - (IBAction)onCurrentStatusBarShownSwithChanged:(UISwitch *)sender {
-    self.prefersStatusBarHidden = !sender.on;
+    self.RFPrefersStatusBarHidden = !sender.on;
     [self updateNavigationAppearanceAnimated:YES];
 }
 
 - (IBAction)onCurrentNavigationBarShownSwithChanged:(UISwitch *)sender {
-    self.prefersNavigationBarHidden = !sender.on;
+    self.RFPrefersNavigationBarHidden = !sender.on;
     [self updateNavigationAppearanceAnimated:YES];
 }
 
 - (IBAction)onCurrentBottomBarShownSwithChanged:(UISwitch *)sender {
-    self.prefersBottomBarShown = sender.on;
+    self.RFPrefersBottomBarShown = sender.on;
     [self updateNavigationAppearanceAnimated:YES];
 }
 

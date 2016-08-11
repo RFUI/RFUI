@@ -14,7 +14,7 @@
 }
 
 - (IBAction)onTest:(id)sender {
-    dout_bool(self.interactivePopGestureRecognizer.enabled)
+    douto(self.defaultAppearanceAttributes)
 }
 
 - (IBAction)navigaitonPop:(id)sender {
