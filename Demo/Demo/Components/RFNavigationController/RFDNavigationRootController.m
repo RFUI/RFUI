@@ -8,11 +8,6 @@
     self.handelViewControllerBasedStatusBarAppearance = YES;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [RFNavigationController setGlobalNavigationController:self];
-}
-
 - (IBAction)onTest:(id)sender {
     douto(self.defaultAppearanceAttributes)
 }

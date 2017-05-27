@@ -10,6 +10,8 @@
 
 @interface RFDTestAPI : RFAPI
 
++ (instancetype)sharedInstance;
+
 + (AFHTTPRequestOperation *)requestWithName:(NSString *)APIName
                                  parameters:(NSDictionary *)parameters
                              viewController:(UIViewController *)viewController
