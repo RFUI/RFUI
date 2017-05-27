@@ -10,5 +10,6 @@
 #import "RFAsynchronousSegue.h"
 
 @interface RFAsynchronousSegueDemoViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISwitch *push2ShouldPerformSegue;
 
 @end
