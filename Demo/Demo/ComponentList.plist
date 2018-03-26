@@ -94,16 +94,6 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>RFSegue</string>
-		<key>Status</key>
-		<string>2.3</string>
-		<key>Detail</key>
-		<string>Released</string>
-		<key>Has Demo</key>
-		<true/>
-	</dict>
-	<dict>
-		<key>Name</key>
 		<string>RFSliderView</string>
 		<key>Status</key>
 		<string>Alpha</string>

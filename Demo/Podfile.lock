@@ -1,0 +1,145 @@
+PODS:
+  - RFKit/ALL (2.0.0):
+    - RFKit/Category/All
+    - RFKit/Default
+    - RFKit/doutkit
+    - RFKit/Performance
+  - RFKit/Category/All (2.0.0):
+    - RFKit/Category/Default
+    - RFKit/Category/NSDate
+    - RFKit/Category/NSDateFormatter
+    - RFKit/Category/NSFileManager
+    - RFKit/Category/NSJSONSerialization
+    - RFKit/Category/NSLayoutConstraint
+    - RFKit/Category/NSNumberFormatter
+    - RFKit/Category/NSURL
+    - RFKit/Category/UIScrollView+RFScrolling
+    - RFKit/Category/UISearchBar
+    - RFKit/Category/UIWebView
+  - RFKit/Category/Default (2.0.0):
+    - RFKit/Category/NSArray
+    - RFKit/Category/NSBundle
+    - RFKit/Category/NSDictionary
+    - RFKit/Category/NSError
+    - RFKit/Category/NSObject
+    - RFKit/Category/NSString
+    - RFKit/Category/UIAlertView
+    - RFKit/Category/UIButton
+    - RFKit/Category/UIColor
+    - RFKit/Category/UIDevice
+    - RFKit/Category/UIImage
+    - RFKit/Category/UINavigationController
+    - RFKit/Category/UIResponder
+    - RFKit/Category/UIStoryboard
+    - RFKit/Category/UITableView
+    - RFKit/Category/UIView
+    - RFKit/Category/UIView+RFAnimate
+    - RFKit/Category/UIViewController
+  - RFKit/Category/NSArray (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/NSBundle (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/NSDate (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/NSDateFormatter (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/NSDictionary (2.0.0):
+    - RFKit/Category/NSObject
+    - RFKit/Foundation
+  - RFKit/Category/NSError (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/NSFileManager (2.0.0):
+    - RFKit/Foundation
+    - RFKit/Runtime
+  - RFKit/Category/NSJSONSerialization (2.0.0):
+    - RFKit/Foundation
+    - RFKit/Runtime
+  - RFKit/Category/NSLayoutConstraint (2.0.0):
+    - RFKit/Category/UIView
+    - RFKit/Foundation
+  - RFKit/Category/NSNumberFormatter (2.0.0):
+    - RFKit/Foundation
+    - RFKit/Runtime
+  - RFKit/Category/NSObject (2.0.0):
+    - RFKit/Foundation
+    - RFKit/Runtime
+  - RFKit/Category/NSString (2.0.0):
+    - RFKit/Foundation
+    - RFKit/Runtime
+  - RFKit/Category/NSURL (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UIAlertView (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UIButton (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UIColor (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UIDevice (2.0.0):
+    - RFKit/Foundation
+    - RFKit/Runtime
+  - RFKit/Category/UIImage (2.0.0):
+    - RFKit/Foundation
+    - RFKit/RFGeometry
+  - RFKit/Category/UINavigationController (2.0.0):
+    - RFKit/Category/NSArray
+    - RFKit/Foundation
+  - RFKit/Category/UIResponder (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UIScrollView+RFScrolling (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UISearchBar (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UIStoryboard (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UITableView (2.0.0):
+    - RFKit/Category/UIView+RFAnimate
+    - RFKit/Foundation
+  - RFKit/Category/UIView (2.0.0):
+    - RFKit/Category/UIResponder
+    - RFKit/Foundation
+    - RFKit/RFGeometry
+  - RFKit/Category/UIView+RFAnimate (2.0.0):
+    - RFKit/Foundation
+    - RFKit/Runtime
+  - RFKit/Category/UIViewController (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Category/UIWebView (2.0.0):
+    - RFKit/Foundation
+  - RFKit/Default (2.0.0):
+    - RFKit/Category/Default
+    - RFKit/RFGeometry
+    - RFKit/Runtime
+  - RFKit/doutkit (2.0.0):
+    - RFKit/Performance
+    - RFKit/Runtime
+  - RFKit/Foundation (2.0.0)
+  - RFKit/Performance (2.0.0):
+    - RFKit/Runtime
+  - RFKit/RFGeometry (2.0.0):
+    - RFKit/Runtime
+  - RFKit/Runtime (2.0.0):
+    - RFKit/Foundation
+  - RFSegue (4.0.0):
+    - RFKit/Category/UIDevice
+    - RFKit/Category/UINavigationController
+    - RFKit/Category/UIResponder
+    - RFKit/Category/UIView
+    - RFKit/Runtime
+
+DEPENDENCIES:
+  - RFKit/ALL (from `../RFUI/Core/RFKit`)
+  - RFSegue (from `../RFUI/RFSegue`)
+
+EXTERNAL SOURCES:
+  RFKit:
+    :path: ../RFUI/Core/RFKit
+  RFSegue:
+    :path: ../RFUI/RFSegue
+
+SPEC CHECKSUMS:
+  RFKit: 8d04979b6ed46d7acb9df79d26597f6279ecde4d
+  RFSegue: bb077fc6038da6dddbf3729cf7d9e6577fb0afe6
+
+PODFILE CHECKSUM: 5db39482bac51e60920dfe7dd0e5460dd46c1a2a
+
+COCOAPODS: 1.4.0

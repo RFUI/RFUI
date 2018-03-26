@@ -1,0 +1,7 @@
+
+platform :ios, '7.0'
+
+target 'RFDemo' do
+    pod 'RFKit', :path => '../RFUI/Core/RFKit', :subspecs => ['ALL']
+    pod 'RFSegue', :path => '../RFUI/RFSegue'
+end
