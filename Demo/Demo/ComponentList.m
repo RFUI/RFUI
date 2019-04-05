@@ -9,27 +9,29 @@
 #import "ComponentList.h"
 #import "RFUI.h"
 
+@interface ComponentList ()
+@property(strong, nonatomic) NSArray<NSDictionary *> *tableData;
+@end
+
 @implementation ComponentList
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ComponentList" ofType:@"plist"];
-    self.tableData = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    NSString *plistPath = [NSBundle.mainBundle pathForResource:@"ComponentList" ofType:@"plist"];
+    self.tableData = [NSArray.alloc initWithContentsOfFile:plistPath];
 }
 
-#pragma mark - DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.tableData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id cell = [tableView dequeueReusableCellWithIdentifier:[self tableView:tableView cellReuseIdentifierForRowAtIndexPath:indexPath]];
-    [self tableView:tableView configureCell:cell forIndexPath:indexPath offscreenRendering:NO];
+    ComponentListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.item = self.tableData[indexPath.row];
     return cell;
 }
 
-#pragma mark - Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *stroyboardName = [(ComponentListCell *)[tableView cellForRowAtIndexPath:indexPath] stroyboardName];
     if (stroyboardName) {
@@ -45,16 +47,6 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-#pragma mark - RFTableViewCellHeightDelegate
-
-- (NSString *)tableView:(UITableView *)tableView cellReuseIdentifierForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return NSStringFromClass([ComponentListCell class]);
-}
-
-- (void)tableView:(UITableView *)tableView configureCell:(id)cell forIndexPath:(NSIndexPath *)indexPath offscreenRendering:(BOOL)isOffscreenRendering {
-    [(ComponentListCell *)cell setComponentInfo:self.tableData[indexPath.row]];
-}
-
 @end
 
 static NSString *const TDkName     = @"Name";
@@ -64,22 +56,20 @@ static NSString *const TDkHasDemo  = @"Has Demo";
 
 @implementation ComponentListCell
 
-- (void)setComponentInfo:(NSDictionary *)componentInfo {
-    if (_componentInfo != componentInfo) {
-        _componentInfo = componentInfo;
-        
-        BOOL hasDemo = [componentInfo boolForKey:TDkHasDemo];
-        self.nameLabel.text = componentInfo[TDkName];
-        self.statusLabel.text = componentInfo[TDkStatus];
-        self.detialLabel.text = componentInfo[TDkDetail];
-        self.accessoryType = (hasDemo)? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
-        self.selectionStyle = (hasDemo)? UITableViewCellSelectionStyleBlue : UITableViewCellSelectionStyleNone;
-    }
+- (void)setItem:(NSDictionary *)item {
+    _item = item;
+    
+    BOOL hasDemo = [item boolForKey:TDkHasDemo];
+    self.nameLabel.text = item[TDkName];
+    self.statusLabel.text = item[TDkStatus];
+    self.detialLabel.text = item[TDkDetail];
+    self.accessoryType = (hasDemo)? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
+    self.selectionStyle = (hasDemo)? UITableViewCellSelectionStyleBlue : UITableViewCellSelectionStyleNone;
 }
 
 - (NSString *)stroyboardName {
-    if ([self.componentInfo boolForKey:TDkHasDemo]) {
-        return self.componentInfo[TDkName];
+    if ([self.item boolForKey:TDkHasDemo]) {
+        return self.item[TDkName];
     }
     return nil;
 }

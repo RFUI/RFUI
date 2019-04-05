@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hZn-V1-CgI">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="hZn-V1-CgI">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Timer-->
@@ -23,20 +27,20 @@
                                     <constraint firstAttribute="width" constant="58" id="zAs-WA-HQm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUM-ag-BJp">
                                 <rect key="frame" x="20" y="157" width="280" height="59"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llx-2m-Cuy">
-                                        <rect key="frame" x="20" y="15" width="96" height="30"/>
+                                        <rect key="frame" x="20" y="14.5" width="96" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="4dK-f6-e4p"/>
                                             <constraint firstAttribute="width" constant="96" id="H6i-fu-vax"/>
                                         </constraints>
                                         <state key="normal" title="Start">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="selected" title="Stop"/>
                                         <connections>
@@ -50,7 +54,7 @@
                                             <constraint firstAttribute="width" constant="96" id="sin-78-6Gh"/>
                                         </constraints>
                                         <state key="normal" title="Pause">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="selected" title="Resume"/>
                                         <connections>
@@ -58,7 +62,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="UeM-8z-qaF" secondAttribute="centerY" constant="-0.5" id="4th-ae-yBn"/>
                                     <constraint firstAttribute="centerX" secondItem="UeM-8z-qaF" secondAttribute="centerX" constant="-72" id="83R-cm-oZ6"/>
@@ -69,7 +73,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lUM-ag-BJp" firstAttribute="top" secondItem="7UM-Ax-Gcv" secondAttribute="bottom" constant="25" id="0xT-XE-vt3"/>
                             <constraint firstItem="7UM-Ax-Gcv" firstAttribute="top" secondItem="FXD-JZ-22t" secondAttribute="bottom" constant="39" id="2Ub-LK-Ggn"/>
@@ -88,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuI-7O-5Ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="56"/>
+            <point key="canvasLocation" x="188.40579710144928" y="37.5"/>
         </scene>
     </scenes>
 </document>

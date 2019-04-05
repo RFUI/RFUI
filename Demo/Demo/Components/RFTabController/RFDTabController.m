@@ -109,6 +109,13 @@
     self.delegate = self;
 }
 
+- (IBAction)onReload:(id)sender {
+    self.tab1ViewController = nil;
+    self.tab2ViewController = nil;
+    self.tab3ViewController = nil;
+    self.viewControllers = [NSArray arrayWithObjects:self.tab1ViewController, self.tab2ViewController, self.tab3ViewController, nil];
+}
+
 - (IBAction)onTabButtonTapped:(UIButton *)sender {
     [self setSelectedIndex:sender.tag animated:YES completion:nil];
 }

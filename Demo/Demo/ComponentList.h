@@ -7,22 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RFTableViewCellHeightDelegate.h"
 
-@interface ComponentList : UITableViewController <
-    RFTableViewCellHeightDataSource
->
-@property(strong, nonatomic) NSMutableArray *tableData;
-
+@interface ComponentList : UITableViewController
 @end
 
 
 @interface ComponentListCell : UITableViewCell
-@property(weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property(weak, nonatomic) IBOutlet UILabel *statusLabel;
-@property(weak, nonatomic) IBOutlet UILabel *detialLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detialLabel;
 
-@property(strong, nonatomic) NSDictionary *componentInfo;
+@property (nonatomic) NSDictionary *item;
 
 - (NSString *)stroyboardName;
 

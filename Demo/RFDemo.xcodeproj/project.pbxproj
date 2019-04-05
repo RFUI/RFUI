@@ -116,7 +116,6 @@
 		D57B0DF31B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57B0DF21B8ABBAA001D7964 /* RFDDelegateChainScrollviewChainTestViewController.m */; };
 		D588BE9E1C841C2C000F2AD3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D588BE991C841C2C000F2AD3 /* AFHTTPRequestOperationManager.m */; };
 		D588BE9F1C841C2C000F2AD3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D588BE9B1C841C2C000F2AD3 /* AFHTTPSessionManager.m */; };
-		D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D2C1938333700F21650 /* RootNavigationController.m */; };
 		D58A5D32193836D000F21650 /* AutoLayoutMultiLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */; };
 		D58C5DE51988DFCF003CBF7E /* RFAnimationTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5DD51988DFCF003CBF7E /* RFAnimationTransitioning.m */; };
 		D58C5DE61988DFCF003CBF7E /* RFPullDownToPopInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58C5DD81988DFCF003CBF7E /* RFPullDownToPopInteractionController.m */; };
@@ -412,8 +411,6 @@
 		D588BE9A1C841C2C000F2AD3 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		D588BE9B1C841C2C000F2AD3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		D588BE9D1C841C2C000F2AD3 /* LICENSE-AFNetworking.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "LICENSE-AFNetworking.md"; sourceTree = "<group>"; };
-		D58A5D2B1938333700F21650 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
-		D58A5D2C1938333700F21650 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		D58A5D30193836D000F21650 /* AutoLayoutMultiLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMultiLineLabel.h; sourceTree = "<group>"; };
 		D58A5D31193836D000F21650 /* AutoLayoutMultiLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutMultiLineLabel.m; sourceTree = "<group>"; };
 		D58C5DD41988DFCF003CBF7E /* RFAnimationTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAnimationTransitioning.h; sourceTree = "<group>"; };
@@ -948,8 +945,6 @@
 				D520070C178CF76A00FEA64B /* ComponentList.m */,
 				D520070E178CFA0400FEA64B /* ComponentList.plist */,
 				D5200536178CF43C00FEA64B /* MainStoryboard.storyboard */,
-				D58A5D2B1938333700F21650 /* RootNavigationController.h */,
-				D58A5D2C1938333700F21650 /* RootNavigationController.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -1637,6 +1632,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				"zh-Hans",
 			);
@@ -1874,7 +1870,6 @@
 				D51D840617977E920086D902 /* RFWindow.m in Sources */,
 				D55F9DFA195D3DA00004DDCD /* RFWindowDemoListViewController.m in Sources */,
 				D55F9DFD195D3E580004DDCD /* RFWindowTouchDemoViewController.m in Sources */,
-				D58A5D2D1938333700F21650 /* RootNavigationController.m in Sources */,
 				D56DF69319500D7A00CB1B14 /* SimpleConsoleView.m in Sources */,
 				D56DF69219500D7A00CB1B14 /* SimpleLogger.m in Sources */,
 				D549014118FB90F200EDA527 /* SVProgressHUD.m in Sources */,
