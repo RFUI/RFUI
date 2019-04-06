@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 RFUI. All rights reserved.
 //
 
-#import "RFUI.h"
+#import <RFKit/RFKit.h>
 #import "RFScrollViewPageControl.h"
 
 @class SimplePageScrollView;

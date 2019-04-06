@@ -1,6 +1,7 @@
 
 #import "RFScrollViewPageControlDemoViewController.h"
 #import "UIView+RFAnimate.h"
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFScrollViewPageControlDemoViewController
 RFUIInterfaceOrientationSupportAll

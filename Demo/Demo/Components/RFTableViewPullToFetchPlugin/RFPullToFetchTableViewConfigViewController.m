@@ -7,6 +7,7 @@
 //
 
 #import "RFPullToFetchTableViewConfigViewController.h"
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFPullToFetchTableViewConfigViewController ()
 

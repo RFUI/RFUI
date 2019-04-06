@@ -1,5 +1,7 @@
 
 #import "RFDMagicMoveDestinationViewController.h"
+#import <RFKit/UIDevice+RFKit.h>
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDMagicMoveDestinationViewController
 RFUIInterfaceOrientationSupportDefault

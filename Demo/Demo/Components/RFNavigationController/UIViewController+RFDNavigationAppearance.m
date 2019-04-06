@@ -7,8 +7,8 @@
 //
 
 #import "UIViewController+RFDNavigationAppearance.h"
-#import "RFNavigationController.h"
 #import "RFSynthesizeCategoryProperty.h"
+#import <RFKit/NSDictionary+RFKit.h>
 
 @implementation UIViewController (RFDNavigationAppearance)
 
@@ -18,18 +18,24 @@ RFSynthesizeCategoryBoolProperty(RFPrefersBottomBarShown, setRFPrefersBottomBarS
 RFSynthesizeCategoryObjectProperty(RFPreferredNavigationBarColor, setRFPreferredNavigationBarColor, UIColor *, OBJC_ASSOCIATION_COPY)
 RFSynthesizeCategoryBoolProperty(RFPrefersLightContentBarStyle, setRFPrefersLightContentBarStyle)
 
-- (NSDictionary<NSString *,id> *)RFNavigationAppearanceAttributes {
+- (NSMutableDictionary *)RFNavigationAppearanceAttributes {
     NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:10];
-    dic[RFViewControllerPrefersStatusBarHiddenAttribute] = @(self.RFPrefersStatusBarHidden);
     dic[RFViewControllerPrefersNavigationBarHiddenAttribute] = @(self.RFPrefersNavigationBarHidden);
     dic[RFViewControllerPrefersBottomBarShownAttribute] = @(self.RFPrefersBottomBarShown);
     [dic rf_setObject:self.RFPreferredNavigationBarColor forKey:RFViewControllerPreferredNavigationBarTintColorAttribute];
     if (self.RFPrefersLightContentBarStyle) {
-        dic[RFViewControllerPreferredStatusBarStyleAttribute] = @(UIStatusBarStyleLightContent);
         dic[RFViewControllerPreferredNavigationBarItemColorAttribute] = [UIColor whiteColor];
         dic[RFViewControllerPreferredNavigationBarTitleTextAttributes] = @{ NSForegroundColorAttributeName : [UIColor whiteColor] };
     }
     return dic;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return self.RFPrefersStatusBarHidden;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return self.RFPrefersLightContentBarStyle? UIStatusBarStyleLightContent : UIStatusBarStyleDefault;
 }
 
 @end

@@ -1,5 +1,7 @@
 
 #import "RFDImageCropperViewController.h"
+#import <RFKit/UIDevice+RFKit.h>
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFDImageCropperViewController () <
     UIImagePickerControllerDelegate

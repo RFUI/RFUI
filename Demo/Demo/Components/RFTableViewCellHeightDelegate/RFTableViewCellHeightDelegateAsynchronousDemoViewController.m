@@ -7,6 +7,7 @@
 //
 
 #import "RFTableViewCellHeightDelegateAsynchronousDemoViewController.h"
+#import <RFKit/UIView+RFKit.h>
 
 @interface RFTableViewCellHeightDelegateAsynchronousDemoViewController ()
 @property (strong, nonatomic) NSArray *tableData;

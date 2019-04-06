@@ -6,7 +6,7 @@
 //  Copyright © 2016 RFUI. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RFNavigationController.h"
 
 @interface UIViewController (RFDNavigationAppearance)
 
@@ -20,6 +20,6 @@
 
 @property IBInspectable BOOL RFPrefersLightContentBarStyle;
 
-- (nullable NSDictionary<NSString *, id> *)RFNavigationAppearanceAttributes;
+- (nullable NSMutableDictionary<RFViewControllerAppearanceAttributeKey, id> *)RFNavigationAppearanceAttributes;
 
 @end

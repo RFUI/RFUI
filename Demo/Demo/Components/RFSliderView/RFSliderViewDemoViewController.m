@@ -1,5 +1,6 @@
 
 #import "RFSliderViewDemoViewController.h"
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFSliderViewDemoViewController ()
 @end

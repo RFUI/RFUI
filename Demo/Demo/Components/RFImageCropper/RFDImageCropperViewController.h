@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 RFUI. All rights reserved.
 //
 
-#import "RFUI.h"
 #import "RFImageCropperView.h"
 
 @interface RFDImageCropperViewController : UIViewController

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 RFUI. All rights reserved.
 //
 
-#import "RFUI.h"
+#import <UIKit/UIKit.h>
 
 @class RFAssetsCache;
 

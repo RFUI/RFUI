@@ -1,5 +1,6 @@
 
 #import "RFWindowTouchDemoViewController.h"
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFWindowTouchDemoViewController ()
 @property (strong, nonatomic) RFWindow *window;

@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 RFUI. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "RFTimer.h"
+#import <RFKit/RFRuntime.h>
+
+@class RFTimer;
 
 @interface RFTimerDemoViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;

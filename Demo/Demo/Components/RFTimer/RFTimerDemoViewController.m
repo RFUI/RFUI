@@ -1,6 +1,8 @@
 
 #import "RFTimerDemoViewController.h"
-#import "RFUI.h"
+#import "RFTimer.h"
+#import <RFKit/UIDevice+RFKit.h>
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFTimerDemoViewController ()
 @end

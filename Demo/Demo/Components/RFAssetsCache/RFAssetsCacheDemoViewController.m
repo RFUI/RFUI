@@ -2,6 +2,8 @@
 #import "RFAssetsCacheDemoViewController.h"
 #import "RFAssetsCache.h"
 #import "RFAssetsCacheTestHelper.h"
+#import <RFKit/UIDevice+RFKit.h>
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFAssetsCacheDemoViewController ()
 @property (strong, nonatomic) RFAssetsCache *cache;

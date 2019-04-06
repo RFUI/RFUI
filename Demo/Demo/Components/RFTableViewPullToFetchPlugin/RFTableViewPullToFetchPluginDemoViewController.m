@@ -9,6 +9,7 @@
 #import "RFTableViewPullToFetchPluginDemoViewController.h"
 #import "RFPullToFetchTableViewConfigViewController.h"
 #import "UIView+RFAnimate.h"
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 static NSTimeInterval DebugFetchDelay = 1;
 static int DebugMaxItemCount = 20;

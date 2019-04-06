@@ -1,5 +1,6 @@
 
 #import "RFDDelegateChainScrollviewChainTestViewController.h"
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFDDelegateChainScrollviewChainTestViewController ()
 @property (strong, nonatomic) id dc;

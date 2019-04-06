@@ -2,6 +2,8 @@
 platform :ios, '8.0'
 
 target 'RFDemo' do
-    pod 'RFKit', :path => '../RFUI/Core/RFKit', :subspecs => ['ALL']
-    pod 'RFSegue', :path => '../RFUI/RFSegue'
+    pod 'RFInitializing'
+    pod 'RFKit', :subspecs => ['ALL']
+    pod 'RFMessageManager'
+    pod 'RFSegue'
 end

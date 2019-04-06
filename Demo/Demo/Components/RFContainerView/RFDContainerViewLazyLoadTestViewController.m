@@ -1,5 +1,7 @@
 
 #import "RFDContainerViewLazyLoadTestViewController.h"
+#import <RFKit/UIDevice+RFKit.h>
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFDContainerViewLazyLoadTestViewController ()
 @end

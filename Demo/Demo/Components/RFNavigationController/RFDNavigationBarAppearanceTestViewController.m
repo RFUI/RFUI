@@ -1,7 +1,8 @@
 
 #import "RFDNavigationBarAppearanceTestViewController.h"
 #import "UIViewController+RFDNavigationAppearance.h"
-
+#import <RFKit/UIDevice+RFKit.h>
+#import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDNavigationBarAppearanceTestViewController
 RFUIInterfaceOrientationSupportDefault

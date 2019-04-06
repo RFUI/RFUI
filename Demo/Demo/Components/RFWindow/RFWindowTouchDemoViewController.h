@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 RFUI. All rights reserved.
 //
 
-#import "RFUI.h"
+#import <RFKit/RFKit.h>
 #import "RFWindow.h"
 
 @interface RFWindowTouchDemoViewController : UIViewController

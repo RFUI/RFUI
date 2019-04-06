@@ -7,7 +7,7 @@
 //
 
 #import "ComponentList.h"
-#import "RFUI.h"
+#import <RFKit/NSDictionary+RFKit.h>
 
 @interface ComponentList ()
 @property(strong, nonatomic) NSArray<NSDictionary *> *tableData;
