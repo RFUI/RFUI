@@ -47,8 +47,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Demo requiest photo library usage</string>
 </dict>

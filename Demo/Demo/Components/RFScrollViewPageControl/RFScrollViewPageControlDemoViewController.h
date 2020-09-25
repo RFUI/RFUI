@@ -26,5 +26,5 @@
 
 @interface SimplePageScrollView : UIScrollView
 @property (assign, nonatomic) float pageCount;
-@property (strong, nonatomic) NSMutableArray *pageViews;
+@property (strong, nonatomic) NSMutableArray<UIView *> *pageViews;
 @end

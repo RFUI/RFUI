@@ -39,8 +39,6 @@
 		D51D83FD17977E920086D902 /* RFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83B117977E920086D902 /* RFTabBar.m */; };
 		D51D83FE17977E920086D902 /* RFTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83B317977E920086D902 /* RFTabBarItem.m */; };
 		D51D840617977E920086D902 /* RFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D51D83C517977E920086D902 /* RFWindow.m */; };
-		D520051F178CF43B00FEA64B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D520051E178CF43B00FEA64B /* UIKit.framework */; };
-		D5200521178CF43B00FEA64B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5200520178CF43B00FEA64B /* Foundation.framework */; };
 		D5200529178CF43B00FEA64B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5200527178CF43B00FEA64B /* InfoPlist.strings */; };
 		D520052B178CF43C00FEA64B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D520052A178CF43C00FEA64B /* main.m */; };
 		D520052F178CF43C00FEA64B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D520052E178CF43C00FEA64B /* AppDelegate.m */; };
@@ -116,17 +114,8 @@
 		D58D099F19515ED2003A0463 /* RFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D099E19515ED2003A0463 /* RFTimer.m */; };
 		D58D09A219518809003A0463 /* RFTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D09A119518809003A0463 /* RFTimer.storyboard */; };
 		D58D09A519518826003A0463 /* RFTimerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D09A419518826003A0463 /* RFTimerDemoViewController.m */; };
-		D593B4981AB28713000DB49F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5200522178CF43B00FEA64B /* CoreGraphics.framework */; };
 		D598F4AB18D1499B009C142D /* RFLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4A418D1499B009C142D /* RFLine.m */; };
 		D598F4AE18D1499B009C142D /* UIView+RFPatternImageBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D598F4AA18D1499B009C142D /* UIView+RFPatternImageBackground.m */; };
-		D5A827631B0AD21B00134258 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51D845E179783030086D902 /* QuartzCore.framework */; };
-		D5A827641B0AD23600134258 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51D8456179782870086D902 /* Security.framework */; };
-		D5A827651B0AD24F00134258 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51D8458179782AD0086D902 /* AVFoundation.framework */; };
-		D5A827661B0AD26B00134258 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51D845C179782DE0086D902 /* AudioToolbox.framework */; };
-		D5A827671B0AD27D00134258 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51D845A179782C30086D902 /* CoreData.framework */; };
-		D5A827681B0AD29500134258 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D549014618FB91B000EDA527 /* SystemConfiguration.framework */; };
-		D5A827691B0AD2A800134258 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D549014418FB918500EDA527 /* MobileCoreServices.framework */; };
-		D5A8276A1B0AD2C000134258 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51D8460179783430086D902 /* MediaPlayer.framework */; };
 		D5A8276C1B0AD5D500134258 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A8276B1B0AD5D500134258 /* Images.xcassets */; };
 		D5A8276E1B0AD61800134258 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A8276D1B0AD61800134258 /* Launch Screen.xib */; };
 		D5A827AF1B0AECD600134258 /* RFDViewEnventLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A827AE1B0AECD600134258 /* RFDViewEnventLogViewController.m */; };
@@ -222,16 +211,7 @@
 		D51D83B317977E920086D902 /* RFTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTabBarItem.m; sourceTree = "<group>"; };
 		D51D83C417977E920086D902 /* RFWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFWindow.h; sourceTree = "<group>"; };
 		D51D83C517977E920086D902 /* RFWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFWindow.m; sourceTree = "<group>"; };
-		D51D8456179782870086D902 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D51D8458179782AD0086D902 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		D51D845A179782C30086D902 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		D51D845C179782DE0086D902 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		D51D845E179783030086D902 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D51D8460179783430086D902 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		D520051B178CF43B00FEA64B /* RFDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D520051E178CF43B00FEA64B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D5200520178CF43B00FEA64B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D5200522178CF43B00FEA64B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D5200526178CF43B00FEA64B /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
 		D5200528178CF43B00FEA64B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D520052A178CF43C00FEA64B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -270,8 +250,6 @@
 		D549012618FB8BF300EDA527 /* RFDelegateChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDelegateChain.m; sourceTree = "<group>"; };
 		D549012918FB8BFE00EDA527 /* RFTableViewCellHeightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewCellHeightDelegate.h; sourceTree = "<group>"; };
 		D549012A18FB8BFE00EDA527 /* RFTableViewCellHeightDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCellHeightDelegate.m; sourceTree = "<group>"; };
-		D549014418FB918500EDA527 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		D549014618FB91B000EDA527 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D549014918FB94F100EDA527 /* RFTableViewCellHeightDelegate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RFTableViewCellHeightDelegate.storyboard; sourceTree = "<group>"; };
 		D549014B18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTableViewCellHeightDelegateDemoViewController.h; sourceTree = "<group>"; };
 		D549014C18FB951100EDA527 /* RFTableViewCellHeightDelegateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTableViewCellHeightDelegateDemoViewController.m; sourceTree = "<group>"; };
@@ -423,18 +401,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A827661B0AD26B00134258 /* AudioToolbox.framework in Frameworks */,
-				D5A827651B0AD24F00134258 /* AVFoundation.framework in Frameworks */,
-				D5A827671B0AD27D00134258 /* CoreData.framework in Frameworks */,
-				D593B4981AB28713000DB49F /* CoreGraphics.framework in Frameworks */,
-				D5200521178CF43B00FEA64B /* Foundation.framework in Frameworks */,
 				79C5DF998D1DD2B483B35FA8 /* libPods-RFDemo.a in Frameworks */,
-				D5A8276A1B0AD2C000134258 /* MediaPlayer.framework in Frameworks */,
-				D5A827691B0AD2A800134258 /* MobileCoreServices.framework in Frameworks */,
-				D5A827631B0AD21B00134258 /* QuartzCore.framework in Frameworks */,
-				D5A827641B0AD23600134258 /* Security.framework in Frameworks */,
-				D5A827681B0AD29500134258 /* SystemConfiguration.framework in Frameworks */,
-				D520051F178CF43B00FEA64B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,18 +627,7 @@
 		D520051D178CF43B00FEA64B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D51D845C179782DE0086D902 /* AudioToolbox.framework */,
-				D51D8458179782AD0086D902 /* AVFoundation.framework */,
-				D51D845A179782C30086D902 /* CoreData.framework */,
-				D5200522178CF43B00FEA64B /* CoreGraphics.framework */,
-				D5200520178CF43B00FEA64B /* Foundation.framework */,
 				B97CF336ABB77DC6FEB690E6 /* libPods-RFDemo.a */,
-				D51D8460179783430086D902 /* MediaPlayer.framework */,
-				D549014418FB918500EDA527 /* MobileCoreServices.framework */,
-				D51D845E179783030086D902 /* QuartzCore.framework */,
-				D51D8456179782870086D902 /* Security.framework */,
-				D549014618FB91B000EDA527 /* SystemConfiguration.framework */,
-				D520051E178CF43B00FEA64B /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

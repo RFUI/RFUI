@@ -1,6 +1,3 @@
 [submodule "RFUI/Alpha"]
 	path = RFUI/Alpha
 	url = https://github.com/RFUI/Alpha.git
-[submodule "RFUI/RFSegue"]
-	path = RFUI/RFSegue
-	url = https://github.com/RFUI/RFSegue.git
