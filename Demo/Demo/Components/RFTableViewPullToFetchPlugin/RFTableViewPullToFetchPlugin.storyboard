@@ -1,58 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="nqk-EQ-dBS">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nqk-EQ-dBS">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Delegate-->
+        <!--PullToFetchTable-->
         <scene sceneID="xzr-L4-8y7">
             <objects>
                 <viewController title="PullToFetchTable" id="nqk-EQ-dBS" customClass="RFTableViewPullToFetchPluginDemoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vNB-6a-9H3"/>
-                        <viewControllerLayoutGuide type="bottom" id="Va8-Mm-iay"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dRL-rU-0UN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="388-18-73i">
-                                <rect key="frame" x="20" y="28" width="295" height="520"/>
+                                <rect key="frame" x="20" y="64" width="350" height="694"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.73999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <label key="tableHeaderView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EgC-0g-5SN">
-                                    <rect key="frame" x="0.0" y="0.0" width="295" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" systemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label key="tableFooterView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lrn-DC-e8B">
-                                    <rect key="frame" x="0.0" y="110" width="295" height="44"/>
+                                    <rect key="frame" x="0.0" y="144" width="350" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.0" green="0.67338966840000003" blue="0.33955807249999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" systemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationLevel="1" indentationWidth="10" reuseIdentifier="Cell" textLabel="ZxM-Bu-IYK" style="IBUITableViewCellStyleDefault" id="y72-75-kkL">
-                                        <rect key="frame" x="0.0" y="66" width="295" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="350" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y72-75-kkL" id="NK4-Ml-Kb2">
-                                            <rect key="frame" x="0.0" y="0.0" width="295" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZxM-Bu-IYK">
-                                                    <rect key="frame" x="25" y="0.0" width="255" height="43.5"/>
+                                                    <rect key="frame" x="26" y="0.0" width="308" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" systemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
                                             </subviews>
@@ -66,12 +62,13 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="X7d-PG-5vm"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
-                            <constraint firstItem="388-18-73i" firstAttribute="top" secondItem="vNB-6a-9H3" secondAttribute="bottom" constant="20" symbolic="YES" id="At9-FA-ano"/>
-                            <constraint firstItem="388-18-73i" firstAttribute="leading" secondItem="dRL-rU-0UN" secondAttribute="leading" constant="20" symbolic="YES" id="OKr-lb-aLl"/>
-                            <constraint firstAttribute="trailing" secondItem="388-18-73i" secondAttribute="trailing" constant="5" id="WkX-KE-nPq"/>
-                            <constraint firstItem="Va8-Mm-iay" firstAttribute="top" secondItem="388-18-73i" secondAttribute="bottom" constant="20" id="Zhx-Xd-qJH"/>
+                            <constraint firstItem="388-18-73i" firstAttribute="top" secondItem="X7d-PG-5vm" secondAttribute="top" constant="20" id="At9-FA-ano"/>
+                            <constraint firstItem="388-18-73i" firstAttribute="leading" secondItem="X7d-PG-5vm" secondAttribute="leading" constant="20" id="OKr-lb-aLl"/>
+                            <constraint firstItem="X7d-PG-5vm" firstAttribute="trailing" secondItem="388-18-73i" secondAttribute="trailing" constant="5" id="WkX-KE-nPq"/>
+                            <constraint firstItem="X7d-PG-5vm" firstAttribute="bottom" secondItem="388-18-73i" secondAttribute="bottom" constant="20" id="Zhx-Xd-qJH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -93,22 +90,19 @@
         <scene sceneID="lcs-VC-KjX">
             <objects>
                 <viewController storyboardIdentifier="RFPullToFetchTableViewConfigViewController" id="R46-Qo-oU9" customClass="RFPullToFetchTableViewConfigViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5s5-lJ-h3O"/>
-                        <viewControllerLayoutGuide type="bottom" id="A7h-cq-vFt"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0yq-iF-z3C">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7OV-ET-CG3">
-                                <rect key="frame" x="20" y="78" width="94" height="29"/>
+                                <rect key="frame" x="20" y="122" width="94" height="32"/>
                             </stepper>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="P39-rJ-8nf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7OV-ET-CG3" firstAttribute="leading" secondItem="0yq-iF-z3C" secondAttribute="leading" constant="20" id="HzC-7Y-bqB"/>
-                            <constraint firstItem="7OV-ET-CG3" firstAttribute="top" secondItem="5s5-lJ-h3O" secondAttribute="bottom" constant="78" id="wCi-bH-jq1"/>
+                            <constraint firstItem="7OV-ET-CG3" firstAttribute="leading" secondItem="P39-rJ-8nf" secondAttribute="leading" constant="20" id="HzC-7Y-bqB"/>
+                            <constraint firstItem="7OV-ET-CG3" firstAttribute="top" secondItem="P39-rJ-8nf" secondAttribute="top" constant="78" id="wCi-bH-jq1"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -119,4 +113,21 @@
             <point key="canvasLocation" x="498.55072463768118" y="33.482142857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

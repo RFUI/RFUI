@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="k8f-ka-1i1">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k8f-ka-1i1">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,57 +13,51 @@
         <scene sceneID="Ze3-gY-VG4">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="k8f-ka-1i1" customClass="RFScrollViewPageControlDemoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IL7-0N-zRq"/>
-                        <viewControllerLayoutGuide type="bottom" id="HZv-4d-GC7"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nh5-6x-ntP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="243" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sol-AS-tZf" customClass="SimplePageScrollView">
-                                <rect key="frame" x="35" y="84" width="250" height="379"/>
+                                <rect key="frame" x="35" y="108" width="305" height="565"/>
                                 <color key="backgroundColor" red="0.82358715739999999" green="1" blue="0.49927056780000001" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="k8f-ka-1i1" id="9ch-gb-wml"/>
                                 </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2AF-PT-ZbV" customClass="RFScrollViewPageControl">
-                                <rect key="frame" x="140.5" y="265.5" width="39" height="37"/>
+                                <rect key="frame" x="127" y="392.33333333333331" width="121.33333333333331" height="27.333333333333314"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.72549019609999998" blue="0.22352941179999999" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="scrollView" destination="Sol-AS-tZf" id="2D7-e6-fmc"/>
                                 </connections>
                             </pageControl>
                             <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y6d-BK-w4a" userLabel="Config">
-                                <rect key="frame" x="0.0" y="483" width="320" height="85"/>
+                                <rect key="frame" x="0.0" y="693" width="375" height="85"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Support half page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKz-Na-9u3">
-                                        <rect key="frame" x="20" y="20" width="223" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <rect key="frame" x="20" y="20" width="278" height="21"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-Tb-OQd">
-                                        <rect key="frame" x="251" y="15" width="51" height="31"/>
+                                        <rect key="frame" x="306" y="15" width="51" height="31"/>
                                         <connections>
                                             <action selector="onSupportHalfPageSwitchChanged:" destination="k8f-ka-1i1" eventType="valueChanged" id="Drt-UA-Hie"/>
                                         </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJh-4z-xu3">
                                         <rect key="frame" x="20" y="51" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="IdU-aV-ymf">
-                                        <rect key="frame" x="87" y="46.5" width="215" height="31"/>
+                                        <rect key="frame" x="87" y="46.666666666666629" width="270" height="31"/>
                                         <connections>
                                             <action selector="onPageCountSliderValueChanged:" destination="k8f-ka-1i1" eventType="valueChanged" id="aTm-mw-B9v"/>
                                         </connections>
                                     </slider>
                                 </subviews>
-                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstItem="VJh-4z-xu3" firstAttribute="centerY" secondItem="IdU-aV-ymf" secondAttribute="centerY" id="8FE-F5-v4n"/>
                                     <constraint firstAttribute="height" constant="85" id="8ht-xp-fAz"/>
@@ -79,16 +73,17 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oWe-Mw-cKI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Sol-AS-tZf" firstAttribute="leading" secondItem="Nh5-6x-ntP" secondAttribute="leading" constant="35" id="1wb-wF-SGR"/>
-                            <constraint firstItem="Y6d-BK-w4a" firstAttribute="leading" secondItem="Nh5-6x-ntP" secondAttribute="leading" id="5SQ-7E-TZS"/>
-                            <constraint firstAttribute="centerX" secondItem="2AF-PT-ZbV" secondAttribute="centerX" id="6w9-sm-oFP"/>
-                            <constraint firstAttribute="trailing" secondItem="Sol-AS-tZf" secondAttribute="trailing" constant="35" id="AMm-Lv-x3Z"/>
-                            <constraint firstItem="Sol-AS-tZf" firstAttribute="top" secondItem="IL7-0N-zRq" secondAttribute="bottom" constant="20" id="GDz-VB-Wqn"/>
-                            <constraint firstAttribute="trailing" secondItem="Y6d-BK-w4a" secondAttribute="trailing" id="LC8-S9-hpf"/>
+                            <constraint firstItem="Sol-AS-tZf" firstAttribute="leading" secondItem="oWe-Mw-cKI" secondAttribute="leading" constant="35" id="1wb-wF-SGR"/>
+                            <constraint firstItem="Y6d-BK-w4a" firstAttribute="leading" secondItem="oWe-Mw-cKI" secondAttribute="leading" id="5SQ-7E-TZS"/>
+                            <constraint firstItem="oWe-Mw-cKI" firstAttribute="centerX" secondItem="2AF-PT-ZbV" secondAttribute="centerX" id="6w9-sm-oFP"/>
+                            <constraint firstItem="oWe-Mw-cKI" firstAttribute="trailing" secondItem="Sol-AS-tZf" secondAttribute="trailing" constant="35" id="AMm-Lv-x3Z"/>
+                            <constraint firstItem="Sol-AS-tZf" firstAttribute="top" secondItem="oWe-Mw-cKI" secondAttribute="top" constant="20" id="GDz-VB-Wqn"/>
+                            <constraint firstItem="oWe-Mw-cKI" firstAttribute="trailing" secondItem="Y6d-BK-w4a" secondAttribute="trailing" id="LC8-S9-hpf"/>
                             <constraint firstItem="Y6d-BK-w4a" firstAttribute="top" secondItem="Sol-AS-tZf" secondAttribute="bottom" constant="20" id="Z1c-Kv-7K5"/>
-                            <constraint firstItem="HZv-4d-GC7" firstAttribute="top" secondItem="Y6d-BK-w4a" secondAttribute="bottom" id="Z9y-Ja-Jjo"/>
+                            <constraint firstItem="oWe-Mw-cKI" firstAttribute="bottom" secondItem="Y6d-BK-w4a" secondAttribute="bottom" id="Z9y-Ja-Jjo"/>
                             <constraint firstAttribute="centerY" secondItem="2AF-PT-ZbV" secondAttribute="centerY" id="siQ-pf-zUC"/>
                         </constraints>
                     </view>
@@ -106,4 +101,12 @@
             <point key="canvasLocation" x="52.173913043478265" y="50.223214285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

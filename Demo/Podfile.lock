@@ -157,7 +157,7 @@ DEPENDENCIES:
   - RFSegue
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - RFInitializing
     - RFKit
     - RFMessageManager
@@ -171,4 +171,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 9679b08a8740c78550fd2095252be06cac4e787a
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.3

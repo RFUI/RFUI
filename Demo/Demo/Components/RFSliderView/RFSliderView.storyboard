@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="IfI-IM-nvf">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IfI-IM-nvf">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,16 +13,12 @@
         <scene sceneID="G6w-hb-Jmt">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="IfI-IM-nvf" customClass="RFSliderViewDemoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RJs-6O-d0B"/>
-                        <viewControllerLayoutGuide type="bottom" id="5EW-xT-Xlk"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zk2-gZ-hIu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cnf-nF-0YE" customClass="RFSliderView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="211"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Cnf-nF-0YE" secondAttribute="height" multiplier="16:9" priority="750" id="Jo7-Lq-8CJ"/>
@@ -35,7 +31,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="KRr-P2-FwW" customClass="RFSliderViewDemoCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                        <rect key="frame" x="27.666666666666668" y="0.0" width="320" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -77,19 +73,20 @@
                                 </connections>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="H8n-OK-lCi" customClass="RFScrollViewPageControl">
-                                <rect key="frame" x="269" y="211" width="39" height="37"/>
+                                <rect key="frame" x="241.66666666666666" y="275.33333333333331" width="121.33333333333334" height="27.666666666666686"/>
                                 <connections>
                                     <outlet property="scrollView" destination="Cnf-nF-0YE" id="OR3-My-TA0"/>
                                 </connections>
                             </pageControl>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="CH2-O6-lqV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Cnf-nF-0YE" firstAttribute="bottom" secondItem="H8n-OK-lCi" secondAttribute="bottom" constant="-4" id="4ek-8O-wdk"/>
-                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="leading" secondItem="zk2-gZ-hIu" secondAttribute="leading" id="CEs-f2-m6p"/>
-                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="top" secondItem="RJs-6O-d0B" secondAttribute="bottom" id="IOu-H9-x6V"/>
-                            <constraint firstItem="5EW-xT-Xlk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cnf-nF-0YE" secondAttribute="bottom" constant="5" id="SU4-Ov-RhS"/>
-                            <constraint firstAttribute="trailing" secondItem="Cnf-nF-0YE" secondAttribute="trailing" id="Ta2-sO-e2I"/>
+                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="leading" secondItem="CH2-O6-lqV" secondAttribute="leading" id="CEs-f2-m6p"/>
+                            <constraint firstItem="Cnf-nF-0YE" firstAttribute="top" secondItem="CH2-O6-lqV" secondAttribute="top" id="IOu-H9-x6V"/>
+                            <constraint firstItem="CH2-O6-lqV" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Cnf-nF-0YE" secondAttribute="bottom" constant="5" id="SU4-Ov-RhS"/>
+                            <constraint firstItem="CH2-O6-lqV" firstAttribute="trailing" secondItem="Cnf-nF-0YE" secondAttribute="trailing" id="Ta2-sO-e2I"/>
                             <constraint firstItem="Cnf-nF-0YE" firstAttribute="trailing" secondItem="H8n-OK-lCi" secondAttribute="trailing" constant="12" id="ra4-Gd-lyI"/>
                         </constraints>
                     </view>
@@ -104,4 +101,9 @@
             <point key="canvasLocation" x="214.49275362318843" y="119.86607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
