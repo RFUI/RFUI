@@ -4,7 +4,6 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDTransitioningBarHiddenSourceViewController
-RFUIInterfaceOrientationSupportDefault
 
 - (void)viewWillAppear:(BOOL)animated {
     doutwork()

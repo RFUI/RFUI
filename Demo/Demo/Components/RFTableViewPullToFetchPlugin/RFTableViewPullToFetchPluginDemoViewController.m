@@ -20,7 +20,6 @@ static int DebugMaxItemCount = 20;
 @end
 
 @implementation RFTableViewPullToFetchPluginDemoViewController
-RFUIInterfaceOrientationSupportAll
 
 - (void)viewDidLoad {
     [super viewDidLoad];

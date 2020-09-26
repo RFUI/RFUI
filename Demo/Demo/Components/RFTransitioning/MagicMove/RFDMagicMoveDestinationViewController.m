@@ -4,7 +4,6 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDMagicMoveDestinationViewController
-RFUIInterfaceOrientationSupportDefault
 
 - (NSString *)RFTransitioningStyle {
     return NSStringFromClass([RFDSampleMagicMoveTransitioning class]);

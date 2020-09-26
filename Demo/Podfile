@@ -2,6 +2,7 @@
 platform :ios, '9.0'
 
 target 'RFDemo' do
+    pod 'RFDelegateChain'
     pod 'RFInitializing'
     pod 'RFKit', :subspecs => ['ALL']
     pod 'RFMessageManager'

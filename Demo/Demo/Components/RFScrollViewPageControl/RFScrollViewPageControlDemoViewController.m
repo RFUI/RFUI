@@ -4,7 +4,6 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFScrollViewPageControlDemoViewController
-RFUIInterfaceOrientationSupportAll
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

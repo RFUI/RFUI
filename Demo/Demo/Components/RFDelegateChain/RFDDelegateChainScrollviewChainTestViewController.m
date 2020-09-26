@@ -3,11 +3,10 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @interface RFDDelegateChainScrollviewChainTestViewController ()
-@property (strong, nonatomic) id dc;
+@property UICollectionViewDelegateChain *dc;
 @end
 
 @implementation RFDDelegateChainScrollviewChainTestViewController
-_RFUIInterfaceOrientationSupportDefault
 
 - (void)viewDidLoad {
     [super viewDidLoad];

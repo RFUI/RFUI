@@ -10,7 +10,6 @@
 @end
 
 @implementation RFAssetsCacheDemoViewController
-RFUIInterfaceOrientationSupportAll
 
 - (void)awakeFromNib {
     [super awakeFromNib];

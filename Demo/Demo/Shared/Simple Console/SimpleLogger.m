@@ -11,7 +11,7 @@
 	static SimpleLogger *sharedInstance = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
-        sharedInstance = [[self alloc] init];
+        sharedInstance = self.new;
     });
 	return sharedInstance;
 }

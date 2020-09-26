@@ -7,7 +7,6 @@
 @end
 
 @implementation RFWindowTouchDemoViewController
-RFUIInterfaceOrientationSupportAll
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

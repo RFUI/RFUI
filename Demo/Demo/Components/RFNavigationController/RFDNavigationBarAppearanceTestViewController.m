@@ -5,7 +5,6 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDNavigationBarAppearanceTestViewController
-RFUIInterfaceOrientationSupportDefault
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     UIViewController *dst = segue.destinationViewController;

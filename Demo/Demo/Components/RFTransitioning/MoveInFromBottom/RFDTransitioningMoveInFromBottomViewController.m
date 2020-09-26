@@ -5,7 +5,6 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDTransitioningMoveInFromBottomViewController
-RFUIInterfaceOrientationSupportDefault
 
 - (NSString *)RFTransitioningStyle {
     return NSStringFromClass([RFMoveInFromBottomTransitioning class]);

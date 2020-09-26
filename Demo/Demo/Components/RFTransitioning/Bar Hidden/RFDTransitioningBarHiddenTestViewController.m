@@ -4,7 +4,6 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDTransitioningBarHiddenTestViewController
-RFUIInterfaceOrientationSupportDefault
 
 - (NSString *)RFTransitioningStyle {
     return @"RFMoveInFromBottomTransitioning";

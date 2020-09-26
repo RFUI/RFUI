@@ -7,7 +7,6 @@
 @end
 
 @implementation RFDContainerViewLazyLoadTestViewController
-RFUIInterfaceOrientationSupportDefault
 
 - (IBAction)onLoadButton1Tapped:(id)sender {
     if (self.loadButton1.selected) {

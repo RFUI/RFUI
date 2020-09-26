@@ -9,10 +9,9 @@ static NSString *const ImageKey = @"image";
 static NSString *const TitleKey = @"title";
 
 @implementation RFSliderViewDemoViewController
-RFUIInterfaceOrientationSupportAll
 
 #define _itemWithImageName(NAME) \
-    @{ ImageKey: [UIImage imageNamed:NAME], TitleKey: NAME }
+    @{ ImageKey: (id)[UIImage imageNamed:NAME], TitleKey: NAME }
 
 - (void)awakeFromNib {
     [super awakeFromNib];

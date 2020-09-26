@@ -14,6 +14,5 @@
 @end
 
 @implementation RFPullToFetchTableViewConfigViewController
-RFUIInterfaceOrientationSupportAll
 
 @end

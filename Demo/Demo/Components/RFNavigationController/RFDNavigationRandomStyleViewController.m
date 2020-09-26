@@ -6,11 +6,11 @@
 static double LightDetectFactor = 0.7;
 
 @interface RFDNavigationRandomStyleViewController ()
-@property (nonatomic, strong) NSDictionary *navigationAppearanceAttributes;
+@property NSDictionary *navigationAppearanceAttributes;
+@property BOOL isLightStyle;
 @end
 
 @implementation RFDNavigationRandomStyleViewController
-RFUIInterfaceOrientationSupportAll
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -26,21 +26,21 @@ RFUIInterfaceOrientationSupportAll
     NSArray *choice = @[ @"RFD", @"Navigation", @"Random", @"StyleViewController", @"RFDNavigationRandomStyleViewController" ];
     self.title = [choice objectAtIndex:arc4random_uniform((u_int32_t)choice.count)];
 
-    NSNumber *barAnimation = ({
-        NSArray *choice = @[ @(UIStatusBarAnimationNone), @(UIStatusBarAnimationFade), @(UIStatusBarAnimationSlide) ];
-        choice[(NSUInteger)arc4random_uniform((u_int32_t)choice.count)];
-    });
-
     self.navigationAppearanceAttributes = @{
-        RFViewControllerPrefersStatusBarHiddenAttribute : @(arc4random_uniform(4) == 0),
         RFViewControllerPrefersNavigationBarHiddenAttribute : @(arc4random_uniform(4) == 0),
         RFViewControllerPrefersBottomBarShownAttribute : @(arc4random_uniform(2) == 0),
         RFViewControllerPreferredNavigationBarTintColorAttribute : themeColor,
-        RFViewControllerPreferredStatusBarStyleAttribute : @(isLightStyle? UIStatusBarStyleLightContent : UIStatusBarStyleDefault),
-        RFViewControllerPreferredStatusBarUpdateAnimationAttribute : barAnimation,
         RFViewControllerPreferredNavigationBarItemColorAttribute : itemColor,
         RFViewControllerPreferredNavigationBarTitleTextAttributes : @{ NSForegroundColorAttributeName : itemColor, NSFontAttributeName : [UIFont boldSystemFontOfSize:(arc4random_uniform(6) + 14)] }
     };
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return arc4random_uniform(4) == 0;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return self.isLightStyle? UIStatusBarStyleLightContent : UIStatusBarStyleDefault;
 }
 
 - (NSDictionary<NSString *,id> *)RFNavigationAppearanceAttributes {

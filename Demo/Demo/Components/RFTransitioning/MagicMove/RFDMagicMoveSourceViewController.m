@@ -4,6 +4,5 @@
 #import <RFKit/UIViewController+RFInterfaceOrientation.h>
 
 @implementation RFDMagicMoveSourceViewController
-RFUIInterfaceOrientationSupportDefault
 
 @end

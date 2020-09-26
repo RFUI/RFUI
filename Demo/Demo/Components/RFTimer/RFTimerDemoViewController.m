@@ -8,7 +8,6 @@
 @end
 
 @implementation RFTimerDemoViewController
-RFUIInterfaceOrientationSupportDefault
 
 - (void)viewDidLoad {
     [super viewDidLoad];
