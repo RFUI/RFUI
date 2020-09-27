@@ -4,39 +4,9 @@
 <array>
 	<dict>
 		<key>Name</key>
-		<string>Core</string>
-		<key>Status</key>
-		<string>OK</string>
-		<key>Detail</key>
-		<string>Ready to use, more document needed.</string>
-		<key>Has Demo</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>RFAPI</string>
-		<key>Status</key>
-		<string>Alpha</string>
-		<key>Detail</key>
-		<string></string>
-		<key>Has Demo</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
-		<string>RFAssetsCache</string>
-		<key>Status</key>
-		<string>TEST</string>
-		<key>Detail</key>
-		<string></string>
-		<key>Has Demo</key>
-		<false/>
-	</dict>
-	<dict>
-		<key>Name</key>
 		<string>RFContainerView</string>
 		<key>Status</key>
-		<string>TEST</string>
+		<string>Good</string>
 		<key>Detail</key>
 		<string></string>
 		<key>Has Demo</key>
@@ -141,7 +111,7 @@ TODO:
 		<key>Status</key>
 		<string>Alpha</string>
 		<key>Detail</key>
-		<string>Works as expected. Will used in more project to verify that.</string>
+		<string>Works as expected.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>
@@ -159,9 +129,9 @@ TODO:
 		<key>Name</key>
 		<string>RFWindow</string>
 		<key>Status</key>
-		<string>Alpha</string>
+		<string>Good</string>
 		<key>Detail</key>
-		<string>Works as expected. Will used in more project to verify that.</string>
+		<string>Works as expected.</string>
 		<key>Has Demo</key>
 		<true/>
 	</dict>

@@ -7,7 +7,6 @@
 //
 
 #import <RFKit/RFKit.h>
-#import "RFSidePanel.h"
 #import "RFTableViewPullToFetchPlugin.h"
 
 @interface RFTableViewPullToFetchPluginDemoViewController : UIViewController <

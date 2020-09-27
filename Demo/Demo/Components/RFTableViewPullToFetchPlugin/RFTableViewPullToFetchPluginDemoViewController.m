@@ -24,7 +24,6 @@ static int DebugMaxItemCount = 20;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupPanel];
     [self setupPullToFetchDisplay];
     [self setupPullToFetchData];
     
@@ -37,20 +36,6 @@ static int DebugMaxItemCount = 20;
     dispatch_after_seconds(1, ^{
         [self.pullToFetchControl triggerHeaderProcess];
     });
-}
-
-- (void)setupPanel {
-    RFSidePanel *sp = [[RFSidePanel alloc] initWithNibName:@"RFSidePanel" bundle:nil];
-    sp.view.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
-    CGRect frame = self.view.bounds;
-    frame.size.width = 200;
-    sp.view.frame = frame;
-    [self addChildViewController:sp intoView:self.view];
-    [sp hide:NO];
-    
-    RFPullToFetchTableViewConfigViewController *cvc = [self.storyboard instantiateViewControllerWithIdentifierUsingClass:[RFPullToFetchTableViewConfigViewController class]];
-    cvc.master = self;
-    sp.rootViewController = cvc;
 }
 
 - (void)setupPullToFetchDisplay {
