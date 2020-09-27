@@ -15,7 +15,15 @@
 
 - (IBAction)onCurrentStatusBarShownSwithChanged:(UISwitch *)sender {
     self.RFPrefersStatusBarHidden = !sender.on;
-    [self updateNavigationAppearanceAnimated:YES];
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return self.RFPrefersStatusBarHidden;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return self.RFPrefersLightContentBarStyle? UIStatusBarStyleLightContent : UIStatusBarStyleDefault;
 }
 
 - (IBAction)onCurrentNavigationBarShownSwithChanged:(UISwitch *)sender {

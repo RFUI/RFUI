@@ -30,12 +30,4 @@ RFSynthesizeCategoryBoolProperty(RFPrefersLightContentBarStyle, setRFPrefersLigh
     return dic;
 }
 
-- (BOOL)prefersStatusBarHidden {
-    return self.RFPrefersStatusBarHidden;
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return self.RFPrefersLightContentBarStyle? UIStatusBarStyleLightContent : UIStatusBarStyleDefault;
-}
-
 @end

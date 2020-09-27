@@ -61,21 +61,18 @@
 
 @end
 
-#import "UIWebView+RFKit.h"
-
 @implementation RDCHWebCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.webView.scrollView.bounces = NO;
-    [self.webView clearBackgroundImages];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     _doutwork()
     self.heightLayoutConstraint.constant = webView.scrollView.contentSize.height;
 
-    UITableView *tableView = (id)[self superviewOfClass:[UITableView class]];
+    UITableView *tableView = [self superviewOfClass:[UITableView class]];
     if (!tableView) return;
     NSIndexPath *indexPath = [tableView indexPathForCell:self];
     if (!indexPath) return;
