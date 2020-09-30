@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79C5DF998D1DD2B483B35FA8 /* libPods-RFDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B97CF336ABB77DC6FEB690E6 /* libPods-RFDemo.a */; };
+		3D8551AD52F6FB690B9B6BA7 /* Pods_RFDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C2DF61FCF6815FF92C0FDF /* Pods_RFDemo.framework */; };
 		D50DFB031CFECABE0075E446 /* RFDNavigationRandomStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50DFB021CFECABE0075E446 /* RFDNavigationRandomStyleViewController.m */; };
 		D50E89A11D02A78200B11A96 /* RFDNavigationBarAppearanceTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50E89A01D02A78200B11A96 /* RFDNavigationBarAppearanceTestViewController.m */; };
 		D51C8A761BF4A245007386CE /* RFLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51C8A751BF4A245007386CE /* RFLine.storyboard */; };
@@ -129,7 +129,6 @@
 
 /* Begin PBXFileReference section */
 		A9C787A4ED9D839DB8372621 /* Pods-RFDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RFDemo/Pods-RFDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B97CF336ABB77DC6FEB690E6 /* libPods-RFDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RFDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50DFB011CFECABE0075E446 /* RFDNavigationRandomStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDNavigationRandomStyleViewController.h; sourceTree = "<group>"; };
 		D50DFB021CFECABE0075E446 /* RFDNavigationRandomStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFDNavigationRandomStyleViewController.m; sourceTree = "<group>"; };
 		D50E899F1D02A78200B11A96 /* RFDNavigationBarAppearanceTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFDNavigationBarAppearanceTestViewController.h; sourceTree = "<group>"; };
@@ -329,6 +328,7 @@
 		D5FF4E3D1AAFF717007BD7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5FF4E451AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSwizzleTestsObjects.h; sourceTree = "<group>"; };
 		D5FF4E461AAFF7F9007BD7F4 /* RFSwizzleTestsObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSwizzleTestsObjects.m; sourceTree = "<group>"; };
+		F3C2DF61FCF6815FF92C0FDF /* Pods_RFDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RFDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE6AF330A472DDA401E662D /* Pods-RFDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RFDemo/Pods-RFDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,7 +337,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C5DF998D1DD2B483B35FA8 /* libPods-RFDemo.a in Frameworks */,
+				3D8551AD52F6FB690B9B6BA7 /* Pods_RFDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +508,7 @@
 		D520051D178CF43B00FEA64B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B97CF336ABB77DC6FEB690E6 /* libPods-RFDemo.a */,
+				F3C2DF61FCF6815FF92C0FDF /* Pods_RFDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1132,6 +1132,7 @@
 				D5200517178CF43B00FEA64B /* Sources */,
 				D5200518178CF43B00FEA64B /* Frameworks */,
 				D5200519178CF43B00FEA64B /* Resources */,
+				CFB24667FDB007FAE506286E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1260,6 +1261,32 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB24667FDB007FAE506286E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RFDemo/Pods-RFDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RFDelegateChain/RFDelegateChain.framework",
+				"${BUILT_PRODUCTS_DIR}/RFInitializing/RFInitializing.framework",
+				"${BUILT_PRODUCTS_DIR}/RFKit/RFKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RFMessageManager/RFMessageManager.framework",
+				"${BUILT_PRODUCTS_DIR}/RFSegue/RFSegue.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RFDelegateChain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RFInitializing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RFKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RFMessageManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RFSegue.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RFDemo/Pods-RFDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1414,7 +1441,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1466,7 +1492,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1497,7 +1522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"$(inherited)",
 					"RFDebugLevel=5",
 					"DOUT_FALG_TRACE=1",
 				);
